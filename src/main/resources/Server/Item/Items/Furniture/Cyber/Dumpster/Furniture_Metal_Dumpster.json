@@ -1,0 +1,84 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Metal_Dumpster.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Metal_Dumpster.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      10,
+      43,
+      9
+    ],
+    "Translation": [
+      7,
+      -17
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Dumpster/Metal_Dumpster.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Dumpster/Metal_Dumpster_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "Group": "Wood",
+    "HitboxType": "Metal_Dumpster",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#183b17",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0.2
+        },
+        "Yaw": 0
+      },
+      {
+        "Offset": {
+          "X": -1,
+          "Y": 0,
+          "Z": 0.2
+        },
+        "Yaw": 0
+      }
+    ],
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Metal"
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Tavern"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

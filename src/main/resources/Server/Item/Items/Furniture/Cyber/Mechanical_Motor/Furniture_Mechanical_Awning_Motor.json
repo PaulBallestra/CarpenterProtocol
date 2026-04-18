@@ -1,0 +1,52 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Mechanical_Awning_Motor.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Mechanical_Awning_Motor.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Mechanical_Motor/Mechanical_Awning_Motor.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Mechanical_Motor/Mechanical_Awning_Motor_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Roof",
+    "HitboxType": "Mechanical_Awning_Motor",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "VariantRotation": "NESW",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {}
+      ]
+    },
+    "ParticleColor": "#8c8c8c",
+    "BlockSoundSetId": "Metal"
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      344,
+      38,
+      0
+    ],
+    "Translation": [
+      6,
+      -10
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
