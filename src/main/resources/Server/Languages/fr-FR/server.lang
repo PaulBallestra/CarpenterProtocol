@@ -1,0 +1,204 @@
+items.Black_Cloth_Half.name=Dalle de Tissu Noir
+
+items.Falling_Block_Rock_Chalk.name=Bloc de Craie Tombant
+items.Falling_Block_Rock_Chalk.description=Bloc de craie qui peut tomber lors d'une interaction avec un joueur (TntRun).
+
+items.Falling_Block_Rock_Salt.name=Bloc de Sel Tombant
+items.Falling_Block_Rock_Salt.description=Bloc de sel qui peut tomber lors d'une interaction avec un joueur (TntRun).
+
+items.Rock_Dark_Concrete_Brick.name=Brique de Béton Foncé
+items.Rock_Dark_Concrete_Brick_Smooth.name=Brique de Béton Foncé Lisse
+
+items.Metal_Dark_Iron.name=Fer Sombre
+items.Metal_Dark_Iron_Half.name=Dalle de Fer Sombre
+items.Metal_Dark_Iron_Smooth.name=Fer Sombre Lisse
+items.Metal_Dark_Iron_Smooth_Half.name=Dalle de Fer Sombre Lisse
+items.Metal_Dark_Iron_Stairs.name=Escalier de Fer Sombre
+items.Metal_Dark_Iron_Ornate.name=Fer Sombre Orné
+items.Metal_Dark_Iron_Decorative.name=Fer Sombre Décoratif
+
+items.Metal_Iron_Vertical_Grid.name=Grille Verticale de Fer
+items.Metal_Iron_Horizontal_Grid.name=Grille Horizontale de Fer
+items.Metal_Iron_Block_Grid.name=Bloc de Grille de Fer
+
+items.Metal_Awning.name=Store Mécanique de Métal
+items.Metal_Shutter.name=Rideau Mécanique de Métal
+
+items.Warning_Block.name=Bloc d'Avertissement
+
+items.Laser_Tag_Marker_Team_Spawn0.name=Team 0 Spawn Marqueur
+items.Laser_Tag_Marker_Team_Spawn1.name=Team 1 Spawn Marqueur
+
+items.Laser_Tag_Black_Beam.name=Faisceau LED Noir
+items.Laser_Tag_Blue_Beam.name=Faisceau LED Bleu
+items.Laser_Tag_Green_Beam.name=Faisceau LED Vert
+items.Laser_Tag_Orange_Beam.name=Faisceau LED Orange
+items.Laser_Tag_Purple_Beam.name=Faisceau LED Violet
+items.Laser_Tag_Red_Beam.name=Faisceau LED Rouge
+items.Laser_Tag_White_Beam.name=Faisceau LED Blanc
+items.Laser_Tag_Yellow_Beam.name=Faisceau LED Jaune
+
+items.Armor_Laser_Tag_Head.name=Casque Laser Game
+items.Armor_Laser_Tag_Chest.name=Plastron Laser Game
+items.Armor_Laser_Tag_Hands.name=Gants Laser Game
+items.Armor_Laser_Tag_Legs.name=Jambières Laser Game
+
+items.Laser_Tag_Weapon_Gun_Red.name=Arme Laser Rouge
+items.Armor_Laser_Tag_Head_Red.name=Casque Rouge Laser Game
+items.Armor_Laser_Tag_Chest_Red.name=Plastron Rouge Laser Game
+items.Armor_Laser_Tag_Legs_Red.name=Jambières Rouge Laser Game
+
+items.Laser_Tag_Weapon_Gun_Blue.name=Arme Laser Bleue
+items.Armor_Laser_Tag_Head_Blue.name=Casque Bleu Laser Game
+items.Armor_Laser_Tag_Chest_Blue.name=Plastron Bleu Laser Game
+items.Armor_Laser_Tag_Legs_Blue.name=Jambières Bleu Laser Game
+
+items.Furniture_Laser_Tag_Door_Large_Vertical.name=Large Porte Verticale Laser Game
+items.Furniture_Laser_Tag_Door_Large_Horizontal.name=Large Porte Horizontale Laser Game
+
+items.Laser_Tag_Led_Blue_Block.name=Bloc LED Bleu
+items.Laser_Tag_Led_Blue_Filled_Block.name=Bloc LED Bleu Rempli
+items.Laser_Tag_Led_Red_Block.name=Bloc LED Rouge
+items.Laser_Tag_Led_Green_Block.name=Bloc LED Vert
+items.Laser_Tag_Led_Purple_Block.name=Bloc LED Violet
+items.Laser_Tag_Led_White_Block.name=Bloc LED Blanc
+items.Laser_Tag_Led_Black_Block.name=Bloc LED Noir
+
+items.Laser_Tag_Wall_Red_Full_Horizontal.name=Mur LED Horizontal Rouge
+items.Laser_Tag_Wall_Green_Full_Horizontal.name=Mur LED Horizontal Vert
+items.Laser_Tag_Wall_Blue_Full_Horizontal.name=Mur LED Horizontal Bleu
+items.Laser_Tag_Wall_Purple_Full_Horizontal.name=Mur LED Horizontal Violet
+
+items.Laser_Tag_Red_Stairs.name=Escalier LED Rouge
+items.Laser_Tag_Green_Stairs.name=Escalier LED Vert
+items.Laser_Tag_Blue_Stairs.name=Escalier LED Bleu
+items.Laser_Tag_Purple_Stairs.name=Escalier LED Violet
+
+items.Laser_Tag_Led_Red_Hexagone_Block.name=Hexagone LED Rouge
+items.Laser_Tag_Led_Red_Hexagone_Inverted_Block.name=Hexagone LED Rouge Inversé
+items.Laser_Tag_Led_Green_Hexagone_Block.name=Hexagone LED Vert
+items.Laser_Tag_Led_Green_Hexagone_Inverted_Block.name=Hexagone LED Vert Inversé
+items.Laser_Tag_Led_Blue_Hexagone_Block.name=Hexagone LED Bleu
+items.Laser_Tag_Led_Blue_Hexagone_Inverted_Block.name=Hexagone LED Bleu Inversé
+items.Laser_Tag_Led_Purple_Hexagone_Block.name=Hexagone LED Violet
+items.Laser_Tag_Led_Purple_Hexagone_Inverted_Block.name=Hexagone LED Violet Inversé
+items.Laser_Tag_Led_White_Hexagone_Block.name=Hexagone LED Blanc
+items.Laser_Tag_Led_White_Hexagone_Inverted_Block.name=Hexagone LED Blanc Inversé
+
+items.Furniture_Led_Tube1_Horizontal_Blue.name=LED Bleue Horizontale 1 bande
+items.Furniture_Led_Tube2_Horizontal_Blue.name=LED Bleue Horizontale 2 bandes
+items.Furniture_Led_Tube3_Horizontal_Blue.name=LED Bleue Horizontale 3 bandes
+items.Furniture_Led_Tube1_Vertical_Blue.name=LED Bleue Verticale 1 bande
+items.Furniture_Led_Tube2_Vertical_Blue.name=LED Bleue Verticale 2 bandes
+items.Furniture_Led_Tube3_Vertical_Blue.name=LED Bleue Verticale 3 bandes
+items.Furniture_Vertical_Neon_Tube.name=Tube Neon Vertical
+
+items.Led_Video_Wall2x7.name=Panneau Mural LED 2x7
+items.Led_Video_Panel1x2.name=Panneau Mural LED 1x2
+
+items.Laser_Tag_Cyber_Block.name=Bloc Cyber
+
+items.Furniture_Cyber_Bench.name=Banc Cyber
+items.Furniture_Cyber2x3_Holo_Sign.name=Publicité Cyber Hologramme
+items.Furniture_Cyber_Video_Grounded_Sign.name=Publicité Sol Cyber Vidéo
+
+items.Furniture_Access_Terminal.name=Terminal d'Accès
+items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
+items.Furniture_Atm_Pod_Alternate.name=Autre Distributeur Automatique de Billets
+items.Furniture_Vending_Dispenser.name=Distributeur Automatique
+items.Furniture_Trash_Bin.name=Poubelle
+
+items.Furniture_Fake_Door.name=Fausse Porte
+items.Furniture_Ceiling_Fan.name=Ventilateur de Plafond
+items.Furniture_Metal_Dumpster.name=Benne à Ordures
+items.Furniture_Mechanical_Awning_Motor.name=Moteur Mécanique de Store
+
+items.Furniture_Industrial_Barrel.name=Fût Industriel
+items.Furniture_Industrial_Bulkhead.name=Gyrophare Industriel
+items.Furniture_Industrial_Exhaust_Fan.name=Ventilateur d'Extraction Industriel
+items.Furniture_Industrial_Exhaust_Fan_Alternate.name=Ventilateur d'Extraction Industriel - Autre
+
+items.Global_Truss_Vertical.name=Poutre Global Truss Verticale
+items.Global_Truss_Horizontal.name=Poutre Global Truss Horizontale
+items.Global_Truss_Corner.name=Angle de Poutre Global Truss
+items.Global_Truss_T.name=T de Poutre Global Truss
+items.Global_Truss_Cross.name=Croix de Poutre Global Truss
+
+items.Furniture_Ceiling_Led_Neon.name=Lampe Néon de Plafond
+items.Furniture_Neon_Trimmed_Bollard.name=Borne Néon avec Bordure
+
+items.Utility_Pole_Base.name=Socle de Poteau Électrique
+items.Utility_Pole_Segment.name=Segment de Poteau avec Boîtier
+items.Utility_Pole_Segment_Heavy.name=Segment de Poteau Électrique Lourd
+items.Utility_Pole_Segment_Light.name=Segment de Poteau Électrique Léger
+items.Utility_Pole_Control_Box_Large.name=Boîtier de Contrôle Large de Poteau Électrique
+items.Utility_Pole_Top.name=Sommet Poteau Électrique
+items.Utility_Pole_Light.name=Lumière de Poteau Électrique
+
+items.Furniture_Electrical_Box.name=Coffret Électrique
+items.Furniture_Electrical_Box_Connected.name=Coffret Électrique Connecté
+items.Furniture_Electrical_Boxes.name=Boîtiers Électrique
+items.Furniture_Transformer_Box.name=Boîte de Transformateur
+
+items.Furniture_Wires.name=Câbles
+
+items.Furniture_Air_Conditioner.name=Climatiseur
+items.Furniture_Air_Conditioner_Small.name=Climatiseur - Petit
+items.Furniture_Air_Conditioner_Long.name=Climatiseur - Long
+
+items.Furniture_Ventilation_Duct_Vertical.name=Conduit d'Aération - Vertical
+items.Furniture_Ventilation_Duct_Horizontal.name=Conduit d'Aération - Horizontal
+items.Furniture_Ventilation_Duct_Angle.name=Conduit d'Aération - Angle
+items.Furniture_Ventilation_Duct_Angle_Horizontal.name=Conduit d'Aération - Angle Horizontal
+items.Furniture_Ventilation_Duct_Angle_Inverted.name=Conduit d'Aération - Angle Inversé
+items.Furniture_Ventilation_Grille.name=Grille de Ventilation
+
+items.Furniture_Cyber_Low_Table.name=Table Basse Cyber
+items.Furniture_Cyber_Armchair.name=Fauteuil Cyber
+items.Furniture_Cyber_Couch.name=Canapé Cyber
+items.Furniture_Cyber_Bar_Chair.name=Chaise de Bar Cybers
+items.Furniture_Cyber_Bar.name=Bar Cyber
+
+items.Furniture_Nightclub_Sofa.name=Canapé de Boîte de Nuit
+
+items.Furniture_Neon_Bar_Sign.name=Panneau de Bar Néon
+items.Furniture_Cybernetics_Lab_Sign.name=Panneau "Cybernetics Labs"
+items.Furniture_Zone_Locked_Sign.name=Panneau "Zone Locked"
+items.Furniture_City_Ramen_Sign.name=Panneau "City Ramen"
+items.Furniture_Synth_Mart_Sign.name=Panneau "Synth Mart"
+items.Furniture_Quickfix_Med_Sign.name=Panneau "Quickfix Med"
+items.Furniture_Personnel_Only_Sign.name=Panneau "Authorized Personnel Only"
+
+items.Furniture_Directionnal_Arrows_Sign.name=Panneau de Flèches Directionnelles
+items.Furniture_Directionnal45_Arrows_Sign.name=Panneau de Flèches Directionnelles (45°)
+items.Furniture_DirectionnalMinus45_Arrows_Sign.name=Panneau de Flèches Directionnelles (-45°)
+
+items.Neon_Arrows_Sign.name=Panneau Fléché Néon
+items.Neon247_Sign.name=Panneau 24/7 Néon
+items.Neon_Open_Red_Sign.name=Panneau "Ouvert" Néon Rouge
+items.Neon_Open_Green_Sign.name=Panneau "Ouvert" Néon Vert
+items.Neon_Open_Blue_Sign.name=Panneau "Ouvert" Néon Bleu
+items.Neon_Gradient_Block.name=Bloc de Dégradé Néon
+
+items.Furniture_Heater.name=Chauffage
+items.Furniture_Wall_Heater.name=Chauffage Mural
+items.Furniture_Vertical_Terminal.name=Borne Verticale
+
+items.Deco_Metal_Crate.name=Caisse Métallique
+items.Deco_Metal_Crate2x1.name=Caisse Métallique - Large
+
+items.Furniture_Advertising_Easel.name=Chevalet Publicitaire
+items.Furniture_Advertising_Totem.name=Totem Publicitaire 
+
+items.Furniture_Angled_Neon_Led_Down.name=Néon LED Coudé - Bas
+items.Furniture_Angled_Neon_Led_Up.name=Néon LED Coudé - Haut
+
+items.Furniture_Neon_Crowd_Control_Barrier.name=Barrière Néon de Contrôle des Foules
+items.Furniture_Concrete_Bench.name=Banc en Béton
+items.Furniture_Antiram_Bollard.name=Borne Anti-Effraction
+
+items.Metal_Railing_Fence.name=Balustrade en Métal
+items.Metal_Iron_Drain_Outlet.name=Sortie d'Évacuation
+
+items.Glass_Fence.name=Barrière en Verre
+items.Furniture_Server_Rack.name=Rack Serveurs

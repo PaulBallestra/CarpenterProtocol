@@ -1,0 +1,69 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Air_Conditioner_Long.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Air_Conditioner_Long.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Air_Conditioner/Air_Conditioner_Long.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Air_Conditioner/Air_Conditioner_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Air_Conditioner_Long",
+    "VariantRotation": "NESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#a0a0a0",
+    "Looping": true
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      355,
+      28,
+      360
+    ],
+    "Translation": [
+      4,
+      -10
+    ]
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
