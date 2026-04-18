@@ -1,0 +1,70 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Global_Truss_Corner.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Global_Truss_Corner.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "Set": "Metal_Cyber",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Structures/Global_Truss/Global_Truss_Corner.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Structures/Global_Truss/Global_Truss_Textures/Global_Truss_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Beam",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Metal_Iron_Fence"
+      }
+    },
+    "VariantRotation": "NESW",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {
+          "FaceType": "FenceConnection"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "FenceConnection"
+        }
+      ]
+    },
+    "ParticleColor": "#87928e",
+    "BlockSoundSetId": "Metal"
+  },
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

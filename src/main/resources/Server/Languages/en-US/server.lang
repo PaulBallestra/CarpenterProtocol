@@ -104,7 +104,7 @@ items.Furniture_Cyber_Video_Grounded_Sign.name=Cyber ​​Video Ground Advertis
 
 items.Furniture_Access_Terminal.name=Access Terminal
 items.Furniture_ATM_Pod.name=ATM
-items.Furniture_ATM_Pod_Alternate.name=Alternate ATM
+items.Furniture_ATM_Pod_Alternate.name=ATM - Alternate
 items.Furniture_Vending_Dispenser.name=Vending Machine
 items.Furniture_Trash_Bin.name=Trash Bin
 
@@ -118,11 +118,11 @@ items.Furniture_Industrial_Bulkhead.name=Industrial Bulkhead
 items.Furniture_Industrial_Exhaust_Fan.name=Industrial Exhaust Fan
 items.Furniture_Industrial_Exhaust_Fan_Alternate.name=Industrial Exhaust Fan - Alternate
 
-items.Global_Truss_Vertical.name=Vertical Global Truss
-items.Global_Truss_Horizontal.name=Horizontal Global Truss
-items.Global_Truss_Corner.name=Global Truss Corner
-items.Global_Truss_T.name=Global Truss T
-items.Global_Truss_Cross.name=Global Truss Cross
+items.Global_Truss_Vertical.name=Global Truss - Vertical
+items.Global_Truss_Horizontal.name=Global Truss - Horizontal
+items.Global_Truss_Corner.name=Global Truss - Corner
+items.Global_Truss_T.name=Global Truss - T
+items.Global_Truss_Cross.name=Global Truss - Cross
 
 items.Furniture_Ceiling_Led_Neon.name=Ceiling Neon Led Lamp
 items.Furniture_Neon_Trimmed_Bollard.name=Neon Trimmed Bollard

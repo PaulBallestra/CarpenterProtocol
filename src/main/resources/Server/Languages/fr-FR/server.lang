@@ -104,7 +104,7 @@ items.Furniture_Cyber_Video_Grounded_Sign.name=Publicité Sol Cyber Vidéo
 
 items.Furniture_Access_Terminal.name=Terminal d'Accès
 items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
-items.Furniture_Atm_Pod_Alternate.name=Autre Distributeur Automatique de Billets
+items.Furniture_Atm_Pod_Alternate.name=Distributeur Automatique de Billets - Alterne
 items.Furniture_Vending_Dispenser.name=Distributeur Automatique
 items.Furniture_Trash_Bin.name=Poubelle
 
@@ -118,11 +118,11 @@ items.Furniture_Industrial_Bulkhead.name=Gyrophare Industriel
 items.Furniture_Industrial_Exhaust_Fan.name=Ventilateur d'Extraction Industriel
 items.Furniture_Industrial_Exhaust_Fan_Alternate.name=Ventilateur d'Extraction Industriel - Autre
 
-items.Global_Truss_Vertical.name=Poutre Global Truss Verticale
-items.Global_Truss_Horizontal.name=Poutre Global Truss Horizontale
-items.Global_Truss_Corner.name=Angle de Poutre Global Truss
-items.Global_Truss_T.name=T de Poutre Global Truss
-items.Global_Truss_Cross.name=Croix de Poutre Global Truss
+items.Global_Truss_Vertical.name=Poutre Global Truss - Verticale
+items.Global_Truss_Horizontal.name=Poutre Global Truss - Horizontale
+items.Global_Truss_Corner.name=Poutre Global Truss - Angle
+items.Global_Truss_T.name=Poutre Global Truss - T
+items.Global_Truss_Cross.name=Poutre Global Truss - Croix
 
 items.Furniture_Ceiling_Led_Neon.name=Lampe Néon de Plafond
 items.Furniture_Neon_Trimmed_Bollard.name=Borne Néon avec Bordure
