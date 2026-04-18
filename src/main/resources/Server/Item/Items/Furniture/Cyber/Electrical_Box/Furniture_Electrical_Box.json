@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Electrical_Box.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Electrical_Box.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Electrical_Box/Electrical_Box.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Electrical_Box/Electrical_Box_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Electrical_Box",
+    "VariantRotation": "NESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#a0a0a0",
+    "Looping": true,
+    "CustomModelAnimation": "Blocks/Animations/Cyber/Electrical_Box/Electrical_Box.blockyanim"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      351,
+      33,
+      360
+    ],
+    "Translation": [
+      6,
+      -23
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
