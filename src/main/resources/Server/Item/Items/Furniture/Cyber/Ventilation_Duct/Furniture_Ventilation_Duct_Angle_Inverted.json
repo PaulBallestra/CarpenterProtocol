@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Ventilation_Duct_Angle_Inverted.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Ventilation_Duct_Angle_Inverted.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Ventilation_Duct/Ventilation_Duct_Angle_Inverted.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Ventilation_Duct/Ventilation_Duct_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Ventilation_Duct_Vertical",
+    "VariantRotation": "UpDownNESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#a0a0a0",
+    "Looping": true,
+    "Supporting": {
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      341,
+      28,
+      360
+    ],
+    "Translation": [
+      2,
+      -16
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
