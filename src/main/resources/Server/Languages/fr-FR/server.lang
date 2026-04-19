@@ -66,10 +66,10 @@ items.Laser_Tag_Wall_Green_Full_Horizontal.name=Mur LED Horizontal Vert
 items.Laser_Tag_Wall_Blue_Full_Horizontal.name=Mur LED Horizontal Bleu
 items.Laser_Tag_Wall_Purple_Full_Horizontal.name=Mur LED Horizontal Violet
 
-items.Laser_Tag_Red_Stairs.name=Escalier LED Rouge
-items.Laser_Tag_Green_Stairs.name=Escalier LED Vert
-items.Laser_Tag_Blue_Stairs.name=Escalier LED Bleu
-items.Laser_Tag_Purple_Stairs.name=Escalier LED Violet
+items.Red_Led_Stairs.name=Escalier LED Rouge
+items.Green_Led_Stairs.name=Escalier LED Vert
+items.Blue_Led_Stairs.name=Escalier LED Bleu
+items.Purple_Led_Stairs.name=Escalier LED Violet
 
 items.Laser_Tag_Led_Red_Hexagone_Block.name=Hexagone LED Rouge
 items.Laser_Tag_Led_Red_Hexagone_Inverted_Block.name=Hexagone LED Rouge Inversé
