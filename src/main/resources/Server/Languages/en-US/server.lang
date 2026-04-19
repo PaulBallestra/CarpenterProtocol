@@ -10,6 +10,10 @@ items.Rock_Dark_Concrete_Brick.name=Dark Concrete Brick
 items.Rock_Dark_Concrete_Brick_Smooth.name=Dark Concrete Brick Smooth
 
 items.Rock_Clear_Concrete_Brick.name=Clear Concrete Brick
+items.Rock_Clear_Concrete_Brick_Smooth.name=Clear Concrete Brick Smooth
+
+items.Rock_Grey_Concrete_Brick.name=Grey Concrete Brick
+items.Rock_Grey_Concrete_Brick_Smooth.name=Grey Concrete Brick Smooth
 
 items.Metal_Dark_Iron.name=Dark Iron
 items.Metal_Dark_Iron_Half.name=Dark Iron Slab

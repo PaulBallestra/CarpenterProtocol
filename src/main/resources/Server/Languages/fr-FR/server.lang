@@ -10,6 +10,10 @@ items.Rock_Dark_Concrete_Brick.name=Brique de Béton Foncé
 items.Rock_Dark_Concrete_Brick_Smooth.name=Brique de Béton Foncé Lisse
 
 items.Rock_Clear_Concrete_Brick.name=Brique de Béton Clair
+items.Rock_Clear_Concrete_Brick_Smooth.name=Brique de Béton Clair Lisse
+
+items.Rock_Grey_Concrete_Brick.name=Brique de Béton Grise
+items.Rock_Grey_Concrete_Brick_Smooth.name=Brique de Béton Grise Lisse
 
 items.Metal_Dark_Iron.name=Fer Sombre
 items.Metal_Dark_Iron_Half.name=Dalle de Fer Sombre
