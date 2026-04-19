@@ -3,3 +3,5 @@ turnmiddleleft=Enable Side : Middle Left
 turnleft=Enable Side : Left
 turnmiddleright=Enable Side : Middle Right
 turnright=Enable Side : Right
+turntop=Enable Side : Top
+turnbottom=Enable Side : Bottom
