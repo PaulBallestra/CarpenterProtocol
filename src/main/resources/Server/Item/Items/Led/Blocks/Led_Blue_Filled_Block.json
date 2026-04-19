@@ -81,14 +81,7 @@
     "BlockSoundSetId": "Metal",
     "ParticleColor": "#0000ff",
     "Opacity": "Transparent",
-    "CubeShadingMode": "Standard",
-    "BlockEntity": {
-      "Components": {
-        "LedBlock": {
-          "Active": false
-        }
-      }
-    }
+    "CubeShadingMode": "Standard"
   },
   "PlayerAnimationsId": "Block",
   "Tags": {

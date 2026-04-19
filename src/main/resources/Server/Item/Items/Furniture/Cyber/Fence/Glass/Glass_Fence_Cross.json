@@ -1,8 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Glass_Fence.name"
+    "Name": "server.items.Glass_Fence_Cross.name"
   },
-  "Icon": "Icons/ItemsGenerated/Glass_Fence.png",
+  "Icon": "Icons/ItemsGenerated/Glass_Fence_Cross.png",
   "Categories": [
     "Blocks.Metal"
   ],
@@ -16,7 +16,7 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence_Cross.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence_Texture.png",
@@ -24,7 +24,7 @@
       }
     ],
     "Group": "Metal",
-    "HitboxType": "Glass_Fence",
+    "HitboxType": "Glass_Fence_Cross",
     "Flags": {},
     "Gathering": {
       "Breaking": {
@@ -58,7 +58,7 @@
     ],
     "Translation": [
       7,
-      -17
+      -14
     ]
   },
   "Tags": {

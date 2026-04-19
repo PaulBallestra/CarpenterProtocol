@@ -9,6 +9,8 @@ items.Falling_Block_Rock_Salt.description=Bloc de sel qui peut tomber lors d'une
 items.Rock_Dark_Concrete_Brick.name=Brique de Béton Foncé
 items.Rock_Dark_Concrete_Brick_Smooth.name=Brique de Béton Foncé Lisse
 
+items.Rock_Clear_Concrete_Brick.name=Brique de Béton Clair
+
 items.Metal_Dark_Iron.name=Fer Sombre
 items.Metal_Dark_Iron_Half.name=Dalle de Fer Sombre
 items.Metal_Dark_Iron_Smooth.name=Fer Sombre Lisse
@@ -203,4 +205,9 @@ items.Metal_Railing_Fence.name=Balustrade en Métal
 items.Metal_Iron_Drain_Outlet.name=Sortie d'Évacuation
 
 items.Glass_Fence.name=Barrière en Verre
+items.Glass_Fence_Corner.name=Barrière en Verre - Coin
+items.Glass_Fence_T.name=Barrière en Verre - T
+items.Glass_Fence_Cross.name=Barrière en Verre - Croix
+items.Glass_Fence_Corner_Little.name=Barrière en Verre - Coin Petit
+
 items.Furniture_Server_Rack.name=Rack Serveurs

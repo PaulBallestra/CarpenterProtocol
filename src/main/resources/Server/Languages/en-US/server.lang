@@ -9,6 +9,8 @@ items.Falling_Block_Rock_Salt.description=Salt block that can fall when interact
 items.Rock_Dark_Concrete_Brick.name=Dark Concrete Brick
 items.Rock_Dark_Concrete_Brick_Smooth.name=Dark Concrete Brick Smooth
 
+items.Rock_Clear_Concrete_Brick.name=Clear Concrete Brick
+
 items.Metal_Dark_Iron.name=Dark Iron
 items.Metal_Dark_Iron_Half.name=Dark Iron Slab
 items.Metal_Dark_Iron_Smooth.name=Dark Iron Smooth
@@ -203,4 +205,9 @@ items.Metal_Railing_Fence.name=Metal Railing Fence
 items.Metal_Iron_Drain_Outlet.name=Drain Outlet
 
 items.Glass_Fence.name=Glass Fence
+items.Glass_Fence_Corner.name=Glass Fence - Corner
+items.Glass_Fence_T.name=Glass Fence - T
+items.Glass_Fence_Cross.name=Glass Fence - Cross
+items.Glass_Fence_Corner_Little.name=Glass Fence - Corner Little
+
 items.Furniture_Server_Rack.name=Servers Rack
