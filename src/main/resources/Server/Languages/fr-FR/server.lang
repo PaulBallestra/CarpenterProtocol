@@ -53,9 +53,6 @@ items.Armor_Laser_Tag_Head_Blue.name=Casque Bleu Laser Game
 items.Armor_Laser_Tag_Chest_Blue.name=Plastron Bleu Laser Game
 items.Armor_Laser_Tag_Legs_Blue.name=Jambières Bleu Laser Game
 
-items.Furniture_Laser_Tag_Door_Large_Vertical.name=Large Porte Verticale Laser Game
-items.Furniture_Laser_Tag_Door_Large_Horizontal.name=Large Porte Horizontale Laser Game
-
 items.Laser_Tag_Led_Blue_Block.name=Bloc LED Bleu
 items.Laser_Tag_Led_Blue_Filled_Block.name=Bloc LED Bleu Rempli
 items.Laser_Tag_Led_Red_Block.name=Bloc LED Rouge
@@ -157,13 +154,14 @@ items.Furniture_Ventilation_Grille.name=Grille de Ventilation
 
 items.Furniture_Cyber_Coffee_Table.name=Table Basse Cyber
 items.Furniture_Cyber_Armchair.name=Fauteuil Cyber
+items.Furniture_Cyber_Chair.name=Chaise Haute Cyber
 items.Furniture_Cyber_Couch.name=Canapé Cyber
 items.Furniture_Cyber_Bar_Stool.name=Chaise de Bar Cyber
 items.Furniture_Cyber_Bar.name=Bar Cyber
 
 items.Furniture_Nightclub_Sofa.name=Canapé de Boîte de Nuit
 
-items.Furniture_Neon_Bar_Sign.name=Panneau de Bar Néon
+items.Furniture_Bar_Sign.name=Panneau de Bar Néon
 items.Furniture_Cybernetics_Lab_Sign.name=Panneau "Cybernetics Labs"
 items.Furniture_Zone_Locked_Sign.name=Panneau "Zone Locked"
 items.Furniture_City_Ramen_Sign.name=Panneau "City Ramen"

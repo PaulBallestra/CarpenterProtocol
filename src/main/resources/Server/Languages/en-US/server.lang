@@ -53,9 +53,6 @@ items.Armor_Laser_Tag_Head_Blue.name=Laser Tag Blue Helmet
 items.Armor_Laser_Tag_Chest_Blue.name=Laser Tag Blue Chestplate
 items.Armor_Laser_Tag_Legs_Blue.name=Laser Tag Blue Leggings
 
-items.Furniture_Laser_Tag_Door_Large_Vertical.name=Laser Tag Vertical Large Door
-items.Furniture_Laser_Tag_Door_Large_Horizontal.name=Laser Tag Horizontal Large Door
-
 items.Laser_Tag_Led_Blue_Block.name=LED Blue Block
 items.Laser_Tag_Led_Blue_Filled_Block.name=LED Blue Block Filled
 items.Laser_Tag_Led_Red_Block.name=LED Red Block
@@ -91,7 +88,7 @@ items.Furniture_Led_Tube3_Horizontal_Blue.name=Blue Horizontal LED 3 Strips
 items.Furniture_Led_Tube1_Vertical_Blue.name=Blue Vertical LED 1 Strip
 items.Furniture_Led_Tube2_Vertical_Blue.name=Blue Vertical LED 2 Strips
 items.Furniture_Led_Tube3_Vertical_Blue.name=Blue Vertical LED 3 Strips
-items.Furniture_Vertical_Led_Tube=Vertical LED Tube
+items.Furniture_Vertical_Led_Tube.name=Vertical LED Tube
 
 items.Led_Video_Wall2x7.name=LED Video Wall 2x7
 items.Led_Video_Panel1x2.name=LED Video Wall 1x2
@@ -105,8 +102,8 @@ items.Furniture_Cyber_Video_Grounded_Sign.name=Cyber ​​Video Ground Advertis
 items.Furniture_Access_Terminal.name=Access Terminal
 items.Furniture_Vertical_Terminal.name=Vertical Terminal
 
-items.Furniture_ATM_Pod.name=ATM
-items.Furniture_ATM_Pod_Alternate.name=ATM - Alternate
+items.Furniture_Atm_Pod.name=ATM
+items.Furniture_Atm_Pod_Alternate.name=ATM - Alternate
 items.Furniture_Vending_Dispenser.name=Vending Machine
 items.Furniture_Trash_Bin.name=Trash Bin
 
@@ -157,13 +154,14 @@ items.Furniture_Ventilation_Grille.name=Ventilation Grille
 
 items.Furniture_Cyber_Coffee_Table.name=Cyber Coffee Table
 items.Furniture_Cyber_Armchair.name=Cyber Armchair
+items.Furniture_Cyber_Chair.name=Cyber Chair
 items.Furniture_Cyber_Couch.name=Cyber Couch
 items.Furniture_Cyber_Bar_Stool.name=Cyber Bar Stool
 items.Furniture_Cyber_Bar.name=Cyber Bar
 
 items.Furniture_Nightclub_Sofa.name=Nightclub Sofa
 
-items.Furniture_Neon_Bar_Sign.name=Neon Bar Sign
+items.Furniture_Bar_Sign.name=Neon Bar Sign
 items.Furniture_Cybernetics_Lab_Sign.name="Cybernetics Labs" Sign
 items.Furniture_Zone_Locked_Sign.name="Zone Locked" Sign
 items.Furniture_City_Ramen_Sign.name="City Ramen" Sign
