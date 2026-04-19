@@ -54,7 +54,8 @@ items.Armor_Laser_Tag_Chest_Blue.name=Plastron Bleu Laser Game
 items.Armor_Laser_Tag_Legs_Blue.name=Jambières Bleu Laser Game
 
 items.Led_Blue_Block.name=Bloc LED Bleu
-items.Led_Blue_Filled_Block.name=Bloc LED Bleu Rempli
+items.Led_Blue_Filled_Block.name=Bloc LED Bleu - Rempli
+items.Led_Corner_Blue_Block.name=Bloc LED Bleu - Coins
 items.Led_Red_Block.name=Bloc LED Rouge
 items.Led_Green_Block.name=Bloc LED Vert
 items.Led_Purple_Block.name=Bloc LED Violet
@@ -91,7 +92,7 @@ items.Furniture_Led_Tube3_Vertical_Blue.name=LED Bleue Verticale 3 bandes
 items.Furniture_Vertical_Led_Tube.name=Tube LED Vertical
 
 items.Led_Video_Wall2x7.name=Panneau Mural LED 2x7
-items.Led_Video_Panel1x2.name=Panneau Mural LED 1x2
+items.Led_Video_Wall1x2.name=Panneau Mural LED 1x2
 items.Led_Video_Poster.name=Poster LED Vidéo
 
 items.Laser_Tag_Cyber_Block.name=Bloc Cyber
@@ -162,8 +163,9 @@ items.Furniture_Cyber_Bar.name=Bar Cyber
 
 items.Furniture_Nightclub_Sofa.name=Canapé de Boîte de Nuit
 
-items.Furniture_Bar_Sign.name=Panneau de Bar Néon
+items.Furniture_Bar_Sign.name=Panneau "Bar"
 items.Furniture_Cybernetics_Lab_Sign.name=Panneau "Cybernetics Labs"
+items.Furniture_Nightfall_Synapse_Sign.name=Panneau "Nightfall Synapse"
 items.Furniture_Zone_Locked_Sign.name=Panneau "Zone Locked"
 items.Furniture_City_Ramen_Sign.name=Panneau "City Ramen"
 items.Furniture_Synth_Mart_Sign.name=Panneau "Synth Mart"

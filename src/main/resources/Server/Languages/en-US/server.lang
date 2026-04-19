@@ -54,7 +54,8 @@ items.Armor_Laser_Tag_Chest_Blue.name=Laser Tag Blue Chestplate
 items.Armor_Laser_Tag_Legs_Blue.name=Laser Tag Blue Leggings
 
 items.Led_Blue_Block.name=LED Blue Block
-items.Led_Blue_Filled_Block.name=LED Blue Block Filled
+items.Led_Blue_Filled_Block.name=LED Blue Block - Filled
+items.Led_Corner_Blue_Block.name=LED Blue Block - Corners
 items.Led_Red_Block.name=LED Red Block
 items.Led_Green_Block.name=LED Green Block
 items.Led_Purple_Block.name=LED Purple Block
@@ -91,7 +92,7 @@ items.Furniture_Led_Tube3_Vertical_Blue.name=Blue Vertical LED 3 Strips
 items.Furniture_Vertical_Led_Tube.name=Vertical LED Tube
 
 items.Led_Video_Wall2x7.name=LED Video Wall 2x7
-items.Led_Video_Panel1x2.name=LED Video Wall 1x2
+items.Led_Video_Wall1x2.name=LED Video Wall 1x2
 items.Led_Video_Poster.name=LED Video Poster
 
 items.Laser_Tag_Cyber_Block.name=Cyber Block EN
@@ -162,8 +163,9 @@ items.Furniture_Cyber_Bar.name=Cyber Bar
 
 items.Furniture_Nightclub_Sofa.name=Nightclub Sofa
 
-items.Furniture_Bar_Sign.name=Neon Bar Sign
+items.Furniture_Bar_Sign.name="Bar" Sign
 items.Furniture_Cybernetics_Lab_Sign.name="Cybernetics Labs" Sign
+items.Furniture_Nightfall_Synapse_Sign.name="Nightfall Synapse" Sign
 items.Furniture_Zone_Locked_Sign.name="Zone Locked" Sign
 items.Furniture_City_Ramen_Sign.name="City Ramen" Sign
 items.Furniture_Synth_Mart_Sign.name="Synth Mart" Sign

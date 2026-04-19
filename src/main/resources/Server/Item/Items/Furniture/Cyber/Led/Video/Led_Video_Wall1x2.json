@@ -2,7 +2,7 @@
   "TranslationProperties": {
     "Name": "server.items.Led_Video_Wall1x2.name"
   },
-  "Icon": "Icons/ItemsGenerated/Led_Video_Panel1x2.png",
+  "Icon": "Icons/ItemsGenerated/Led_Video_Wall1x2.png",
   "Categories": [
     "Blocks.Deco"
   ],
