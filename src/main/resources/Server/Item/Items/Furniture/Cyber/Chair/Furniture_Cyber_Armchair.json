@@ -1,0 +1,83 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cyber_Armchair.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      2,
+      -18
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Chair/Cyber_Armchair.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Chair/Cyber_Armchair_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "HitboxType": "Chair",
+    "Material": "Solid",
+    "ParticleColor": "#506f70",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0.2
+        },
+        "Yaw": 0
+      }
+    ],
+    "Interactions": {
+      "Use": "Block_Seat"
+    },
+    "VariantRotation": "NESW",
+    "Opacity": "Transparent",
+    "Light": {
+      "Color": "#244"
+    }
+  },
+  "Model": "Blocks/Decorative_Sets/Tavern/Table.blockymodel",
+  "Texture": "Blocks/Decorative_Sets/Tavern/Chair_Texture.png",
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Jungle"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Armchair.png",
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

@@ -1,0 +1,80 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cyber_Chair.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Chair.png",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Chair/Cyber_Chair_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Chair",
+    "VariantRotation": "NESW",
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0.3,
+          "Z": 0.1
+        },
+        "Yaw": 0
+      }
+    ],
+    "Interactions": {
+      "Use": "Block_Seat"
+    },
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Chair/Cyber_Chair.blockymodel",
+    "ParticleColor": "#5b3222",
+    "BlockSoundSetId": "Metal"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.495,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -18
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}

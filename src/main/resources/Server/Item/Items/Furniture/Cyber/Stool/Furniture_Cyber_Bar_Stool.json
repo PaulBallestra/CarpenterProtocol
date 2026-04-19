@@ -1,0 +1,83 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cyber_Bar_Stool.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Bar_Stool.png",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Stool/Cyber_Bar_Stool_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Chest_Small",
+    "VariantRotation": "NESW",
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0.3,
+          "Z": 0.1
+        },
+        "Yaw": 0
+      }
+    ],
+    "Interactions": {
+      "Use": "Block_Seat"
+    },
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Stool/Cyber_Bar_Stool.blockymodel",
+    "ParticleColor": "#597e7b",
+    "BlockSoundSetId": "Metal",
+    "Light": {
+      "Color": "#245"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.495,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
