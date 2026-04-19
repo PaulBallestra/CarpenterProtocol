@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Neon_Arrows_Sign.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Neon_Arrows_Sign.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Arrows_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Arrows_Sign_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Arrows_Sign",
+    "VariantRotation": "UpDownNESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#ec1031",
+    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Neon_Arrows_Sign.blockyanim",
+    "Looping": true,
+    "Light": {
+      "Color": "#400"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      347,
+      18,
+      0
+    ],
+    "Translation": [
+      5,
+      -12.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}

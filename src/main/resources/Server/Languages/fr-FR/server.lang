@@ -103,6 +103,8 @@ items.Furniture_Cyber2x3_Holo_Sign.name=Publicité Cyber Hologramme
 items.Furniture_Cyber_Video_Grounded_Sign.name=Publicité Sol Cyber Vidéo
 
 items.Furniture_Access_Terminal.name=Terminal d'Accès
+items.Furniture_Vertical_Terminal.name=Borne Verticale
+
 items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
 items.Furniture_Atm_Pod_Alternate.name=Distributeur Automatique de Billets - Alterne
 items.Furniture_Vending_Dispenser.name=Distributeur Automatique
@@ -174,7 +176,7 @@ items.Furniture_Directionnal45_Arrows_Sign.name=Panneau de Flèches Directionnel
 items.Furniture_DirectionnalMinus45_Arrows_Sign.name=Panneau de Flèches Directionnelles (-45°)
 
 items.Neon_Arrows_Sign.name=Panneau Fléché Néon
-items.Neon247_Sign.name=Panneau 24/7 Néon
+items.247_Sign.name=Panneau 24/7
 items.Neon_Open_Red_Sign.name=Panneau "Ouvert" Néon Rouge
 items.Neon_Open_Green_Sign.name=Panneau "Ouvert" Néon Vert
 items.Neon_Open_Blue_Sign.name=Panneau "Ouvert" Néon Bleu
@@ -182,7 +184,6 @@ items.Neon_Gradient_Block.name=Bloc de Dégradé Néon
 
 items.Furniture_Heater.name=Chauffage
 items.Furniture_Wall_Heater.name=Chauffage Mural
-items.Furniture_Vertical_Terminal.name=Borne Verticale
 
 items.Deco_Metal_Crate.name=Caisse Métallique
 items.Deco_Metal_Crate2x1.name=Caisse Métallique - Large

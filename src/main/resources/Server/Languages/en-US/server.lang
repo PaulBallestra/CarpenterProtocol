@@ -103,6 +103,8 @@ items.Furniture_Cyber2x3_Holo_Sign.name=Cyber Hologram Ads
 items.Furniture_Cyber_Video_Grounded_Sign.name=Cyber ​​Video Ground Advertising
 
 items.Furniture_Access_Terminal.name=Access Terminal
+items.Furniture_Vertical_Terminal.name=Vertical Terminal
+
 items.Furniture_ATM_Pod.name=ATM
 items.Furniture_ATM_Pod_Alternate.name=ATM - Alternate
 items.Furniture_Vending_Dispenser.name=Vending Machine
@@ -174,7 +176,7 @@ items.Furniture_Directionnal45_Arrows_Sign.name=Directionnal Arrows Sign (45°)
 items.Furniture_DirectionnalMinus45_Arrows_Sign.name=Directionnal Arrows Sign (-45°)
 
 items.Neon_Arrows_Sign.name=Neon Arrows Sign
-items.Neon247_Sign.name=24/7 Neon Sign
+items.247_Sign.name=24/7 Sign
 items.Neon_Open_Red_Sign.name=Red "Open" Neon Sign
 items.Neon_Open_Green_Sign.name=Green "Open" Neon Sign
 items.Neon_Open_Blue_Sign.name=Blue "Open" Neon Sign
@@ -182,8 +184,6 @@ items.Neon_Gradient_Block.name=Neon Gradient Bloc
 
 items.Furniture_Heater.name=Heater
 items.Furniture_Wall_Heater.name=Wall Heater
-
-items.Furniture_Vertical_Terminal.name=Vertical Terminal
 
 items.Deco_Metal_Crate.name=Metal Crate
 items.Deco_Metal_Crate2x1.name=Metal Crate - Large

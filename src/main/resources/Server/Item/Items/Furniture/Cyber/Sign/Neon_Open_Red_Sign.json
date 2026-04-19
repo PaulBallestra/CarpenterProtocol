@@ -1,0 +1,105 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Neon_Open_Red_Sign.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Neon_Open_Red_Sign.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Open_Off_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Open_Red_Sign_Off_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Open_Sign",
+    "VariantRotation": "NESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#c31414",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "On",
+              "On": "Off",
+              "Off": "On"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "On": {
+          "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
+          "DrawType": "Model",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Open_Red_Sign_Texture.png"
+            }
+          ],
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Open_Sign.blockymodel",
+          "Light": {
+            "Color": "#733"
+          }
+        },
+        "Off": {
+          "InteractionHint": "server.interactionHints.turnon",
+          "Light": null,
+          "Particles": null,
+          "InteractionSoundEventId": "SFX_Torch_Off",
+          "AmbientSoundEventId": null,
+          "DrawType": "Model",
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Open_Off_Sign.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Neon_Open_Red_Sign_Off_Texture.png"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      347,
+      18,
+      0
+    ],
+    "Translation": [
+      5,
+      -19
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
