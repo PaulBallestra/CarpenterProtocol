@@ -124,7 +124,7 @@ items.Global_Truss_Corner.name=Poutre Global Truss - Angle
 items.Global_Truss_T.name=Poutre Global Truss - T
 items.Global_Truss_Cross.name=Poutre Global Truss - Croix
 
-items.Furniture_Ceiling_Led_Neon.name=Lampe Néon de Plafond
+items.Furniture_Ceiling_Led.name=Lampe LED de Plafond
 items.Furniture_Neon_Trimmed_Bollard.name=Borne Néon avec Bordure
 
 items.Utility_Pole_Base.name=Socle de Poteau Électrique
@@ -190,8 +190,8 @@ items.Deco_Metal_Crate2x1.name=Caisse Métallique - Large
 items.Furniture_Advertising_Easel.name=Chevalet Publicitaire
 items.Furniture_Advertising_Totem.name=Totem Publicitaire 
 
-items.Furniture_Angled_Neon_Led_Down.name=Néon LED Coudé - Bas
-items.Furniture_Angled_Neon_Led_Up.name=Néon LED Coudé - Haut
+items.Furniture_Angled_Led_Down.name=LED Coudé - Bas
+items.Furniture_Angled_Led_Up.name=LED Coudé - Haut
 
 items.Furniture_Neon_Crowd_Control_Barrier.name=Barrière Néon de Contrôle des Foules
 items.Furniture_Concrete_Bench.name=Banc en Béton

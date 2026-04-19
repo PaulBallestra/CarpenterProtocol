@@ -124,7 +124,7 @@ items.Global_Truss_Corner.name=Global Truss - Corner
 items.Global_Truss_T.name=Global Truss - T
 items.Global_Truss_Cross.name=Global Truss - Cross
 
-items.Furniture_Ceiling_Led_Neon.name=Ceiling Neon Led Lamp
+items.Furniture_Ceiling_Led.name=Ceiling Led Lamp
 items.Furniture_Neon_Trimmed_Bollard.name=Neon Trimmed Bollard
 
 items.Utility_Pole_Base.name=Utility Pole Base
@@ -191,8 +191,8 @@ items.Deco_Metal_Crate2x1.name=Metal Crate - Large
 items.Furniture_Advertising_Easel.name=Advertising Easel
 items.Furniture_Advertising_Totem.name=Advertising Totem
 
-items.Furniture_Angled_Neon_Led_Down.name=Neon Led Angled - Down
-items.Furniture_Angled_Neon_Led_Up.name=Neon Led Angled - Up
+items.Furniture_Angled_Led_Down.name=Led Angled - Down
+items.Furniture_Angled_Led_Up.name=Led Angled - Up
 
 items.Furniture_Neon_Crowd_Control_Barrier.name=Neon Crowd Control Barrier
 items.Furniture_Concrete_Bench.name=Concrete Bench

@@ -1,0 +1,150 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Ceiling_Led.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Lighting"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Ceiling_Led.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      352,
+      23,
+      8
+    ],
+    "Translation": [
+      -13,
+      -22
+    ]
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "Light": {
+      "Color": "#919",
+      "Radius": 0
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#eb92fb",
+    "Support": {
+      "Up": [
+        {
+          "FaceType": "Full",
+          "Filler": [
+            {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          ]
+        },
+        {
+          "FaceType": "Branch",
+          "Filler": [
+            {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          ]
+        },
+        {
+          "FaceType": "Rock_Beam",
+          "Filler": [
+            {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          ]
+        },
+        {
+          "FaceType": "Wood_Beam",
+          "Filler": [
+            {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            }
+          ]
+        }
+      ]
+    },
+    "HitboxType": "Ceiling_Led",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Off",
+              "Off": "default"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "On": {
+          "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
+          "DrawType": "Model",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led_Texture.png"
+            }
+          ],
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led.blockymodel",
+          "Light": {
+            "Color": "#733"
+          }
+        },
+        "Off": {
+          "InteractionHint": "server.interactionHints.turnon",
+          "Light": null,
+          "Particles": null,
+          "InteractionSoundEventId": "SFX_Torch_Off",
+          "AmbientSoundEventId": null,
+          "DrawType": "Model",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led_Texture.png"
+            }
+          ],
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led.blockymodel"
+        }
+      }
+    },
+    "InteractionHint": "server.interactionHints.turnoff",
+    "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
+    "Looping": true,
+    "VariantRotation": "NESW"
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Tavern"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}
