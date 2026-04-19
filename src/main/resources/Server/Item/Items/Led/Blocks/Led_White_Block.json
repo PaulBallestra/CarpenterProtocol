@@ -1,0 +1,52 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Led_White_Block.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Led_White_Block.png",
+  "ItemLevel": 2,
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Metal",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Led_Block_White_Texture.png"
+      }
+    ],
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#fff",
+    "Opacity": "Solid",
+    "CubeShadingMode": "Reflective",
+    "RequiresAlphaBlending": false
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}
