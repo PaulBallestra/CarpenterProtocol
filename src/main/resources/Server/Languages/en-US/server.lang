@@ -53,13 +53,13 @@ items.Armor_Laser_Tag_Head_Blue.name=Laser Tag Blue Helmet
 items.Armor_Laser_Tag_Chest_Blue.name=Laser Tag Blue Chestplate
 items.Armor_Laser_Tag_Legs_Blue.name=Laser Tag Blue Leggings
 
-items.Laser_Tag_Led_Blue_Block.name=LED Blue Block
-items.Laser_Tag_Led_Blue_Filled_Block.name=LED Blue Block Filled
-items.Laser_Tag_Led_Red_Block.name=LED Red Block
-items.Laser_Tag_Led_Green_Block.name=LED Green Block
-items.Laser_Tag_Led_Purple_Block.name=LED Purple Block
-items.Laser_Tag_Led_White_Block.name=LED White Block
-items.Laser_Tag_Led_Black_Block.name=LED Black Block
+items.Led_Blue_Block.name=LED Blue Block
+items.Led_Blue_Filled_Block.name=LED Blue Block Filled
+items.Led_Red_Block.name=LED Red Block
+items.Led_Green_Block.name=LED Green Block
+items.Led_Purple_Block.name=LED Purple Block
+items.Led_White_Block.name=LED White Block
+items.Led_Black_Block.name=LED Black Block
 
 items.Led_Wall_Red_Full_Horizontal.name=Horizontal Red LED Wall
 items.Led_Wall_Green_Full_Horizontal.name=Horizontal Green LED Wall

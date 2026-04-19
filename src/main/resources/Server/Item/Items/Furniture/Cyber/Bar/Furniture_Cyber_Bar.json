@@ -1,0 +1,169 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cyber_Bar.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Bar.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "FuelQuality": 6.0,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Bar/Bar.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Texture.png"
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Stairs",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Wood_Softwood_Stairs"
+      }
+    },
+    "VariantRotation": "UpDownNESW",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {}
+      ],
+      "North": [
+        {}
+      ],
+      "South": [
+        {}
+      ]
+    },
+    "ParticleColor": "#0000ff",
+    "BlockSoundSetId": "Metal",
+    "State": {
+      "Definitions": {
+        "Corner_Right": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Corner_Right.blockymodel",
+          "HitboxType": "Stairs_Corner_Right",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Corner_Left_Texture.png"
+            }
+          ]
+        },
+        "Inverted_Corner_Right": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Inverted_Corner_Right.blockymodel",
+          "HitboxType": "Stairs_Inverted_Corner_Right",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ],
+            "North": [
+              {}
+            ],
+            "East": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Inverted_Corner_Right_Texture.png"
+            }
+          ]
+        },
+        "Corner_Left": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Corner_Left.blockymodel",
+          "HitboxType": "Stairs_Corner_Left",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Corner_Left_Texture.png"
+            }
+          ]
+        },
+        "Inverted_Corner_Left": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Inverted_Corner_Left.blockymodel",
+          "HitboxType": "Stairs_Inverted_Corner_Left",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ],
+            "North": [
+              {}
+            ],
+            "West": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Inverted_Corner_Right_Texture.png"
+            }
+          ]
+        }
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer"
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "Stair",
+      "Corner_Left": {
+        "State": "Corner_Left"
+      },
+      "Corner_Right": {
+        "State": "Corner_Right"
+      },
+      "Inverted_Corner_Left": {
+        "State": "Inverted_Corner_Left"
+      },
+      "Inverted_Corner_Right": {
+        "State": "Inverted_Corner_Right"
+      },
+      "Straight": {
+        "State": "default"
+      }
+    },
+    "Light": {
+      "Color": "#008",
+      "Radius": 1
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      3,
+      -19
+    ]
+  }
+}

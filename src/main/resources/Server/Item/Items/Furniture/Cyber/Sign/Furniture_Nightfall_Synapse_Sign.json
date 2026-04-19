@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Nightfall_Synapse_Sign.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Signs"
+  ],
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.2,
+    "Rotation": [
+      347,
+      25,
+      0
+    ],
+    "Translation": [
+      -36,
+      -29
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Nightfall_Synapse_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Nightfall_Synapse_Sign_Texture-Sheet.png",
+        "Weight": 1
+      }
+    ],
+    "Looping": true,
+    "DrawType": "Model",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#de4062",
+    "VariantRotation": "NESW",
+    "HitboxType": "Sign_Tall1Halfx1",
+    "Light": {
+      "Color": "#911"
+    },
+    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Nightfall_Synapse_Sign.blockyanim"
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Lumberjack"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Nightfall_Synapse_Sign.png"
+}

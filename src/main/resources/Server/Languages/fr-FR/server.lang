@@ -53,13 +53,13 @@ items.Armor_Laser_Tag_Head_Blue.name=Casque Bleu Laser Game
 items.Armor_Laser_Tag_Chest_Blue.name=Plastron Bleu Laser Game
 items.Armor_Laser_Tag_Legs_Blue.name=Jambières Bleu Laser Game
 
-items.Laser_Tag_Led_Blue_Block.name=Bloc LED Bleu
-items.Laser_Tag_Led_Blue_Filled_Block.name=Bloc LED Bleu Rempli
-items.Laser_Tag_Led_Red_Block.name=Bloc LED Rouge
-items.Laser_Tag_Led_Green_Block.name=Bloc LED Vert
-items.Laser_Tag_Led_Purple_Block.name=Bloc LED Violet
-items.Laser_Tag_Led_White_Block.name=Bloc LED Blanc
-items.Laser_Tag_Led_Black_Block.name=Bloc LED Noir
+items.Led_Blue_Block.name=Bloc LED Bleu
+items.Led_Blue_Filled_Block.name=Bloc LED Bleu Rempli
+items.Led_Red_Block.name=Bloc LED Rouge
+items.Led_Green_Block.name=Bloc LED Vert
+items.Led_Purple_Block.name=Bloc LED Violet
+items.Led_White_Block.name=Bloc LED Blanc
+items.Led_Black_Block.name=Bloc LED Noir
 
 items.Led_Wall_Red_Full_Horizontal.name=Mur LED Horizontal Rouge
 items.Led_Wall_Green_Full_Horizontal.name=Mur LED Horizontal Vert
