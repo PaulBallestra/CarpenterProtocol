@@ -1,0 +1,76 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cyber_Coffee_Table.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Coffee_Table.png",
+  "IconProperties": {
+    "Scale": 0.36,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -12,
+      -15
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Table/Cyber_Coffee_Table.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Table/Cyber_Coffee_Table_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "Group": "Wood",
+    "HitboxType": "Coffee_Table",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#506f70",
+    "Supporting": {
+      "Up": [
+        {}
+      ]
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Metal",
+    "VariantRotation": "NESW",
+    "Light": {
+      "Color": "#244"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Desert"
+    ]
+  },
+  "Scale": 0.6,
+  "ItemSoundSetId": "ISS_Items_Metal"
+}
