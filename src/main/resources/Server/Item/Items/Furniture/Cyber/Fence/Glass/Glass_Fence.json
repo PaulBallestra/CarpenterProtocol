@@ -1,0 +1,97 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Glass_Fence.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Glass_Fence.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "Set": "Furniture_Cyber",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Glass_Fence",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Metal_Iron_Fence"
+      }
+    },
+    "VariantRotation": "UpDownNESW",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {
+          "FaceType": "Fence"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "Fence"
+        }
+      ]
+    },
+    "ParticleColor": "#87928e",
+    "BlockSoundSetId": "Metal",
+    "State": {
+      "Definitions": {
+        "Corner": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence_Corner.blockymodel",
+          "HitboxType": "Glass_Fence_Corner"
+        },
+        "T": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence_T.blockymodel",
+          "FlipType": "Symmetric",
+          "HitboxType": "Glass_Fence_T"
+        },
+        "Cross": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Glass/Glass_Fence_Cross.blockymodel",
+          "HitboxType": "Glass_Fence_Cross"
+        }
+      }
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "CustomTemplate",
+      "TemplateShapeAssetId": "WallConnectedBlockTemplate",
+      "TemplateShapeBlockPatterns": {
+        "Straight": "Glass_Fence",
+        "Corner": "*Glass_Fence_State_Definitions_Corner",
+        "T_Junction": "*Glass_Fence_State_Definitions_T",
+        "Cross_Junction": "*Glass_Fence_State_Definitions_Cross"
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.63,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      7,
+      -17
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

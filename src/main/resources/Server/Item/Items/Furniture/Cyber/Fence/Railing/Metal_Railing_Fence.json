@@ -1,0 +1,95 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Metal_Railing_Fence.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Metal_Railing_Fence.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "Set": "Furniture_Cyber",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Railing/Metal_Railing_Fence.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Fence/Railing/Metal_Railing_Fence_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Fence_Small",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks",
+        "ItemId": "Metal_Iron_Fence"
+      }
+    },
+    "VariantRotation": "NESW",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {
+          "FaceType": "Fence"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "Fence"
+        }
+      ]
+    },
+    "ParticleColor": "#87928e",
+    "BlockSoundSetId": "Metal",
+    "State": {
+      "Definitions": {
+        "Corner": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Railing/Metal_Railing_Fence_Corner.blockymodel",
+          "HitboxType": "Fence_Corner_Small"
+        },
+        "T": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Railing/Metal_Railing_Fence_T.blockymodel",
+          "FlipType": "Symmetric"
+        },
+        "Cross": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Fence/Railing/Metal_Railing_Fence_Cross.blockymodel"
+        }
+      }
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "CustomTemplate",
+      "TemplateShapeAssetId": "WallConnectedBlockTemplate",
+      "TemplateShapeBlockPatterns": {
+        "Straight": "Metal_Railing_Fence",
+        "Corner": "*Metal_Railing_Fence_State_Definitions_Corner",
+        "T_Junction": "*Metal_Railing_Fence_State_Definitions_T",
+        "Cross_Junction": "*Metal_Railing_Fence_State_Definitions_Cross"
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.63,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}
