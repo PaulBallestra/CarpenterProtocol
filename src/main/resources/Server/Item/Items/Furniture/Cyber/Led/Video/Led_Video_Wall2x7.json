@@ -1,0 +1,173 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Led_Video_Wall2x7.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Led_Video_Wall2x7.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Video_Wall2x7",
+    "VariantRotation": "NESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#396f88",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Center",
+              "Center": "MiddleLeft",
+              "MiddleLeft": "Left",
+              "Left": "MiddleRight",
+              "MiddleRight": "Right",
+              "Right": "Center"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Center": {
+          "InteractionHint": "interactionHints.turnmiddleleft",
+          "Light": {
+            "Color": "#b8c",
+            "Radius": 1
+          },
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7.blockymodel",
+          "CubeShadingMode": "Fullbright",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Texture-Sheet.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Video/Led_Video_Wall_2x7.blockyanim",
+          "Looping": true
+        },
+        "MiddleLeft": {
+          "InteractionHint": "interactionHints.turnleft",
+          "Light": {
+            "Color": "#7be",
+            "Radius": 1
+          },
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Middle_Left.blockymodel",
+          "CubeShadingMode": "Fullbright",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Texture-Sheet.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Video/Led_Video_Wall_2x7.blockyanim",
+          "Looping": true
+        },
+        "Left": {
+          "InteractionHint": "interactionHints.turnmiddleright",
+          "Light": {
+            "Color": "#b8c",
+            "Radius": 1
+          },
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Left.blockymodel",
+          "CubeShadingMode": "Fullbright",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Texture-Sheet.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Video/Led_Video_Wall_2x7.blockyanim",
+          "Looping": true
+        },
+        "MiddleRight": {
+          "InteractionHint": "interactionHints.turnright",
+          "Light": {
+            "Color": "#7be",
+            "Radius": 1
+          },
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Middle_Right.blockymodel",
+          "CubeShadingMode": "Fullbright",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Texture-Sheet.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Video/Led_Video_Wall_2x7.blockyanim",
+          "Looping": true
+        },
+        "Right": {
+          "InteractionHint": "interactionHints.turncenter",
+          "Light": {
+            "Color": "#b8c",
+            "Radius": 1
+          },
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Right.blockymodel",
+          "CubeShadingMode": "Fullbright",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Wall_2x7_Texture-Sheet.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Video/Led_Video_Wall_2x7.blockyanim",
+          "Looping": true
+        }
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.1,
+    "Rotation": [
+      10,
+      220,
+      0
+    ],
+    "Translation": [
+      15,
+      -116
+    ]
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}
