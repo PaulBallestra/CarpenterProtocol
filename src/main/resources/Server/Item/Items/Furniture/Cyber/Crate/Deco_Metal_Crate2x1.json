@@ -1,0 +1,54 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Deco_Metal_Crate2x1.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Deco_Metal_Crate2x1.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Group": "Wood",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftWoods"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "ParticleColor": "#647570",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Hypixel/Hyspace/Moving_Boxes/Moving_Box_1x2.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Crate/Metal_Crate_Texture.png"
+      }
+    ],
+    "RandomRotation": "None",
+    "HitboxType": "Coffin",
+    "VariantRotation": "NESW"
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "Blackwood"
+    ]
+  },
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -12,
+      -18
+    ]
+  }
+}
