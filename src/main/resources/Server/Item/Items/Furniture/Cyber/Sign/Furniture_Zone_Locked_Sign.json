@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Zone_Locked_Sign.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Signs"
+  ],
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      354,
+      13,
+      4
+    ],
+    "Translation": [
+      -8,
+      -16
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Zone_Locked_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Zone_Locked_Sign_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Looping": true,
+    "DrawType": "Model",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#de4062",
+    "VariantRotation": "NESW",
+    "HitboxType": "Sign_Tall1Halfx1",
+    "Light": {
+      "Color": "#911"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Lumberjack"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Zone_Locked_Sign.png"
+}

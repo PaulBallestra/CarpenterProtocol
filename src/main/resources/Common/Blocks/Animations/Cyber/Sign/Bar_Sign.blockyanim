@@ -1,0 +1,91 @@
+{
+  "formatVersion": 1,
+  "duration": 615,
+  "holdLastKeyframe": false,
+  "nodeAnimations": {
+    "B": {
+      "position": [],
+      "orientation": [],
+      "shapeStretch": [],
+      "shapeVisible": [],
+      "shapeUvOffset": [
+        {
+          "time": 184,
+          "delta": {"x": 0, "y": -24},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 189,
+          "delta": {"x": 0, "y": 0},
+          "interpolationType": "linear"
+        }
+      ]
+    },
+    "A": {
+      "position": [],
+      "orientation": [],
+      "shapeStretch": [],
+      "shapeVisible": [],
+      "shapeUvOffset": [
+        {
+          "time": 192,
+          "delta": {"x": 0, "y": -24},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 197,
+          "delta": {"x": 0, "y": 0},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 490,
+          "delta": {"x": 0, "y": -24},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 496,
+          "delta": {"x": 0, "y": 0},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 502,
+          "delta": {"x": 0, "y": -24},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 512,
+          "delta": {"x": 0, "y": 0},
+          "interpolationType": "linear"
+        }
+      ]
+    },
+    "R": {
+      "position": [],
+      "orientation": [],
+      "shapeStretch": [],
+      "shapeVisible": [],
+      "shapeUvOffset": [
+        {
+          "time": 90,
+          "delta": {"x": 0, "y": -24},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 95,
+          "delta": {"x": 0, "y": 0},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 600,
+          "delta": {"x": 0, "y": -24},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 610,
+          "delta": {"x": 0, "y": 0},
+          "interpolationType": "linear"
+        }
+      ]
+    }
+  }
+}
