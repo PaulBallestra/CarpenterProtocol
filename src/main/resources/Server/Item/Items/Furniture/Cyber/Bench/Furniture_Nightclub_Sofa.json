@@ -1,0 +1,222 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Nightclub_Sofa.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Nightclub_Sofa.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0.125,
+          "Z": 0.175
+        }
+      }
+    ],
+    "Interactions": {
+      "Use": "Block_Seat"
+    },
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Texture.png"
+      }
+    ],
+    "Group": "Metal",
+    "HitboxType": "Nightclub_Sofa",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods",
+        "ItemId": "Wood_Softwood_Stairs"
+      }
+    },
+    "VariantRotation": "UpDownNESW",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {}
+      ],
+      "North": [
+        {}
+      ],
+      "South": [
+        {}
+      ]
+    },
+    "ParticleColor": "#6d616f",
+    "BlockSoundSetId": "Metal",
+    "State": {
+      "Definitions": {
+        "Corner_Right": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Corner_Right.blockymodel",
+          "HitboxType": "Nightclub_Sofa_Corner_Right",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Texture.png"
+            }
+          ],
+          "Seats": [
+            {
+              "Yaw": -45,
+              "Offset": {
+                "X": -0.175,
+                "Y": 0.125,
+                "Z": 0.175
+              }
+            }
+          ]
+        },
+        "Inverted_Corner_Right": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Inverted_Corner_Right.blockymodel",
+          "HitboxType": "Nightclub_Sofa_Inverted_Corner_Right",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ],
+            "North": [
+              {}
+            ],
+            "East": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Texture.png"
+            }
+          ],
+          "Seats": [
+            {
+              "Yaw": -45,
+              "Offset": {
+                "X": -0.275,
+                "Y": 0.125,
+                "Z": 0.275
+              }
+            }
+          ]
+        },
+        "Corner_Left": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Corner_Left.blockymodel",
+          "HitboxType": "Nightclub_Sofa_Corner_Left",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Texture.png"
+            }
+          ],
+          "Seats": [
+            {
+              "Yaw": 45,
+              "Offset": {
+                "X": 0.125,
+                "Y": 0.125,
+                "Z": 0.125
+              }
+            }
+          ]
+        },
+        "Inverted_Corner_Left": {
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Inverted_Corner_Left.blockymodel",
+          "HitboxType": "Nightclub_Sofa_Inverted_Corner_Left",
+          "FlipType": "Orthogonal",
+          "Supporting": {
+            "Down": [
+              {}
+            ],
+            "North": [
+              {}
+            ],
+            "West": [
+              {}
+            ]
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Nightclub_Sofa_Texture.png"
+            }
+          ],
+          "Seats": [
+            {
+              "Yaw": 45,
+              "Offset": {
+                "X": 0.275,
+                "Y": 0.125,
+                "Z": 0.275
+              }
+            }
+          ]
+        }
+      }
+    },
+    "PlacementSettings": {
+      "RotationMode": "StairFacingPlayer"
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "Stair",
+      "Corner_Left": {
+        "State": "Corner_Left"
+      },
+      "Corner_Right": {
+        "State": "Corner_Right"
+      },
+      "Inverted_Corner_Left": {
+        "State": "Inverted_Corner_Left"
+      },
+      "Inverted_Corner_Right": {
+        "State": "Inverted_Corner_Right"
+      },
+      "Straight": {
+        "State": "default"
+      },
+      "MaterialName": "Nightclub_Sofa"
+    },
+    "Light": {
+      "Color": "#008",
+      "Radius": 1
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      8,
+      48,
+      8
+    ],
+    "Translation": [
+      1,
+      -28
+    ]
+  },
+  "Set": "Furniture_Cyber"
+}

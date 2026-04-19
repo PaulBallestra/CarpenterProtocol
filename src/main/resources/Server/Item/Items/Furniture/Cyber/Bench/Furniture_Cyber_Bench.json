@@ -1,0 +1,94 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cyber_Bench.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Bench.png",
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      16,
+      34,
+      9
+    ],
+    "Translation": [
+      14,
+      -10
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Bench/Cyber_Bench.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Cyber_Bench_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "Group": "Wood",
+    "HitboxType": "Bench",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#506f70",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Seats": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0.2
+        },
+        "Yaw": 0
+      },
+      {
+        "Offset": {
+          "X": -1,
+          "Y": 0,
+          "Z": 0.2
+        },
+        "Yaw": 0
+      }
+    ],
+    "Interactions": {
+      "Use": "Block_Seat"
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Metal",
+    "Light": {
+      "Color": "#244",
+      "Radius": 1
+    }
+  },
+  "Model": "Blocks/Decorative_Sets/Cyber/Bench/Cyber_Bench.blockymodel",
+  "Texture": "Blocks/Decorative_Sets/Cyber/Bench/Cyber_Bench_Texture.png",
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Tavern"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}
