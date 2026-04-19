@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Neon_Open_Green_Sign.png",
   "Categories": [
-    "Blocks.Deco"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Signs"
   ],
   "BlockType": {
     "Material": "Solid",

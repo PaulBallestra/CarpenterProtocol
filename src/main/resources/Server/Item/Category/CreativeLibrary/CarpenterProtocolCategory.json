@@ -1,0 +1,13 @@
+{
+  "Icon": "Icons/ItemCategories/Furniture.png",
+  "Order": 4,
+  "Children": [
+    {
+      "Id": "Signs",
+      "Name": "server.ui.carpenterprotocolcategory.signs",
+      "Icon": "Icons/ItemCategories/Signs.png"
+    }
+  ],
+  "Id": "CarpenterProtocolCategory",
+  "Name": "CarpenterProtocolCategory"
+}

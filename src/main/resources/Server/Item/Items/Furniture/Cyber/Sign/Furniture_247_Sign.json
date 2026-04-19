@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/247_Sign.png",
   "Categories": [
-    "Blocks.Deco"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Signs"
   ],
   "BlockType": {
     "Material": "Solid",
