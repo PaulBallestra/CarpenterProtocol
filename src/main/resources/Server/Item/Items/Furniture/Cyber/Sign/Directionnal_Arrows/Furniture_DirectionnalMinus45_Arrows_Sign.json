@@ -1,0 +1,64 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_DirectionnalMinus45_Arrows_Sign.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_DirectionnalMinus45_Arrows_Sign.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Directionnal_Arrows/Directionnal_Minus45_Arrows_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Directionnal_Arrows/Directionnal_Arrows_Sign_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Directionnal_Arrows_Sign",
+    "VariantRotation": "UpDownNESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#cb84dd",
+    "Looping": true,
+    "Light": {
+      "Color": "#304"
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      347,
+      29,
+      341
+    ],
+    "Translation": [
+      2,
+      -11
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}

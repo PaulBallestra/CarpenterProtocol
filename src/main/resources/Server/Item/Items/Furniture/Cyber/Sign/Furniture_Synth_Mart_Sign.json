@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Synth_Mart_Sign.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Signs"
+  ],
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      345,
+      27,
+      360
+    ],
+    "Translation": [
+      -11,
+      -16
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Synth_Mart_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Synth_Mart_Sign_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Looping": true,
+    "DrawType": "Model",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#d0fb68",
+    "VariantRotation": "NESW",
+    "HitboxType": "Sign_Tall2x1",
+    "Light": {
+      "Color": "#684"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Lumberjack"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Synth_Mart_Sign.png"
+}

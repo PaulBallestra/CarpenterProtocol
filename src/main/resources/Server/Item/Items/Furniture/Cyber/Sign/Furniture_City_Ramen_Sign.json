@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_City_Ramen_Sign.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Signs"
+  ],
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.2,
+    "Rotation": [
+      347,
+      25,
+      0
+    ],
+    "Translation": [
+      -4,
+      -19
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/City_Ramen_Sign.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/City_Ramen_Sign_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Looping": true,
+    "DrawType": "Model",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#ff8057",
+    "VariantRotation": "NESW",
+    "HitboxType": "City_Ramen_Sign",
+    "Light": {
+      "Color": "#954"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Lumberjack"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_City_Ramen_Sign.png"
+}
