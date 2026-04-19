@@ -1,0 +1,66 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Metal_Dark_Iron.name"
+  },
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "Set": "Metal_Dark_Iron",
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Metal",
+    "HitboxType": "Full",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Metal_Dark_Iron_Texture.png"
+      },
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Metal_Dark_Iron02_Texture.png"
+      }
+    ],
+    "ParticleColor": "#2b2d2d",
+    "BlockSoundSetId": "Metal",
+    "TransitionToGroups": [
+      "Stone",
+      "Sand",
+      "Wood",
+      "Mud",
+      "Dirt"
+    ],
+    "CubeShadingMode": "Standard",
+    "RandomRotation": "YawStep90"
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ],
+    "Family": [
+      "Sand"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Metal_Dark_Iron.png",
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

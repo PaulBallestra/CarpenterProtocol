@@ -1,0 +1,49 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Metal_Dark_Iron_Smooth.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Metal_Dark_Iron_Smooth.png",
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "Set": "Metal_Dark_Iron",
+  "BlockType": {
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "Textures": [
+      {
+        "All": "BlockTextures/Metal_Dark_Iron_Smooth.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#2b2d2d",
+    "Material": "Solid"
+  },
+  "Tags": {
+    "Type": [
+      "Metal"
+    ],
+    "Family": [
+      "Iron"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Parent": "Rock_Gold_Brick_Smooth"
+}
