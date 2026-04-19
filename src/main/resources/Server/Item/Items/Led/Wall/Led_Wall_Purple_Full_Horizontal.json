@@ -1,0 +1,101 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Led_Wall_Purple_Full_Horizontal.name"
+  },
+  "ItemLevel": 15,
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Led_Wall_Purple_Full_Horizontal.png",
+  "Categories": [
+    "Blocks.Structural"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Rock_Stone_Brick",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Structures/Walls/Led_Wall_Full_Horizontal.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Structures/Walls/Led_Wall_Purple_Full_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Stone",
+    "HitboxType": "Fence",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "VariantRotation": "Wall",
+    "BlockParticleSetId": "Stone",
+    "Supporting": {
+      "Down": [
+        {
+          "FaceType": "Wall"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "Wall"
+        }
+      ]
+    },
+    "ParticleColor": "#be29ec",
+    "BlockSoundSetId": "Stone",
+    "State": {
+      "Definitions": {
+        "Corner": {
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Structures/Walls/Led_Wall_Purple_Full_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModel": "Blocks/Structures/Walls/Led_Wall_Full_Horizontal_Corner.blockymodel",
+          "HitboxType": "Fence_Corner",
+          "Gathering": {
+            "Breaking": {
+              "ItemId": "Led_Wall_Purple_Full_Horizontal",
+              "GatherType": "Rocks"
+            }
+          }
+        }
+      }
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "CustomTemplate",
+      "TemplateShapeAssetId": "WallConnectedBlockTemplate",
+      "TemplateShapeBlockPatterns": {
+        "Straight": "Led_Wall_Purple_Full_Horizontal",
+        "Corner": "*Led_Wall_Purple_Full_Horizontal_State_Definitions_Corner"
+      }
+    },
+    "CubeShadingMode": "Standard",
+    "Light": {
+      "Color": "#be29ec"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Stone"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

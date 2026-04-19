@@ -61,10 +61,10 @@ items.Laser_Tag_Led_Purple_Block.name=LED Purple Block
 items.Laser_Tag_Led_White_Block.name=LED White Block
 items.Laser_Tag_Led_Black_Block.name=LED Black Block
 
-items.Laser_Tag_Wall_Red_Full_Horizontal.name=Horizontal Red LED Wall
-items.Laser_Tag_Wall_Green_Full_Horizontal.name=Horizontal Green LED Wall
-items.Laser_Tag_Wall_Blue_Full_Horizontal.name=Horizontal Blue LED Wall
-items.Laser_Tag_Wall_Purple_Full_Horizontal.name=Horizontal Purple LED Wall
+items.Led_Wall_Red_Full_Horizontal.name=Horizontal Red LED Wall
+items.Led_Wall_Green_Full_Horizontal.name=Horizontal Green LED Wall
+items.Led_Wall_Blue_Full_Horizontal.name=Horizontal Blue LED Wall
+items.Led_Wall_Purple_Full_Horizontal.name=Horizontal Purple LED Wall
 
 items.Red_Led_Stairs.name=Red LED Stairs
 items.Green_Led_Stairs.name=Green LED Stairs
