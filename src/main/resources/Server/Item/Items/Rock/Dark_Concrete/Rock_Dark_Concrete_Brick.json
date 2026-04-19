@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Rock_Dark_Concrete_Brick.name"
+  },
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Rock_Dark_Concrete_Brick.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Rock_Stone",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "BlockTextures/Dark_Concrete_Texture.png"
+      },
+      {
+        "All": "BlockTextures/Dark_Concrete02_Texture.png"
+      },
+      {
+        "All": "BlockTextures/Dark_Concrete03_Texture.png"
+      }
+    ],
+    "ParticleColor": "#363636",
+    "BlockSoundSetId": "Stone",
+    "RandomRotation": "YawStep90",
+    "VariantRotation": "NESW"
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Stone"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}
