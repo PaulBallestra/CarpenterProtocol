@@ -1,0 +1,157 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Led_Tube2_Vertical_Blue.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Shelves"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Led_Tube2_Vertical_Blue.png",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      4,
+      -21
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube2_Vertical_Center.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "HitboxType": "Led_Tube2_Vertical_Center",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "Support": {
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Supporting": {
+      "Up": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "Light": {
+      "Color": "#004"
+    },
+    "ParticleColor": "#0000ff",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Center",
+              "Center": "Left",
+              "Left": "Right",
+              "Right": "Center"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Center": {
+          "InteractionHint": "interactionHints.turnleft",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png"
+            }
+          ],
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube2_Vertical_Center.blockymodel",
+          "DrawType": "Model",
+          "Textures": [
+            {
+              "All": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png"
+            }
+          ],
+          "HitboxType": "Led_Tube2_Vertical_Center",
+          "Light": {
+            "Color": "#004"
+          }
+        },
+        "Left": {
+          "InteractionHint": "interactionHints.turnright",
+          "DrawType": "Model",
+          "Textures": [
+            {
+              "All": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png"
+            }
+          ],
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png"
+            }
+          ],
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube2_Vertical_Left.blockymodel",
+          "HitboxType": "Led_Tube2_Vertical_Left",
+          "Light": {
+            "Color": "#004"
+          }
+        },
+        "Right": {
+          "InteractionHint": "interactionHints.turncenter",
+          "DrawType": "Model",
+          "Textures": [
+            {
+              "All": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png"
+            }
+          ],
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube_Blue_Texture.png"
+            }
+          ],
+          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Tube/Led_Tube2_Vertical_Right.blockymodel",
+          "HitboxType": "Led_Tube2_Vertical_Right",
+          "Light": {
+            "Color": "#004"
+          }
+        }
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Ancient"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

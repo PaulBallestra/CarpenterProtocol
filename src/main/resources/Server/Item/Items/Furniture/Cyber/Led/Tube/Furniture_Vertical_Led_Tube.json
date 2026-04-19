@@ -1,0 +1,123 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Vertical_Led_Tube.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Containers"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Vertical_Led_Tube.png",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "Gathering": {
+      "Soft": {
+        "DropList": "Container_Pot_Ancient",
+        "IsWeaponBreakable": true
+      }
+    },
+    "Group": "Wood",
+    "HitboxType": "Vertical_Led_Tube",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "RandomRotation": "YawStep1",
+    "ParticleColor": "#cc9393",
+    "BlockSoundSetId": "Metal",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "State1",
+              "State1": "State2",
+              "State2": "State3",
+              "State3": "State1"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "State1": {
+          "InteractionHint": "server.interactionHints.turntostate2",
+          "AmbientSoundEventId": "SFX_Portal_Neutral",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube_Texture-Sheet.png"
+            }
+          ],
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Led_Tube_Flash.blockyanim",
+          "Looping": true
+        },
+        "State2": {
+          "InteractionHint": "server.interactionHints.turntostate3",
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Led_Tube_Flash_2.blockyanim",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube_Texture-Sheet.png"
+            }
+          ],
+          "Looping": true
+        },
+        "State3": {
+          "InteractionHint": "server.interactionHints.turntostate1",
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Led_Tube_Flash_3.blockyanim",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube_Texture-Sheet.png"
+            }
+          ],
+          "Looping": true
+        }
+      }
+    },
+    "Light": {
+      "Color": "#600",
+      "Radius": 1
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Ancient"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -26
+    ]
+  }
+}
