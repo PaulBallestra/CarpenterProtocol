@@ -1,0 +1,43 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Blue_Led_Beam.name"
+  },
+  "Parent": "Wood_Softwood_Beam",
+  "Icon": "Icons/ItemsGenerated/Blue_Led_Beam.png",
+  "Set": "Wood_Darkwood_Planks",
+  "BlockType": {
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Blue_Led_Beam_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Opacity": "Transparent",
+    "ParticleColor": "#245bc1",
+    "CubeShadingMode": "Standard",
+    "Light": {
+      "Color": "#00C",
+      "Radius": 1
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "Darkwood"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

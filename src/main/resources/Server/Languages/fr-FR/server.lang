@@ -29,14 +29,14 @@ items.Warning_Block.name=Bloc d'Avertissement
 items.Laser_Tag_Marker_Team_Spawn0.name=Team 0 Spawn Marqueur
 items.Laser_Tag_Marker_Team_Spawn1.name=Team 1 Spawn Marqueur
 
-items.Laser_Tag_Black_Beam.name=Faisceau LED Noir
-items.Laser_Tag_Blue_Beam.name=Faisceau LED Bleu
-items.Laser_Tag_Green_Beam.name=Faisceau LED Vert
-items.Laser_Tag_Orange_Beam.name=Faisceau LED Orange
-items.Laser_Tag_Purple_Beam.name=Faisceau LED Violet
-items.Laser_Tag_Red_Beam.name=Faisceau LED Rouge
-items.Laser_Tag_White_Beam.name=Faisceau LED Blanc
-items.Laser_Tag_Yellow_Beam.name=Faisceau LED Jaune
+items.Black_Led_Beam.name=Faisceau LED Noir
+items.Blue_Led_Beam.name=Faisceau LED Bleu
+items.Green_Led_Beam.name=Faisceau LED Vert
+items.Orange_Led_Beam.name=Faisceau LED Orange
+items.Purple_Led_Beam.name=Faisceau LED Violet
+items.Red_Led_Beam.name=Faisceau LED Rouge
+items.White_Led_Beam.name=Faisceau LED Blanc
+items.Yellow_Led_Beam.name=Faisceau LED Jaune
 
 items.Armor_Laser_Tag_Head.name=Casque Laser Game
 items.Armor_Laser_Tag_Chest.name=Plastron Laser Game

@@ -29,14 +29,14 @@ items.Warning_Block.name=Warning Block
 items.Laser_Tag_Marker_Team_Spawn0.name=Team 0 Marker Spawn
 items.Laser_Tag_Marker_Team_Spawn1.name=Team 1 Marker Spawn
 
-items.Laser_Tag_Black_Beam.name=Black LED Beam
-items.Laser_Tag_Blue_Beam.name=Blue LED Beam
-items.Laser_Tag_Green_Beam.name=Green LED Beam
-items.Laser_Tag_Orange_Beam.name=Orange LED Beam
-items.Laser_Tag_Purple_Beam.name=Purple LED Beam
-items.Laser_Tag_Red_Beam.name=Red LED Beam
-items.Laser_Tag_White_Beam.name=White LED Beam
-items.Laser_Tag_Yellow_Beam.name=Yellow LED Beam
+items.Black_Led_Beam.name=Black LED Beam
+items.Blue_Led_Beam.name=Blue LED Beam
+items.Green_Led_Beam.name=Green LED Beam
+items.Orange_Led_Beam.name=Orange LED Beam
+items.Purple_Led_Beam.name=Purple LED Beam
+items.Red_Led_Beam.name=Red LED Beam
+items.White_Led_Beam.name=White LED Beam
+items.Yellow_Led_Beam.name=Yellow LED Beam
 
 items.Armor_Laser_Tag_Head.name=Laser Tag Helmet
 items.Armor_Laser_Tag_Chest.name=Laser Tag Chestplate
