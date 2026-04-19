@@ -1,0 +1,113 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Led_Blue_Filled_Block.name"
+  },
+  "ItemLevel": 2,
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Group": "Metal",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Led_Blue_Filled_Animated_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Light": {
+      "Color": "#00c",
+      "Radius": 1
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Off",
+              "On": "Off",
+              "Off": "On"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "On": {
+          "AmbientSoundEventId": "SFX_Torch_Default_Loop",
+          "Light": {
+            "Color": "#00c",
+            "Radius": 1
+          },
+          "CustomModelTexture": [
+            {
+              "Texture": "BlockTextures/Led_Blue_Filled_Animated_Texture.png"
+            }
+          ]
+        },
+        "Off": {
+          "InteractionHint": "server.interactionHints.turnon",
+          "Light": null,
+          "Particles": null,
+          "InteractionSoundEventId": "SFX_Torch_Off",
+          "AmbientSoundEventId": null,
+          "CustomModelAnimation": "Blocks/Animations/Light/Light_Off.blockyanim",
+          "CustomModelTexture": [
+            {
+              "Texture": "BlockTextures/Led_Block_Blue_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "CubeShadingMode": "Reflective",
+          "Textures": [
+            {
+              "All": "BlockTextures/Led_Block_Blue_Texture.png"
+            }
+          ]
+        }
+      }
+    },
+    "InteractionHint": "server.interactionHints.turnoff",
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#0000ff",
+    "Opacity": "Transparent",
+    "CubeShadingMode": "Standard",
+    "BlockEntity": {
+      "Components": {
+        "LedBlock": {
+          "Active": false
+        }
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Led_Blue_Filled_Block.png"
+}

@@ -1,0 +1,55 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Led_Blue_Hexagone_Y_Block.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Led_Blue_Hexagone_Y_Block.png",
+  "ItemLevel": 2,
+  "Categories": [
+    "Blocks.Metal"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Group": "Metal",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#0000ff",
+    "Opacity": "Solid",
+    "CubeShadingMode": "Standard",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Hexagone/Led_Hexagone_Y.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Hexagone/Led_Blue_Hexagone_Texture.png"
+      }
+    ],
+    "VariantRotation": "DoublePipe",
+    "RandomRotation": "None",
+    "FlipType": "Symmetric",
+    "RotationYawPlacementOffset": "None"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      355,
+      205,
+      356
+    ],
+    "Translation": [
+      1,
+      -17
+    ]
+  }
+}
