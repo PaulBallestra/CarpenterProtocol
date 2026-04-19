@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Metal_Dark_Iron_Ornate.png",
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "Set": "Metal_Dark_Iron",
   "BlockType": {

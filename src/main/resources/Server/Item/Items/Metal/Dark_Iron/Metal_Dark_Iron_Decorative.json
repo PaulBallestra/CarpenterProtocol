@@ -6,7 +6,8 @@
   "Quality": "Common",
   "MaxStack": 50,
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "Set": "Metal_Dark_Iron",
   "PlayerAnimationsId": "Block",

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Nightclub_Sofa.png",
   "Categories": [
-    "Blocks.Metal"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "PlayerAnimationsId": "Item",
   "Interactions": {

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Metal_Awning.png",
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "PlayerAnimationsId": "Block",
   "BlockType": {

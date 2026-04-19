@@ -4,6 +4,7 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
+    "CarpenterProtocolCategory.Lighting",
     "Furniture.Lighting"
   ],
   "Set": "Furniture_Cyber",

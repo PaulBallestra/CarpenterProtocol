@@ -40,5 +40,9 @@
       0,
       -13.5
     ]
-  }
+  },
+  "Categories": [
+    "CarpenterProtocolCategory.Lighting",
+    "Furniture.Lighting"
+  ]
 }

@@ -216,4 +216,10 @@ items.Glass_Fence_Corner_Little.name=Barrière en Verre - Coin Petit
 
 items.Furniture_Server_Rack.name=Rack Serveurs
 
+ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Roches
+ui.carpenterprotocolcategory.metal=Carpenter Protocol - Métal
+ui.carpenterprotocolcategory.deco=Carpenter Protocol - Décoration
+ui.carpenterprotocolcategory.furniture=Carpenter Protocol - Mobilier
 ui.carpenterprotocolcategory.signs=Carpenter Protocol - Panneaux
+ui.carpenterprotocolcategory.doors=Carpenter Protocol - Portes
+ui.carpenterprotocolcategory.lighting=Carpenter Protocol - Éclairages

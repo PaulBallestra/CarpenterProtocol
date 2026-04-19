@@ -4,7 +4,8 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
-    "Furniture.Containers"
+    "Furniture.Containers",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
   "Icon": "Icons/ItemsGenerated/Furniture_Industrial_Barrel.png",

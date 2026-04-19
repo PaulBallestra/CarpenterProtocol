@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Purple_Led_Stairs.png",
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "PlayerAnimationsId": "Item",
   "Interactions": {

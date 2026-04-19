@@ -4,7 +4,8 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
-    "Furniture.Lighting"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Deco"
   ],
   "Set": "Furniture_Cyber",
   "Icon": "Icons/ItemsGenerated/Furniture_Ceiling_Fan.png",

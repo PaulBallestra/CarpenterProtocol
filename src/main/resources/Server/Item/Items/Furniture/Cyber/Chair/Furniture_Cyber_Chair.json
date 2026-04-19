@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Chair.png",
   "Categories": [
-    "Furniture.Furniture"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "Interactions": {
     "Primary": "Block_Primary",

@@ -4,7 +4,8 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
-    "Furniture.Shelves"
+    "CarpenterProtocolCategory.Lighting",
+    "Furniture.Lighting"
   ],
   "Set": "Furniture_Cyber",
   "Icon": "Icons/ItemsGenerated/Furniture_Led_Tube1_Horizontal_Blue.png",

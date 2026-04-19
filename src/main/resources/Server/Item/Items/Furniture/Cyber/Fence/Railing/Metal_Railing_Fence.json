@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Metal_Railing_Fence.png",
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "Set": "Furniture_Cyber",
   "PlayerAnimationsId": "Item",

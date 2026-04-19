@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Electrical_Boxes.png",
   "Categories": [
-    "Blocks.Deco"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Deco"
   ],
   "BlockType": {
     "Material": "Solid",

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Deco_Metal_Crate2x1.png",
   "Categories": [
-    "Blocks.Deco"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Deco"
   ],
   "PlayerAnimationsId": "Block",
   "BlockType": {

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Server_Rack.png",
   "Categories": [
-    "Blocks.Deco"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Deco"
   ],
   "BlockType": {
     "Material": "Solid",

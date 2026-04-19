@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Glass_Fence_T.png",
   "Categories": [
-    "Blocks.Metal"
+    "CarpenterProtocolCategory.Deco",
+    "Blocks.Deco"
   ],
   "Set": "Furniture_Cyber",
   "PlayerAnimationsId": "Item",

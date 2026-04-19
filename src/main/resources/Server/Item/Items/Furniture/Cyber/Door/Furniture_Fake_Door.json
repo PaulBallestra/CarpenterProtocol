@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Fake_Door.png",
   "Categories": [
-    "Furniture.Doors"
+    "Furniture.Doors",
+    "CarpenterProtocolCategory.Doors"
   ],
   "Interactions": {
     "Primary": "Block_Primary",

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Bar.png",
   "Categories": [
-    "Blocks.Metal"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "FuelQuality": 6.0,
   "PlayerAnimationsId": "Item",

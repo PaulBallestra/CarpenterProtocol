@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Deco_Metal_Crate.png",
   "Categories": [
-    "Blocks.Deco"
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Deco"
   ],
   "Set": "Furniture_Cyber",
   "PlayerAnimationsId": "Block",

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Global_Truss_T.png",
   "Categories": [
-    "Blocks.Metal"
+    "CarpenterProtocolCategory.Deco",
+    "Blocks.Deco"
   ],
   "Set": "Metal_Cyber",
   "PlayerAnimationsId": "Item",

@@ -216,4 +216,10 @@ items.Glass_Fence_Corner_Little.name=Glass Fence - Corner Little
 
 items.Furniture_Server_Rack.name=Servers Rack
 
+ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Rocks
+ui.carpenterprotocolcategory.metal=Carpenter Protocol - Metal
+ui.carpenterprotocolcategory.deco=Carpenter Protocol - Decoration
+ui.carpenterprotocolcategory.furniture=Carpenter Protocol - Furniture
 ui.carpenterprotocolcategory.signs=Carpenter Protocol - Signs
+ui.carpenterprotocolcategory.doors=Carpenter Protocol - Doors
+ui.carpenterprotocolcategory.lighting=Carpenter Protocol - Lighting

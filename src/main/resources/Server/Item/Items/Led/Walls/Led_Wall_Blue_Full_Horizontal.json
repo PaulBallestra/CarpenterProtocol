@@ -6,7 +6,10 @@
   "MaxStack": 100,
   "Icon": "Icons/ItemsGenerated/Led_Wall_Blue_Full_Horizontal.png",
   "Categories": [
-    "Blocks.Structural"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal",
+    "CarpenterProtocolCategory.Lighting",
+    "Furniture.Lighting"
   ],
   "PlayerAnimationsId": "Block",
   "Set": "Rock_Stone_Brick",
@@ -29,7 +32,7 @@
       }
     },
     "VariantRotation": "Wall",
-    "BlockParticleSetId": "Stone",
+    "BlockParticleSetId": "Metal",
     "Supporting": {
       "Down": [
         {
@@ -42,7 +45,7 @@
         }
       ]
     },
-    "ParticleColor": "#000000",
+    "ParticleColor": "#02027b",
     "BlockSoundSetId": "Stone",
     "State": {
       "Definitions": {

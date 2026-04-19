@@ -3,7 +3,8 @@
     "Name": "server.items.Metal_Dark_Iron.name"
   },
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "Set": "Metal_Dark_Iron",
   "PlayerAnimationsId": "Block",

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Led_Video_Wall1x2.png",
   "Categories": [
-    "Blocks.Deco"
+    "CarpenterProtocolCategory.Lighting",
+    "Furniture.Lighting"
   ],
   "BlockType": {
     "Material": "Solid",

@@ -5,7 +5,8 @@
   "MaxStack": 100,
   "Icon": "Icons/ItemsGenerated/Rock_Grey_Concrete_Brick.png",
   "Categories": [
-    "Blocks.Rocks"
+    "Blocks.Rocks",
+    "CarpenterProtocolCategory.Rocks"
   ],
   "PlayerAnimationsId": "Block",
   "Set": "Rock_Stone",

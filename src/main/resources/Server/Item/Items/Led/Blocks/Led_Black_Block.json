@@ -5,7 +5,8 @@
   "Icon": "Icons/ItemsGenerated/Led_Black_Block.png",
   "ItemLevel": 2,
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "BlockType": {
     "Material": "Solid",

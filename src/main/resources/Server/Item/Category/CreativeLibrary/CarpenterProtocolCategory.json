@@ -3,9 +3,39 @@
   "Order": 4,
   "Children": [
     {
+      "Id": "Rocks",
+      "Name": "server.ui.carpenterprotocolcategory.rocks",
+      "Icon": "Icons/ItemCategories/Blocks.png"
+    },
+    {
+      "Id": "Metal",
+      "Name": "server.ui.carpenterprotocolcategory.metal",
+      "Icon": "Icons/ItemCategories/Metal.png"
+    },
+    {
+      "Id": "Deco",
+      "Name": "server.ui.carpenterprotocolcategory.deco",
+      "Icon": "Icons/ItemCategories/Natural-Fire.png"
+    },
+    {
+      "Id": "Furniture",
+      "Name": "server.ui.carpenterprotocolcategory.furniture",
+      "Icon": "Icons/ItemCategories/Build-Furnitures.png"
+    },
+    {
+      "Id": "Lighting",
+      "Name": "server.ui.carpenterprotocolcategory.lighting",
+      "Icon": "Icons/ItemCategories/Build-Lights.png"
+    },
+    {
       "Id": "Signs",
       "Name": "server.ui.carpenterprotocolcategory.signs",
       "Icon": "Icons/ItemCategories/Signs.png"
+    },
+    {
+      "Id": "Doors",
+      "Name": "server.ui.carpenterprotocolcategory.doors",
+      "Icon": "Icons/ItemCategories/Doors.png"
     }
   ],
   "Id": "CarpenterProtocolCategory",

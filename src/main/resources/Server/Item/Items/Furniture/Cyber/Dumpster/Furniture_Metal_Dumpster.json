@@ -4,7 +4,8 @@
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
-    "Furniture.Furniture"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
   "Icon": "Icons/ItemsGenerated/Furniture_Metal_Dumpster.png",

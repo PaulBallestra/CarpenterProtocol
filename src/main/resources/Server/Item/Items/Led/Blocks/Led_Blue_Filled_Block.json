@@ -4,7 +4,8 @@
   },
   "ItemLevel": 2,
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "BlockType": {
     "Material": "Solid",

@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Wall_Heater.png",
   "Categories": [
-    "Blocks.Deco"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "BlockType": {
     "Material": "Solid",

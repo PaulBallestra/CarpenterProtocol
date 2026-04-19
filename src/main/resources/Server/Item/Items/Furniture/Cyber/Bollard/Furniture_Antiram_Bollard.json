@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Antiram_Bollard.png",
   "Categories": [
-    "Furniture.Containers"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "BlockType": {
     "Material": "Solid",

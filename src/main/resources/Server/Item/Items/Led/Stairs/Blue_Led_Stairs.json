@@ -4,7 +4,8 @@
   },
   "Icon": "Icons/ItemsGenerated/Blue_Led_Stairs.png",
   "Categories": [
-    "Blocks.Metal"
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
   ],
   "FuelQuality": 6.0,
   "PlayerAnimationsId": "Item",

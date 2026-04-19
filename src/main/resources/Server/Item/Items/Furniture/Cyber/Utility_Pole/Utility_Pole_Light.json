@@ -54,7 +54,6 @@
     ]
   },
   "ItemSoundSetId": "ISS_Items_Metal",
-  "Set": "Furniture_Cyber",
   "IconProperties": {
     "Scale": 0.4,
     "Rotation": [
@@ -66,5 +65,9 @@
       -9,
       -18
     ]
-  }
+  },
+  "Categories": [
+    "CarpenterProtocolCategory.Metal",
+    "Blocks.Metal"
+  ]
 }
