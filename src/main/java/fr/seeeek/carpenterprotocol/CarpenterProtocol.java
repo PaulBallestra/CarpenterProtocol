@@ -42,8 +42,16 @@ public class CarpenterProtocol extends JavaPlugin {
         EventRegistry eventRegistry = this.getEventRegistry();
         AssetRegistry assetRegistry = this.getAssetRegistry();
 
+        // LOBBY
         ComponentType<EntityStore, LobbyComponent> lobbyComponentComponentType = entityStoreRegistry.registerComponent(LobbyComponent.class, LobbyComponent::new);
         LobbyComponent.setComponentType(lobbyComponentComponentType);
+
+        // LASER TAG
+        // ArmorSlotHandler armorSlotHandler = new ArmorSlotHandler();
+        // inboundFilter = PacketAdapters.registerInbound(armorSlotHandler);
+
+        ComponentType<EntityStore, LaserTagRotatingLedsCubeComponent> rotatingLedsCubeComponentComponentType = entityStoreRegistry.registerComponent(LaserTagRotatingLedsCubeComponent.class, LaserTagRotatingLedsCubeComponent::new);
+        LaserTagRotatingLedsCubeComponent.setComponentType(rotatingLedsCubeComponentComponentType);
 
         ComponentType<EntityStore, LaserTagGameComponent> laserTagGameComponentComponentType = entityStoreRegistry.registerComponent(LaserTagGameComponent.class, "LaserTagGameComponent", LaserTagGameComponent.CODEC);
         LaserTagGameComponent.setComponentType(laserTagGameComponentComponentType);
@@ -54,6 +62,19 @@ public class CarpenterProtocol extends JavaPlugin {
         ComponentType<ChunkStore, LaserTagMarkerTeamSpawnerComponent> laserTagMarkerTeamSpawnerComponentComponentType = chunkStoreRegistry.registerComponent(LaserTagMarkerTeamSpawnerComponent.class, "LaserTagMarkerTeamSpawnerComponent", LaserTagMarkerTeamSpawnerComponent.CODEC);
         LaserTagMarkerTeamSpawnerComponent.setComponentType(laserTagMarkerTeamSpawnerComponentComponentType);
 
+        entityStoreRegistry.registerSystem(new LaserTagRotatingLedsCubeSystem());
+        entityStoreRegistry.registerSystem(new LaserTagPlayerDeathSystem());
+        entityStoreRegistry.registerSystem(new LaserTagPlayerComponentSystem());
+        // entityStoreRegistry.registerSystem(new LaserTagHudSystem());
+
+        commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
+        commandRegistry.registerCommand(new GetLaserTagGameCommand());
+        commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
+//        commandRegistry.registerCommand(new GetLaserTagSpawnMarkers());
+//        commandRegistry.registerCommand(new GetConfigCommand());
+        commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
+
+        // MINI-GAMES
         ComponentType<EntityStore, MiniGameComponent> miniGameComponentComponentType = entityStoreRegistry.registerComponent(MiniGameComponent.class, MiniGameComponent::new);
         MiniGameComponent.setComponentType(miniGameComponentComponentType);
 
@@ -66,22 +87,15 @@ public class CarpenterProtocol extends JavaPlugin {
         ComponentType<EntityStore, MiniGameHudComponent> miniGameHudComponentComponentType = entityStoreRegistry.registerComponent(MiniGameHudComponent.class, MiniGameHudComponent::new);
         MiniGameHudComponent.setComponentType(miniGameHudComponentComponentType);
 
-        eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);
+        commandRegistry.registerCommand(new GetMiniGameStateCommand());
+        commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
+        commandRegistry.registerCommand(new OverridePlayerStateCommand());
+        commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
 
-        entityStoreRegistry.registerSystem(new LaserTagPlayerDeathSystem());
-        entityStoreRegistry.registerSystem(new LaserTagPlayerComponentSystem());
+        eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);
 
         entityStoreRegistry.registerSystem(new MiniGameSystem());
         entityStoreRegistry.registerSystem(new MiniGameUISystem());
         entityStoreRegistry.registerSystem(new MiniGameHudSystem());
-
-        commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
-        commandRegistry.registerCommand(new GetLaserTagGameCommand());
-        commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
-        commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
-//        commandRegistry.registerCommand(new GetLaserTagSpawnMarkers());
-//        commandRegistry.registerCommand(new GetConfigCommand());
-
-        commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
     }
 }

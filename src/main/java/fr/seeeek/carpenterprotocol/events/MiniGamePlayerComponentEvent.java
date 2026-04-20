@@ -57,7 +57,7 @@ public class MiniGamePlayerComponentEvent {
         }
 
         // add MiniGamePlayerComponent if it's a mini game instance
-        if(player.getWorld().getName().startsWith("epixia-mini_game-")){
+        if(player.getWorld().getName().startsWith("mini_game-")){
             MiniGamePlayerComponent miniGamePlayerComponent = new MiniGamePlayerComponent();
             MiniGameHudComponent miniGameHudComponent = new MiniGameHudComponent();
             Store<EntityStore> store = player.getReference().getStore();
