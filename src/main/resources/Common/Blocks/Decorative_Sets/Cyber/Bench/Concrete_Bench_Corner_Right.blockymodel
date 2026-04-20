@@ -72,12 +72,12 @@
                     },
                     "textureLayout": {
                       "back": {
-                        "offset": {"x": 15, "y": 28},
+                        "offset": {"x": 41, "y": 7},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
                       "right": {
-                        "offset": {"x": 47, "y": 7},
+                        "offset": {"x": 15, "y": 28},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
@@ -123,7 +123,7 @@
                         "angle": 0
                       },
                       "right": {
-                        "offset": {"x": 47, "y": 7},
+                        "offset": {"x": 12, "y": 7},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
@@ -399,7 +399,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "stretch": {"x": 0.995, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 11, "y": 11, "z": 21}
@@ -435,7 +435,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "stretch": {"x": 0.995, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 11, "y": 11, "z": 21}
