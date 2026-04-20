@@ -1,0 +1,127 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Rock_Grey_Concrete_Brick_Smooth_Half.name"
+  },
+  "ItemLevel": 15,
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Rock_Grey_Concrete_Brick_Smooth_Half.png",
+  "Categories": [
+    "Blocks.Rocks",
+    "CarpenterProtocolCategory.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Parent": "Half_Block",
+          "Matchers": [
+            {
+              "Block": {
+                "Id": "Rock_Stone_Brick_Half",
+                "State": "default"
+              },
+              "Face": "Up",
+              "StaticFace": false
+            }
+          ]
+        }
+      ],
+      "Cooldown": {
+        "Id": "BlockInteraction",
+        "Cooldown": 0.3,
+        "ClickBypass": true
+      },
+      "Settings": {
+        "Creative": {
+          "AllowSkipChainOnClick": true
+        }
+      }
+    }
+  },
+  "Set": "Rock_Grey_Concrete",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Structures/Base_Shapes/HalfBlock.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/Grey_Concrete_Smooth_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Stone",
+    "HitboxType": "Block_Half",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "VariantRotation": "DoublePipe",
+    "BlockParticleSetId": "Stone",
+    "Supporting": {
+      "Down": [
+        {}
+      ]
+    },
+    "ParticleColor": "#4e4c4e",
+    "BlockSoundSetId": "Stone",
+    "State": {
+      "Definitions": {
+        "Block": {
+          "Material": "Solid",
+          "DrawType": "Cube",
+          "HitboxType": "Full",
+          "Textures": [
+            {
+              "All": "BlockTextures/Rock_Stone_Brick.png",
+              "Weight": 1
+            }
+          ],
+          "Supporting": {
+            "BlockSides": [
+              {}
+            ]
+          },
+          "Gathering": {
+            "Breaking": {
+              "GatherType": "Rocks",
+              "DropList": {
+                "Container": {
+                  "Type": "Single",
+                  "Item": {
+                    "ItemId": "Rock_Stone_Brick_Half",
+                    "QuantityMax": 2,
+                    "QuantityMin": 2
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Stone"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

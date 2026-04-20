@@ -9,7 +9,7 @@
     "CarpenterProtocolCategory.Rocks"
   ],
   "PlayerAnimationsId": "Block",
-  "Set": "Rock_Stone",
+  "Set": "Rock_Grey_Concrete",
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Cube",

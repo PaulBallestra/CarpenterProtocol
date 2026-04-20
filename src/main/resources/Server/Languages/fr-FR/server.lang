@@ -6,14 +6,26 @@ items.Falling_Block_Rock_Chalk.description=Bloc de craie qui peut tomber lors d'
 items.Falling_Block_Rock_Salt.name=Bloc de Sel Tombant
 items.Falling_Block_Rock_Salt.description=Bloc de sel qui peut tomber lors d'une interaction avec un joueur (TntRun).
 
-items.Rock_Dark_Concrete_Brick.name=Brique de Béton Foncé
-items.Rock_Dark_Concrete_Brick_Smooth.name=Brique de Béton Foncé Lisse
+items.Rock_Dark_Concrete_Brick.name=Béton Foncé
+items.Rock_Dark_Concrete_Brick_Smooth.name=Béton Foncé Lisse
+items.Rock_Dark_Concrete_Brick_Half.name=Dalle de Béton Foncé
+items.Rock_Dark_Concrete_Smooth_Half.name=Dalle de Béton Foncé Lisse
+items.Rock_Dark_Concrete_Stairs.name=Escalier de Béton Foncé
+items.Rock_Dark_Concrete_Smooth_Stairs.name=Escalier de Béton Foncé Lisse
 
-items.Rock_Clear_Concrete_Brick.name=Brique de Béton Clair
-items.Rock_Clear_Concrete_Brick_Smooth.name=Brique de Béton Clair Lisse
+items.Rock_Clear_Concrete_Brick.name=Béton Clair
+items.Rock_Clear_Concrete_Brick_Smooth.name=Béton Clair Lisse
+items.Rock_Clear_Concrete_Brick_Half.name=Dalle de Béton Clair
+items.Rock_Clear_Concrete_Stairs.name=Escalier de Béton Clair
+items.Rock_Clear_Concrete_Brick_Smooth_Half.name=Dalle de Béton Clair Lisse
+items.Rock_Clear_Concrete_Smooth_Stairs.name=Escalier de Béton Clair Lisse
 
-items.Rock_Grey_Concrete_Brick.name=Brique de Béton Grise
-items.Rock_Grey_Concrete_Brick_Smooth.name=Brique de Béton Grise Lisse
+items.Rock_Grey_Concrete_Brick.name=Béton Gris
+items.Rock_Grey_Concrete_Brick_Smooth.name=Béton Gris Lisse
+items.Rock_Grey_Concrete_Brick_Half.name=Dalle de Béton Gris
+items.Rock_Grey_Concrete_Stairs.name=Escalier de Béton Gris
+items.Rock_Grey_Concrete_Brick_Smooth_Half.name=Dalle de Béton Gris Lisse
+items.Rock_Grey_Concrete_Smooth_Stairs.name=Escalier de Béton Gris Lisse
 
 items.Metal_Dark_Iron.name=Fer Sombre
 items.Metal_Dark_Iron_Half.name=Dalle de Fer Sombre
@@ -154,10 +166,16 @@ items.Furniture_Air_Conditioner_Small.name=Climatiseur - Petit
 items.Furniture_Air_Conditioner_Long.name=Climatiseur - Long
 
 items.Furniture_Ventilation_Duct_Vertical.name=Conduit d'Aération - Vertical
+items.Furniture_Ventilation_Duct_Vertical_Free.name=Conduit d'Aération - Vertical (Libre)
 items.Furniture_Ventilation_Duct_Horizontal.name=Conduit d'Aération - Horizontal
+items.Furniture_Ventilation_Duct_Horizontal_Free.name=Conduit d'Aération - Horizontal (Libre)
 items.Furniture_Ventilation_Duct_Angle.name=Conduit d'Aération - Angle
+items.Furniture_Ventilation_Duct_Angle_Free.name=Conduit d'Aération - Angle (Libre)
 items.Furniture_Ventilation_Duct_Angle_Horizontal.name=Conduit d'Aération - Angle Horizontal
+items.Furniture_Ventilation_Duct_Angle_Horizontal_Free.name=Conduit d'Aération - Angle Horizontal (Libre)
 items.Furniture_Ventilation_Duct_Angle_Inverted.name=Conduit d'Aération - Angle Inversé
+items.Furniture_Ventilation_Duct_Angle_Free_Inverted.name=Conduit d'Aération - Angle Inversé (Libre)
+
 items.Furniture_Ventilation_Grille.name=Grille de Ventilation
 
 items.Furniture_Cyber_Coffee_Table.name=Table Basse Cyber

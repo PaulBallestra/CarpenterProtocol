@@ -6,14 +6,26 @@ items.Falling_Block_Rock_Chalk.description=Chalk block that can fall when intera
 items.Falling_Block_Rock_Salt.name=Falling Salt Block
 items.Falling_Block_Rock_Salt.description=Salt block that can fall when interacting with a player (TntRun).
 
-items.Rock_Dark_Concrete_Brick.name=Dark Concrete Brick
-items.Rock_Dark_Concrete_Brick_Smooth.name=Dark Concrete Brick Smooth
+items.Rock_Dark_Concrete_Brick.name=Dark Concrete
+items.Rock_Dark_Concrete_Brick_Smooth.name=Dark Concrete Smooth
+items.Rock_Dark_Concrete_Brick_Half.name=Dark Concrete Slab
+items.Rock_Dark_Concrete_Smooth_Half.name=Dark Concrete Smooth Slab
+items.Rock_Dark_Concrete_Stairs.name=Dark Concrete Stairs
+items.Rock_Dark_Concrete_Smooth_Stairs.name=Dark Concrete Smooth Stairs
 
-items.Rock_Clear_Concrete_Brick.name=Clear Concrete Brick
-items.Rock_Clear_Concrete_Brick_Smooth.name=Clear Concrete Brick Smooth
+items.Rock_Clear_Concrete_Brick.name=Clear Concrete
+items.Rock_Clear_Concrete_Brick_Smooth.name=Clear Concrete Smooth
+items.Rock_Clear_Concrete_Brick_Half.name=Clear Concrete Slab
+items.Rock_Clear_Concrete_Stairs.name=Clear Concrete Stairs
+items.Rock_Clear_Concrete_Brick_Smooth_Half.name=Clear Concrete Smooth Slab
+items.Rock_Clear_Concrete_Smooth_Stairs.name=Clear Concrete Smooth Stairs
 
-items.Rock_Grey_Concrete_Brick.name=Grey Concrete Brick
-items.Rock_Grey_Concrete_Brick_Smooth.name=Grey Concrete Brick Smooth
+items.Rock_Grey_Concrete_Brick.name=Grey Concrete
+items.Rock_Grey_Concrete_Brick_Smooth.name=Grey Concrete Smooth
+items.Rock_Grey_Concrete_Brick_Half.name=Grey Concrete Slab
+items.Rock_Grey_Concrete_Stairs.name=Grey Concrete Stairs
+items.Rock_Grey_Concrete_Brick_Smooth_Half.name=Grey Concrete Smooth Slab
+items.Rock_Grey_Concrete_Smooth_Stairs.name=Grey Concrete Smooth Stairs
 
 items.Metal_Dark_Iron.name=Dark Iron
 items.Metal_Dark_Iron_Half.name=Dark Iron Slab
@@ -154,10 +166,16 @@ items.Furniture_Air_Conditioner_Small.name=Air Conditioner - Small
 items.Furniture_Air_Conditioner_Long.name=Air Conditioner - Long
 
 items.Furniture_Ventilation_Duct_Vertical.name=Ventilation Duct - Vertical
+items.Furniture_Ventilation_Duct_Vertical_Free.name=Ventilation Duct - Vertical (Free)
 items.Furniture_Ventilation_Duct_Horizontal.name=Ventilation Duct - Horizontal
+items.Furniture_Ventilation_Duct_Horizontal_Free.name=Ventilation Duct - Horizontal (Free)
 items.Furniture_Ventilation_Duct_Angle.name=Ventilation Duct - Angle
+items.Furniture_Ventilation_Duct_Angle_Free.name=Ventilation Duct - Angle (Free)
 items.Furniture_Ventilation_Duct_Angle_Horizontal.name=Ventilation Duct - Horizontal Angle
+items.Furniture_Ventilation_Duct_Angle_Horizontal_Free.name=Ventilation Duct - Horizontal Angle (Free)
 items.Furniture_Ventilation_Duct_Angle_Inverted.name=Ventilation Duct - Inverted Angle
+items.Furniture_Ventilation_Duct_Angle_Free_Inverted.name=Ventilation Duct - Inverted Angle (Free)
+
 items.Furniture_Ventilation_Grille.name=Ventilation Grille
 
 items.Furniture_Cyber_Coffee_Table.name=Cyber Coffee Table
