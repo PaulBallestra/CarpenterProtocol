@@ -1,0 +1,8 @@
+{
+  "Model": "NPC/LedsCube/Models/Leds_Cube.blockymodel",
+  "Texture": "NPC/LedsCube/Models/Leds_Cube_Texture.png",
+  "HitBox": {
+    "Max": { "X": 15, "Y": 20, "Z": 15 },
+    "Min": { "X": -15, "Y": 0, "Z": -15 }
+  }
+}

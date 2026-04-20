@@ -1,0 +1,18 @@
+{
+  "Conditions": {
+    "WeatherIds": [
+      "Zone3_Cave_Deep"
+    ],
+    "Altitude": {
+      "Max": 85
+    }
+  },
+  "Music": {
+    "Tracks": [
+      "Music/Laser_Tag/Waiting_Zone_01.ogg"
+    ],
+    "Volume": -2.2
+  },
+  "AudioCategory": "AudioCat_Music",
+  "Priority": 70
+}

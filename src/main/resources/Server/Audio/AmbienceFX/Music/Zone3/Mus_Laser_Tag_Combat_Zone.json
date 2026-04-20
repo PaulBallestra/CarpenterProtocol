@@ -1,0 +1,20 @@
+{
+  "Music": {
+    "Tracks": [
+      "Music/Laser_Tag/Combat_01.ogg"
+    ],
+    "Volume": 3.3
+  },
+  "AudioCategory": "AudioCat_Music",
+  "Conditions": {
+    "WeatherIds": [
+      "Zone3_Cave_Deep"
+    ],
+    "Never": false,
+    "Altitude": {
+      "Min": 90,
+      "Max": 130
+    }
+  },
+  "Priority": 100
+}

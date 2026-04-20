@@ -1,0 +1,24 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Laser_Tag_Marker_Team_Spawn1.name"
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "GizmoCube",
+    "Opacity": "Transparent",
+    "BlockEntity": {
+      "Components": {
+        "LaserTagMarkerTeamSpawnerComponent": {
+          "TeamId": 1
+        },
+        "RespawnBlock": {}
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Icon": "Icons/ItemsGenerated/Editor_Empty.png",
+  "Categories": [
+    "Tool.TechnicalBlocks",
+    "CarpenterProtocolCategory.TechnicalBlocks"
+  ]
+}

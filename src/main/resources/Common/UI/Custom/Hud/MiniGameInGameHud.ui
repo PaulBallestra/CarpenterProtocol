@@ -1,0 +1,129 @@
+$C = "../Common.ui";
+
+$C.@DecoratedContainer {
+  // Anchor to the top-right of the screen (Right: 20, Top: 50)
+  Anchor: (Width: 300, Height: 400, Right: 20, Top: 50);
+
+  $C.@Container {
+    Anchor: (Full: 0); // Fill the decorated container
+    Background: #000000(0.0);
+
+    #Title {
+      $C.@Title #LobbyDisplayName { @Text = "Mini-Game"; }
+    }
+
+    #Content {
+      // Top layout stacks elements vertically
+      LayoutMode: Top;
+      Anchor: (Top: 50, Bottom: 10, Left: 15, Right: 15);
+
+      Group {
+        Background: #000000(0.5);
+
+        Label #MiniGameType { Text: "Type"; Style: (FontSize: 16, HorizontalAlignment: Center); }
+      }
+
+      Group { Anchor: (Height: 8); } // Spacer
+      Group {
+        Anchor: (Height: 1);
+        Background: #2b3542;
+      }
+      Group { Anchor: (Height: 8); } // Spacer
+
+      Label #MiniGameState { Text: "State: Loading..."; Style: (FontSize: 12); }
+
+      Group {
+        LayoutMode: Center;
+        Group {
+          FlexWeight: 1;
+          LayoutMode: Left;
+          Label {
+            Text: "Players";
+            Style: (FontSize: 12);
+          }
+        }
+
+        Group {
+          FlexWeight: 1;
+          LayoutMode: Right;
+          Label #PlayerCount {
+            Text: "0/0";
+            Style: (FontSize: 12);
+          }
+        }
+      }
+
+      Group { Anchor: (Height: 8); } // Spacer
+
+      Label { Text: "Alive Players:"; Style: (FontSize: 12); }
+
+      // The container where we will dynamically inject player names
+      Group #PlayerList {
+        LayoutMode: Top;
+        FlexWeight: 1;
+        Anchor: (Left: 0, Right: 0);
+      }
+
+      Group { Anchor: (Height: 8); } // Spacer
+      Group {
+        Anchor: (Height: 1);
+        Background: #2b3542;
+      }
+      Group { Anchor: (Height: 8); } // Spacer
+
+
+      Group #StatsGrid {
+        LayoutMode: CenterMiddle;
+        Background: #000000(0.5);
+
+        Group {
+          FlexWeight: 1;
+          LayoutMode: Top;
+
+          Label #Stat1Value {
+            Anchor: (Height: 32);
+            Text: "Stat 1 Value";
+            Style: (FontSize: 26, TextColor: #4a9eff, RenderBold: true, Alignment: Center);
+          }
+          Label #Stat1Key {
+            Anchor: (Height: 18);
+            Text: "Stat 1 Key";
+            Style: (FontSize: 11, TextColor: #6e7da1, Alignment: Center);
+          }
+        }
+
+        Group {
+          FlexWeight: 1;
+          LayoutMode: Top;
+
+          Label #Stat3Value {
+            Anchor: (Height: 32);
+            Text: "Stat 3 Value";
+            Style: (FontSize: 26, TextColor: #ffaa4a, RenderBold: true, Alignment: Center);
+          }
+          Label #Stat3Key {
+            Anchor: (Height: 18);
+            Text: "Stat 3 Key";
+            Style: (FontSize: 11, TextColor: #6e7da1, Alignment: Center);
+          }
+        }
+
+        Group {
+          FlexWeight: 1;
+          LayoutMode: Top;
+
+          Label #Stat2Value {
+            Anchor: (Height: 32);
+            Text: "Stat 2 Value";
+            Style: (FontSize: 26, TextColor: #4aff7f, RenderBold: true, Alignment: Center);
+          }
+          Label #Stat2Key {
+            Anchor: (Height: 18);
+            Text: "Stat 2 Key";
+            Style: (FontSize: 11, TextColor: #6e7da1, Alignment: Center);
+          }
+        }
+      }
+    }
+  }
+}

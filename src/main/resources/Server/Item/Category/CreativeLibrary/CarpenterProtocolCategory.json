@@ -46,6 +46,11 @@
       "Id": "Armors",
       "Name": "server.ui.carpenterprotocolcategory.armors",
       "Icon": "Icons/ItemCategories/Items-Armor.png"
+    },
+    {
+      "Id": "TechnicalBlocks",
+      "Name": "server.ui.carpenterprotocolcategory.technicalBlocks",
+      "Icon": "Icons/ItemCategories/TechnicalBlocks.png"
     }
   ],
   "Id": "CarpenterProtocolCategory",
