@@ -1,0 +1,43 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Laser_Tag_Legs_Red.name"
+  },
+  "Quality": "Technical",
+  "Icon": "Icons/ItemsGenerated/Armor_Laser_Tag_Legs_Red.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -2.7,
+      -22
+    ]
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ]
+  },
+  "Model": "Items/Armors/CarpenterProtocol/Legs.blockymodel",
+  "Texture": "Items/Armors/CarpenterProtocol/Legs_Red_Texture.png",
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Light": {
+    "Color": "#400",
+    "Radius": 0
+  },
+  "Categories": [
+    "Items.Armors",
+    "CarpenterProtocolCategory.Armors"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Laser_Tag_Head_Blue.name"
+  },
+  "Quality": "Technical",
+  "Icon": "Icons/ItemsGenerated/Armor_Laser_Tag_Head_Blue.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -2,
+      -1
+    ]
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ]
+  },
+  "Model": "Items/Armors/CarpenterProtocol/Head.blockymodel",
+  "Texture": "Items/Armors/CarpenterProtocol/Head_Blue_Texture.png",
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Light": {
+    "Color": "#004",
+    "Radius": 0
+  },
+  "Categories": [
+    "Items.Armors",
+    "CarpenterProtocolCategory.Armors"
+  ]
+}

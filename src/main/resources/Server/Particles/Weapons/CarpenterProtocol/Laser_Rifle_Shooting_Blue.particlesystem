@@ -1,0 +1,13 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Laser_Glow_Blue",
+      "PositionOffset": {
+        "Y": 0.0,
+        "Z": -0.08
+      }
+    }
+  ],
+  "IsImportant": true,
+  "LifeSpan": 1.0
+}

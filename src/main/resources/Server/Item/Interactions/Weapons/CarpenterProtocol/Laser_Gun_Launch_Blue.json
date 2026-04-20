@@ -1,0 +1,25 @@
+{
+  "Type": "LaunchProjectile",
+  "RunTime": 0.25,
+  "Effects": {
+    "WorldSoundEventId": "SFX_Laser_Gun_Shoot",
+    "LocalSoundEventId": "SFX_Laser_Gun_Shoot_Local",
+    "ItemAnimationId": "Shoot",
+    "Particles": [
+      {
+        "SystemId": "Laser_Rifle_Shooting_Blue",
+        "TargetEntityPart": "Self",
+        "PositionOffset": {
+          "Y": 0.15,
+          "Z": 0.85
+        },
+        "RotationOffset": {
+          "Pitch": 90
+        },
+        "Color": "#00f",
+        "TargetNodeName": "Origin_Item"
+      }
+    ]
+  },
+  "ProjectileId": "Laser_Tag_Weapon_Gun_Bullet_Blue"
+}

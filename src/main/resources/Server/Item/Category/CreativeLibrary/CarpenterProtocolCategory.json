@@ -36,6 +36,16 @@
       "Id": "Doors",
       "Name": "server.ui.carpenterprotocolcategory.doors",
       "Icon": "Icons/ItemCategories/Doors.png"
+    },
+    {
+      "Id": "Weapons",
+      "Name": "server.ui.carpenterprotocolcategory.weapons",
+      "Icon": "Icons/ItemCategories/Items-Weapons.png"
+    },
+    {
+      "Id": "Armors",
+      "Name": "server.ui.carpenterprotocolcategory.armors",
+      "Icon": "Icons/ItemCategories/Items-Armor.png"
     }
   ],
   "Id": "CarpenterProtocolCategory",

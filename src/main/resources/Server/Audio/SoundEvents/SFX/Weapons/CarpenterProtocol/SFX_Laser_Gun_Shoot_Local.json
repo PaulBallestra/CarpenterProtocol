@@ -1,0 +1,20 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/LaserGun/Laser_Gun_Shoot_Stereo_01.ogg",
+        "Sounds/Weapons/LaserGun/Laser_Gun_Shoot_Stereo_02.ogg",
+        "Sounds/Weapons/LaserGun/Laser_Gun_Shoot_Stereo_03.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 1
+      },
+      "StartDelay": 0,
+      "Volume": -3
+    }
+  ],
+  "Volume": -6.0,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Loud"
+}

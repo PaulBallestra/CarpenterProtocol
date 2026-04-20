@@ -1,0 +1,42 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Laser_Tag_Chest_Blue.name"
+  },
+  "Quality": "Technical",
+  "Icon": "Icons/ItemsGenerated/Armor_Laser_Tag_Chest_Blue.png",
+  "IconProperties": {
+    "Scale": 0.415,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1.5,
+      -6.9
+    ]
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "CosmeticsToHide": [
+      "Overtop",
+      "Cape"
+    ]
+  },
+  "Model": "Items/Armors/CarpenterProtocol/Chest.blockymodel",
+  "Texture": "Items/Armors/CarpenterProtocol/Chest_Blue_Texture.png",
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Light": {
+    "Color": "#004",
+    "Radius": 0
+  },
+  "Categories": [
+    "Items.Armors",
+    "CarpenterProtocolCategory.Armors"
+  ]
+}
