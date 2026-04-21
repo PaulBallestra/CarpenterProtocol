@@ -125,7 +125,9 @@ items.Furniture_Vertical_Terminal.name=Borne Verticale
 items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
 items.Furniture_Atm_Pod_Alternate.name=Distributeur Automatique de Billets - Alterne
 items.Furniture_Vending_Dispenser.name=Distributeur Automatique
+
 items.Furniture_Trash_Bin.name=Poubelle
+items.Furniture_Smart_Trash.name=Poubelle Intelligente
 
 items.Furniture_Fake_Door.name=Fausse Porte
 items.Furniture_Ceiling_Fan.name=Ventilateur de Plafond

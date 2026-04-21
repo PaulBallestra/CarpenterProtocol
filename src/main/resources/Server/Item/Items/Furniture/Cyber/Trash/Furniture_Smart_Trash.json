@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Vertical_Terminal.name"
+    "Name": "server.items.Furniture_Smart_Trash.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,26 +8,26 @@
     "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Vertical_Terminal.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Smart_Trash.png",
   "IconProperties": {
-    "Scale": 0.4,
+    "Scale": 0.5,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
     "Translation": [
-      1,
-      -26
+      5,
+      -16
     ]
   },
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Terminal/Vertical_Terminal.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Trash/Trash_Bin.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Terminal/Vertical_Terminal_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Trash/Trash_Bin_Texture.png",
         "Weight": 1
       }
     ],
@@ -41,7 +41,7 @@
       }
     },
     "Material": "Solid",
-    "ParticleColor": "#980c8d",
+    "ParticleColor": "#898d91",
     "Support": {
       "Down": [
         {
@@ -53,7 +53,7 @@
     "Opacity": "Transparent",
     "RequiresAlphaBlending": false,
     "CubeShadingMode": "Flat",
-    "HitboxType": "Vertical_Terminal",
+    "HitboxType": "Smart_Bin",
     "Light": {
       "Color": "#244"
     }
@@ -66,6 +66,5 @@
       "Lumberjack"
     ]
   },
-  "Scale": 0.8,
   "ItemSoundSetId": "ISS_Items_Metal"
 }

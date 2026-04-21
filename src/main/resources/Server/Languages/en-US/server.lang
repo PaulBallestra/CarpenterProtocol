@@ -125,7 +125,9 @@ items.Furniture_Vertical_Terminal.name=Vertical Terminal
 items.Furniture_Atm_Pod.name=ATM
 items.Furniture_Atm_Pod_Alternate.name=ATM - Alternate
 items.Furniture_Vending_Dispenser.name=Vending Machine
+
 items.Furniture_Trash_Bin.name=Trash Bin
+items.Furniture_Smart_Trash.name=Smart Trash
 
 items.Furniture_Fake_Door.name=Fake Door
 items.Furniture_Ceiling_Fan.name=Ceiling Fan

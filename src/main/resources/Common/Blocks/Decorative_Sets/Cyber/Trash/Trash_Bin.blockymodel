@@ -138,11 +138,11 @@
             {
               "id": "5",
               "name": "Top",
-              "position": {"x": 0, "y": 10.35402, "z": -4.15534},
+              "position": {"x": 0, "y": 10.35402, "z": -3.65534},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0.5},
+                "offset": {"x": 0, "y": 0, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -179,12 +179,12 @@
             {
               "id": "6",
               "name": "Angle",
-              "position": {"x": 0, "y": 7.93795, "z": 3.46603},
+              "position": {"x": 0.05, "y": 7.93795, "z": 3.46603},
               "orientation": {"x": 0.32144, "y": 0, "z": 0, "w": 0.94693},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 0.995, "y": 1, "z": 1},
+                "offset": {"x": -0.05, "y": 0, "z": 0},
+                "stretch": {"x": 0.99, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
                   "size": {"x": 16, "y": 6, "z": 10}
@@ -210,6 +210,60 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "7",
+              "name": "GreenScreen",
+              "position": {"x": -3, "y": -1.14598, "z": 9.44466},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 6, "y": 11},
+                  "normal": "+Z"
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 32, "y": 46},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "fullbright"
+              }
+            },
+            {
+              "id": "8",
+              "name": "YellowScreen",
+              "position": {"x": 4.5, "y": 2.35402, "z": 9.44466},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 3, "y": 4},
+                  "normal": "+Z"
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 41, "y": 46},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "fullbright"
               }
             }
           ]
