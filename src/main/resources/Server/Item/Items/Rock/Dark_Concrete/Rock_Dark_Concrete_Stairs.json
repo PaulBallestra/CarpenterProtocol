@@ -4,7 +4,7 @@
   },
   "ItemLevel": 10,
   "MaxStack": 100,
-  "Icon": "Icons/ItemsGenerated/Rock_Clear_Concrete_Stairs.png",
+  "Icon": "Icons/ItemsGenerated/Rock_Dark_Concrete_Stairs.png",
   "Categories": [
     "Blocks.Rocks",
     "CarpenterProtocolCategory.Rocks"

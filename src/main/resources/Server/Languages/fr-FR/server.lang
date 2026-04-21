@@ -126,6 +126,8 @@ items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
 items.Furniture_Atm_Pod_Alternate.name=Distributeur Automatique de Billets - Alterne
 items.Furniture_Vending_Dispenser.name=Distributeur Automatique
 
+items.Furniture_Industrial_Shelf.name=Étagère Industrielle
+
 items.Furniture_Trash_Bin.name=Poubelle
 items.Furniture_Smart_Trash.name=Poubelle Intelligente
 
@@ -236,6 +238,10 @@ items.Glass_Fence_Corner.name=Barrière en Verre - Coin
 items.Glass_Fence_T.name=Barrière en Verre - T
 items.Glass_Fence_Cross.name=Barrière en Verre - Croix
 items.Glass_Fence_Corner_Little.name=Barrière en Verre - Coin Petit
+
+items.Glass_Orange.name=Fenêtre Orange
+items.Glass_Cyan.name=Fenêtre Cyan
+items.Glass_Purple.name=Fenêtre Violet
 
 items.Furniture_Server_Rack.name=Rack Serveurs
 

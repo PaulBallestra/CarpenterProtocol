@@ -126,6 +126,8 @@ items.Furniture_Atm_Pod.name=ATM
 items.Furniture_Atm_Pod_Alternate.name=ATM - Alternate
 items.Furniture_Vending_Dispenser.name=Vending Machine
 
+items.Furniture_Industrial_Shelf.name=Industrial Shelf
+
 items.Furniture_Trash_Bin.name=Trash Bin
 items.Furniture_Smart_Trash.name=Smart Trash
 
@@ -236,6 +238,10 @@ items.Glass_Fence_Corner.name=Glass Fence - Corner
 items.Glass_Fence_T.name=Glass Fence - T
 items.Glass_Fence_Cross.name=Glass Fence - Cross
 items.Glass_Fence_Corner_Little.name=Glass Fence - Corner Little
+
+items.Glass_Orange.name=Orange Glass
+items.Glass_Cyan.name=Cyan Glass
+items.Glass_Purple.name=Purple Glass
 
 items.Furniture_Server_Rack.name=Servers Rack
 
