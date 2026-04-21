@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Cyber_Coffee_Table.name"
+    "Name": "server.items.Furniture_High_Table_Square_Cross.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,7 +8,7 @@
     "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Cyber_Coffee_Table.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_High_Table_Square_Cross.png",
   "IconProperties": {
     "Scale": 0.4,
     "Rotation": [
@@ -17,8 +17,8 @@
       22.5
     ],
     "Translation": [
-      -12,
-      -15
+      0,
+      -21
     ]
   },
   "Interactions": {
@@ -27,10 +27,10 @@
   },
   "BlockType": {
     "BlockParticleSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Table/Cyber_Coffee_Table.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Table/High_Table_Cross.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Table/Cyber_Coffee_Table_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Table/High_Table_Texture.png",
         "Weight": 1
       }
     ],
@@ -42,10 +42,10 @@
       }
     },
     "Group": "Wood",
-    "HitboxType": "Coffee_Table",
+    "HitboxType": "High_Table",
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#506f70",
+    "ParticleColor": "#767b78",
     "Supporting": {
       "Up": [
         {}

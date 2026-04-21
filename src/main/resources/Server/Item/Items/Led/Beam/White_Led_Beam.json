@@ -4,7 +4,6 @@
   },
   "Parent": "Wood_Softwood_Beam",
   "Icon": "Icons/ItemsGenerated/White_Led_Beam.png",
-  "Set": "Wood_Darkwood_Planks",
   "BlockType": {
     "CustomModelTexture": [
       {
