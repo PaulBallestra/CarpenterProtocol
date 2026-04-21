@@ -19,7 +19,7 @@
       }
     ],
     "CustomModelScale": 1,
-    "HitboxType": "Air_Conditioner_Long",
+    "HitboxType": "Wall_Heater",
     "VariantRotation": "NESW",
     "Gathering": {
       "Soft": {}

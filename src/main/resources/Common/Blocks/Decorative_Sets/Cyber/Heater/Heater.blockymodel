@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Attachment",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 0, "y": -6, "z": 0},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,7 +22,7 @@
         {
           "id": "2",
           "name": "Heater",
-          "position": {"x": -0.00063, "y": 27.4824, "z": -0.00104},
+          "position": {"x": -0.00063, "y": 33.4824, "z": -0.00104},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",

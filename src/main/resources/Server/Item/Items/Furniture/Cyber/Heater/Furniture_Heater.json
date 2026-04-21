@@ -10,14 +10,14 @@
   "Set": "Furniture_Cyber",
   "Icon": "Icons/ItemsGenerated/Furniture_Heater.png",
   "IconProperties": {
-    "Scale": 0.35,
+    "Scale": 0.4,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
     "Translation": [
-      1,
+      -0.55,
       -23
     ]
   },
@@ -66,6 +66,5 @@
       "Lumberjack"
     ]
   },
-  "Scale": 0.8,
   "ItemSoundSetId": "ISS_Items_Metal"
 }
