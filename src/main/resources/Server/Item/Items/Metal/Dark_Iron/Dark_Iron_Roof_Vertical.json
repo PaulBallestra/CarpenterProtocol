@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Dark_Iron_Roof_Vertical.name"
+  },
+  "Categories": [
+    "Blocks.Metal",
+    "CarpenterProtocolCategory.Metal"
+  ],
+  "SubCategory": "RoofBlocks",
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Structures/Roofs/Cloth_Roof_Vertical.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Structures/Roofs/Metal_Roof_Textures/Dark_Iron.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Roof",
+    "HitboxType": "Block_Vertical_Flat",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "North": [
+        {}
+      ]
+    },
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#1d1f1f"
+  },
+  "Icon": "Icons/ItemsGenerated/Dark_Iron_Roof_Vertical.png",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      9.9,
+      -17.7
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ],
+    "SubType": [
+      "Roof"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

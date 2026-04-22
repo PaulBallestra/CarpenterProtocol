@@ -265,6 +265,12 @@ items.Glass_Clear_Grey.name=Fenêtre Grise - Claire
 
 items.Furniture_Server_Rack.name=Rack Serveurs
 
+items.Dark_Iron_Roof.name=Toit en Fer Sombre - Pente
+items.Dark_Iron_Roof_Steep.name=Toit en Fer Sombre - Pente Raide
+items.Dark_Iron_Roof_Shallow.name=Toit en Fer Sombre - Pente Peu Raide
+items.Dark_Iron_Roof_Flat.name=Toit en Fer Sombre - Horizontal
+items.Dark_Iron_Roof_Vertical.name=Toit en Fer Sombre - Vertical
+
 ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Roches
 ui.carpenterprotocolcategory.metal=Carpenter Protocol - Métal
 ui.carpenterprotocolcategory.deco=Carpenter Protocol - Décoration
