@@ -297,7 +297,7 @@
             {
               "id": "9",
               "name": "Angles",
-              "position": {"x": -1.25, "y": 24.7, "z": 4.0625},
+              "position": {"x": -1.25, "y": 24.9, "z": 4.0625},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -321,7 +321,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "stretch": {"x": 1.05, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 10, "y": 2, "z": 2}
@@ -350,7 +350,7 @@
                     },
                     "unwrapMode": "custom",
                     "visible": true,
-                    "doubleSided": false,
+                    "doubleSided": true,
                     "shadingMode": "flat"
                   }
                 },
@@ -362,7 +362,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "stretch": {"x": 1.05, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 10, "y": 2, "z": 2}
@@ -391,7 +391,7 @@
                     },
                     "unwrapMode": "custom",
                     "visible": true,
-                    "doubleSided": false,
+                    "doubleSided": true,
                     "shadingMode": "flat"
                   }
                 },
@@ -403,7 +403,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "stretch": {"x": 1.05, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 10, "y": 2, "z": 2}
@@ -432,7 +432,7 @@
                     },
                     "unwrapMode": "custom",
                     "visible": true,
-                    "doubleSided": false,
+                    "doubleSided": true,
                     "shadingMode": "flat"
                   }
                 }
@@ -446,7 +446,7 @@
               "shape": {
                 "type": "box",
                 "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "stretch": {"x": 1.05, "y": 1.05, "z": 1},
                 "settings": {
                   "isPiece": false,
                   "size": {"x": 2, "y": 5, "z": 2}
@@ -475,7 +475,7 @@
                 },
                 "unwrapMode": "custom",
                 "visible": true,
-                "doubleSided": false,
+                "doubleSided": true,
                 "shadingMode": "flat"
               }
             }
