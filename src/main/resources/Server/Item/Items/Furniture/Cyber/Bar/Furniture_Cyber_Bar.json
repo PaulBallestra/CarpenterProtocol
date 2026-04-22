@@ -60,7 +60,7 @@
           },
           "CustomModelTexture": [
             {
-              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Corner_Left_Texture.png"
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Texture.png"
             }
           ]
         },
@@ -81,7 +81,7 @@
           },
           "CustomModelTexture": [
             {
-              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Inverted_Corner_Right_Texture.png"
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Texture.png"
             }
           ]
         },
@@ -96,7 +96,7 @@
           },
           "CustomModelTexture": [
             {
-              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Corner_Left_Texture.png"
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Texture.png"
             }
           ]
         },
@@ -117,7 +117,7 @@
           },
           "CustomModelTexture": [
             {
-              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Inverted_Corner_Right_Texture.png"
+              "Texture": "Blocks/Decorative_Sets/Cyber/Bar/Bar_Texture.png"
             }
           ]
         }
