@@ -176,6 +176,11 @@ items.Furniture_Air_Conditioner.name=Air Conditioner
 items.Furniture_Air_Conditioner_Small.name=Air Conditioner - Small
 items.Furniture_Air_Conditioner_Long.name=Air Conditioner - Long
 
+items.Furniture_Storage_Locker_Tall.name=Storage Locker Tall
+items.Furniture_Storage_Locker_Tall_Double.name=Storage Locker Tall - Double
+items.Furniture_Storage_Locker_Small.name=Storage Lockers Small
+items.Furniture_Storage_Locker_Small_Double.name=Storage Lockers Small - Double
+
 items.Furniture_Ventilation_Duct_Vertical.name=Ventilation Duct - Vertical
 items.Furniture_Ventilation_Duct_Vertical_Free.name=Ventilation Duct - Vertical (Free)
 items.Furniture_Ventilation_Duct_Horizontal.name=Ventilation Duct - Horizontal

@@ -45,7 +45,7 @@
         {}
       ]
     },
-    "ParticleColor": "#0000ff",
+    "ParticleColor": "#7f888b",
     "BlockSoundSetId": "Metal",
     "State": {
       "Definitions": {
@@ -166,5 +166,6 @@
       3,
       -19
     ]
-  }
+  },
+  "Set": "Furniture_Cyber"
 }

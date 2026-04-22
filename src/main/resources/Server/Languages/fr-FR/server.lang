@@ -176,6 +176,11 @@ items.Furniture_Air_Conditioner.name=Climatiseur
 items.Furniture_Air_Conditioner_Small.name=Climatiseur - Petit
 items.Furniture_Air_Conditioner_Long.name=Climatiseur - Long
 
+items.Furniture_Storage_Locker_Tall.name=Grand Casier
+items.Furniture_Storage_Locker_Tall_Double.name=Grand Casier - Double
+items.Furniture_Storage_Locker_Small.name=Petits Casiers
+items.Furniture_Storage_Locker_Small_Double.name=Petits Casiers - Double
+
 items.Furniture_Ventilation_Duct_Vertical.name=Conduit d'Aération - Vertical
 items.Furniture_Ventilation_Duct_Vertical_Free.name=Conduit d'Aération - Vertical (Libre)
 items.Furniture_Ventilation_Duct_Horizontal.name=Conduit d'Aération - Horizontal

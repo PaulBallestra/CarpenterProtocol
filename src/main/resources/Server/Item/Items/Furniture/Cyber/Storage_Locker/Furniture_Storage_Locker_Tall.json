@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Vertical_Terminal.name"
+    "Name": "server.items.Furniture_Storage_Locker_Tall.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,26 +8,26 @@
     "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Vertical_Terminal.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Storage_Locker_Tall.png",
   "IconProperties": {
     "Scale": 0.4,
     "Rotation": [
-      22.5,
+      24.5,
       45,
       22.5
     ],
     "Translation": [
-      1,
-      -26
+      5,
+      -31
     ]
   },
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Terminal/Vertical_Terminal.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Storage_Locker/Storage_Locker.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Terminal/Vertical_Terminal_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Storage_Locker/Storage_Locker_Texture.png",
         "Weight": 1
       }
     ],
@@ -41,7 +41,7 @@
       }
     },
     "Material": "Solid",
-    "ParticleColor": "#980c8d",
+    "ParticleColor": "#7e7e85",
     "Support": {
       "Down": [
         {
@@ -53,7 +53,7 @@
     "Opacity": "Transparent",
     "RequiresAlphaBlending": false,
     "CubeShadingMode": "Flat",
-    "HitboxType": "Vertical_Terminal",
+    "HitboxType": "Storage_Locker_Tall",
     "Light": {
       "Color": "#244"
     }
