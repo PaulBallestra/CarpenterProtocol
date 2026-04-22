@@ -55,10 +55,6 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
 
         assert game != null;
 
-        if(game.getState() == MiniGameState.CREATED){
-            BroadcastMessage.toWorld(world, "MiniGame created!", MessageType.DEBUG);
-        }
-
         int seconds = (int) Math.ceil(game.getStartingTimer());
         if (seconds > 0 && Math.ceil(game.getStartingTimer() - seconds) < dt && game.getState() == MiniGameState.STARTING) {
             showMinorUITitle(store, seconds, world);

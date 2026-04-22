@@ -26,6 +26,21 @@
         {
           "FaceType": "Full"
         }
+      ],
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "South": [
+        {
+          "FaceType": "Full"
+        }
       ]
     },
     "Gathering": {
@@ -34,7 +49,6 @@
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
     "ParticleColor": "#a0a0a0",
-    "Looping": true,
     "Supporting": {
       "West": [
         {

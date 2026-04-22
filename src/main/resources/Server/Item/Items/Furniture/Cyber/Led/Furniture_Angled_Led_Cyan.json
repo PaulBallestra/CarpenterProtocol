@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Angled_Led_Up.name"
+    "Name": "server.items.Furniture_Angled_Led_Cyan.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,7 +8,7 @@
     "Furniture.Lighting"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Angled_Led_Up.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Angled_Led_Down.png",
   "IconProperties": {
     "Scale": 0.6,
     "Rotation": [
@@ -28,10 +28,10 @@
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Angled_Led_Up.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Angled_Led.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Angled_Led_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Angled_Led_Cyan_Texture.png",
         "Weight": 1
       }
     ],
@@ -64,9 +64,9 @@
         }
       ]
     },
-    "VariantRotation": "NESW",
+    "VariantRotation": "UpDownNESW",
     "Light": {
-      "Color": "#08a"
+      "Color": "#09a"
     },
     "ParticleColor": "#63909a"
   },

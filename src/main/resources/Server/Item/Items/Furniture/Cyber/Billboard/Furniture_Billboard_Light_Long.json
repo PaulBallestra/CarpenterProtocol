@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Angled_Led_Down.name"
+    "Name": "server.items.Furniture_Billboard_Light_Long.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,7 +8,7 @@
     "Furniture.Lighting"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Angled_Led_Down.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Billboard_Light_Long.png",
   "IconProperties": {
     "Scale": 0.6,
     "Rotation": [
@@ -17,7 +17,7 @@
       22.5
     ],
     "Translation": [
-      9,
+      -8,
       -19
     ]
   },
@@ -28,47 +28,30 @@
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Angled_Led_Down.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Billboard/Billboard_Light_Long.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Angled_Led_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Billboard/Billboard_Light_Texture.png",
         "Weight": 1
       }
     ],
     "DrawType": "Model",
     "Flags": {},
-    "HitboxType": "Led_Tube1_Horizontal_Center",
+    "HitboxType": "Billboard_Light_Long",
     "Material": "Solid",
     "Opacity": "Transparent",
     "Support": {
-      "East": [
-        {
-          "FaceType": "Full"
-        }
-      ],
       "North": [
         {
           "FaceType": "Full"
         }
-      ],
-      "West": [
-        {
-          "FaceType": "Full"
-        }
       ]
     },
-    "Supporting": {
-      "Up": [
-        {
-          "FaceType": "Full"
-        }
-      ]
-    },
-    "VariantRotation": "NESW",
+    "VariantRotation": "UpDownNESW",
     "Light": {
-      "Color": "#08a"
+      "Color": "#999"
     },
-    "ParticleColor": "#63909a"
+    "ParticleColor": "#616262"
   },
   "Tags": {
     "Type": [

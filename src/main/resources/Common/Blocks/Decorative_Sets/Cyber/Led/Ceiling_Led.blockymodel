@@ -41,7 +41,7 @@
             {
               "id": "3",
               "name": "Light",
-              "position": {"x": 0, "y": -7.125, "z": 0},
+              "position": {"x": 0, "y": -4.125, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -233,11 +233,11 @@
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "box",
-                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "offset": {"x": 0, "y": 1.5, "z": 0},
                     "stretch": {"x": 1, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
-                      "size": {"x": 2, "y": 18, "z": 2}
+                      "size": {"x": 2, "y": 15, "z": 2}
                     },
                     "textureLayout": {
                       "back": {
@@ -274,11 +274,11 @@
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "box",
-                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "offset": {"x": 0, "y": 1.5, "z": 0},
                     "stretch": {"x": 1, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
-                      "size": {"x": 2, "y": 18, "z": 2}
+                      "size": {"x": 2, "y": 15, "z": 2}
                     },
                     "textureLayout": {
                       "back": {
@@ -313,7 +313,7 @@
             {
               "id": "10",
               "name": "Left",
-              "position": {"x": -28.5, "y": -4.125, "z": 0},
+              "position": {"x": -28.5, "y": -1.125, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -359,7 +359,7 @@
             {
               "id": "11",
               "name": "Right",
-              "position": {"x": 28.5, "y": -4.125, "z": 0},
+              "position": {"x": 28.5, "y": -1.125, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -427,7 +427,7 @@
             {
               "id": "13",
               "name": "LeftMiddle",
-              "position": {"x": -27, "y": -4.125, "z": 0},
+              "position": {"x": -27, "y": -1.125, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -473,7 +473,7 @@
             {
               "id": "14",
               "name": "RightMiddle",
-              "position": {"x": 27, "y": -4.125, "z": 0},
+              "position": {"x": 27, "y": -1.125, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -541,7 +541,7 @@
             {
               "id": "16",
               "name": "TopPart",
-              "position": {"x": 0, "y": -0.625, "z": 0},
+              "position": {"x": 0, "y": 2.375, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -587,7 +587,7 @@
             {
               "id": "17",
               "name": "TopLeftAttach",
-              "position": {"x": -20, "y": 0.875, "z": 0},
+              "position": {"x": -20, "y": 3.875, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -633,7 +633,7 @@
             {
               "id": "18",
               "name": "TopRightAttach",
-              "position": {"x": 20, "y": 0.875, "z": 0},
+              "position": {"x": 20, "y": 3.875, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -679,7 +679,7 @@
             {
               "id": "19",
               "name": "Front",
-              "position": {"x": 0, "y": -4.125, "z": 3.5},
+              "position": {"x": 0, "y": -1.125, "z": 3.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -725,7 +725,7 @@
             {
               "id": "20",
               "name": "Back",
-              "position": {"x": 0, "y": -4.125, "z": -3.5},
+              "position": {"x": 0, "y": -1.125, "z": -3.5},
               "orientation": {"x": 0, "y": 1, "z": 0, "w": 0},
               "shape": {
                 "type": "box",

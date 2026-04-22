@@ -31,10 +31,24 @@
         {
           "FaceType": "Full"
         }
+      ],
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "South": [
+        {
+          "FaceType": "Full"
+        }
       ]
     },
     "ParticleColor": "#a0a0a0",
-    "Looping": true,
     "Supporting": {
       "East": [
         {

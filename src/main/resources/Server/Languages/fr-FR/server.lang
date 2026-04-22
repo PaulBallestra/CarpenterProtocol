@@ -172,6 +172,9 @@ items.Furniture_Transformer_Box.name=Boîte de Transformateur
 
 items.Furniture_Wires.name=Câbles
 
+items.Furniture_Billboard_Light.name=Lumière de Panneau d'Affichage
+items.Furniture_Billboard_Light_Long.name=Lumière de Panneau d'Affichage - Long
+
 items.Furniture_Air_Conditioner.name=Climatiseur
 items.Furniture_Air_Conditioner_Small.name=Climatiseur - Petit
 items.Furniture_Air_Conditioner_Long.name=Climatiseur - Long
@@ -235,8 +238,8 @@ items.Deco_Metal_Crate2x1.name=Caisse Métallique - Large
 items.Furniture_Advertising_Easel.name=Chevalet Publicitaire
 items.Furniture_Advertising_Totem.name=Totem Publicitaire 
 
-items.Furniture_Angled_Led_Down.name=LED Coudé - Bas
-items.Furniture_Angled_Led_Up.name=LED Coudé - Haut
+items.Furniture_Angled_Led_Cyan.name=LED Coudé - Cyan
+items.Furniture_Angled_Led_Purple.name=LED Coudé - Violet
 
 items.Furniture_Neon_Crowd_Control_Barrier.name=Barrière Néon de Contrôle des Foules
 items.Furniture_Concrete_Bench.name=Banc en Béton
@@ -252,8 +255,13 @@ items.Glass_Fence_Cross.name=Barrière en Verre - Croix
 items.Glass_Fence_Corner_Little.name=Barrière en Verre - Coin Petit
 
 items.Glass_Orange.name=Fenêtre Orange
+items.Glass_Clear_Orange.name=Fenêtre Orange - Claire
 items.Glass_Cyan.name=Fenêtre Cyan
-items.Glass_Purple.name=Fenêtre Violet
+items.Glass_Clear_Cyan.name=Fenêtre Cyan - Claire
+items.Glass_Purple.name=Fenêtre Violette
+items.Glass_Clear_Purple.name=Fenêtre Violette - Claire
+items.Glass_Grey.name=Fenêtre Grise
+items.Glass_Clear_Grey.name=Fenêtre Grise - Claire
 
 items.Furniture_Server_Rack.name=Rack Serveurs
 

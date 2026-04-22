@@ -18,7 +18,7 @@
     ],
     "Translation": [
       -13,
-      -22
+      -17
     ]
   },
   "BlockType": {
@@ -39,12 +39,12 @@
       }
     },
     "Light": {
-      "Color": "#919",
+      "Color": "#c1c",
       "Radius": 0
     },
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#eb92fb",
+    "ParticleColor": "#b166bf",
     "Support": {
       "Up": [
         {
@@ -90,51 +90,6 @@
       ]
     },
     "HitboxType": "Ceiling_Led",
-    "Interactions": {
-      "Use": {
-        "Interactions": [
-          {
-            "Type": "ChangeState",
-            "Changes": {
-              "default": "Off",
-              "Off": "default"
-            }
-          }
-        ]
-      }
-    },
-    "State": {
-      "Definitions": {
-        "On": {
-          "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
-          "DrawType": "Model",
-          "CustomModelTexture": [
-            {
-              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led_Texture.png"
-            }
-          ],
-          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led.blockymodel",
-          "Light": {
-            "Color": "#733"
-          }
-        },
-        "Off": {
-          "InteractionHint": "server.interactionHints.turnon",
-          "Light": null,
-          "Particles": null,
-          "InteractionSoundEventId": "SFX_Torch_Off",
-          "AmbientSoundEventId": null,
-          "DrawType": "Model",
-          "CustomModelTexture": [
-            {
-              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led_Texture.png"
-            }
-          ],
-          "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led.blockymodel"
-        }
-      }
-    },
-    "InteractionHint": "server.interactionHints.turnoff",
     "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
     "Looping": true,
     "VariantRotation": "NESW"
