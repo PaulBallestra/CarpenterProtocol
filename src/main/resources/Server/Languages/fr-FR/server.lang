@@ -248,6 +248,10 @@ items.Furniture_Angled_Led_Cyan.name=LED Coudé - Cyan
 items.Furniture_Angled_Led_Purple.name=LED Coudé - Violet
 
 items.Furniture_Neon_Crowd_Control_Barrier.name=Barrière Néon de Contrôle des Foules
+items.Furniture_Concrete_Control_Barrier.name=Barrière de Contrôle des Foules en Béton
+items.Furniture_Dark_Concrete_Control_Barrier.name=Barrière de Contrôle des Foules en Béton Foncé
+items.Furniture_Dark_Concrete_Control_Barrier_Warning.name=Barrière de Contrôle des Foules en Béton Foncé - Warning
+
 items.Furniture_Concrete_Bench.name=Banc en Béton
 items.Furniture_Antiram_Bollard.name=Borne Anti-Effraction
 

@@ -1,0 +1,66 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Concrete_Control_Barrier.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Concrete_Control_Barrier.png",
+  "BlockType": {
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Barrier/Concrete_Control_Barrier.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Barrier/Concrete_Control_Barrier_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Gathering": {
+      "Soft": {
+        "DropList": "Barrels"
+      }
+    },
+    "HitboxType": "Chest_Large",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#848484",
+    "RandomRotation": "None",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        },
+        {
+          "FaceType": "Barrel"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Stone",
+    "VariantRotation": "NESW"
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Ancient"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      11,
+      -8
+    ]
+  }
+}

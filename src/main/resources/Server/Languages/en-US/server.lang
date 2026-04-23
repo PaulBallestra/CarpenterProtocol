@@ -248,6 +248,10 @@ items.Furniture_Angled_Led_Cyan.name=Led Angled - Cyan
 items.Furniture_Angled_Led_Purple.name=Led Angled - Violet
 
 items.Furniture_Neon_Crowd_Control_Barrier.name=Neon Crowd Control Barrier
+items.Furniture_Concrete_Control_Barrier.name=Concrete Control Barrier
+items.Furniture_Dark_Concrete_Control_Barrier.name=Dark Concrete Control Barrier
+items.Furniture_Dark_Concrete_Control_Barrier_Warning.name=Dark Concrete Control Barrier - Warning
+
 items.Furniture_Concrete_Bench.name=Concrete Bench
 items.Furniture_Antiram_Bollard.name=Anti-Ram Bollard
 
