@@ -1,33 +1,33 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Ceiling_Led.name"
+    "Name": "server.items.Furniture_Advertising_Inclined_Ceiling.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
-    "CarpenterProtocolCategory.Lighting",
-    "Furniture.Lighting"
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Ceiling_Led.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Advertising_Inclined_Ceiling.png",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
       352,
-      23,
-      8
+      44,
+      1
     ],
     "Translation": [
-      -13,
-      -17
+      1,
+      -15
     ]
   },
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Inclined_Ceiling.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Ceiling_Led_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Inclined_Ceiling_Texture.png",
         "Weight": 1
       }
     ],
@@ -39,12 +39,12 @@
       }
     },
     "Light": {
-      "Color": "#c1c",
+      "Color": "#d66",
       "Radius": 0
     },
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#b166bf",
+    "ParticleColor": "#d67373",
     "Support": {
       "Up": [
         {
@@ -89,7 +89,8 @@
         }
       ]
     },
-    "HitboxType": "Ceiling_Led",
+    "HitboxType": "Ceiling_Screen",
+    "Looping": false,
     "VariantRotation": "NESW"
   },
   "Tags": {

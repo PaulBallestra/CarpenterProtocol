@@ -1,0 +1,70 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Advertising_Standing_Lcd.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Furniture",
+    "CarpenterProtocolCategory.Furniture"
+  ],
+  "Set": "Furniture_Cyber",
+  "Icon": "Icons/ItemsGenerated/Furniture_Advertising_Standing_Lcd.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      24,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -26
+    ]
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Standing_Lcd.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Standing_Lcd_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {
+      "IsUsable": false
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "Material": "Solid",
+    "ParticleColor": "#828b86",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "VariantRotation": "NESW",
+    "Opacity": "Transparent",
+    "RequiresAlphaBlending": false,
+    "CubeShadingMode": "Flat",
+    "HitboxType": "Standing_Lcd",
+    "Light": {
+      "Color": "#244"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Lumberjack"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

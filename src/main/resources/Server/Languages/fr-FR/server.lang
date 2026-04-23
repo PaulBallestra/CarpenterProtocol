@@ -239,6 +239,10 @@ items.Deco_Metal_Crate2x1.name=Caisse Métallique - Large
 
 items.Furniture_Advertising_Easel.name=Chevalet Publicitaire
 items.Furniture_Advertising_Totem.name=Totem Publicitaire 
+items.Furniture_Advertising_Standing_Lcd.name=Écran LCD Publicitaire sur Pied
+items.Furniture_Advertising_Poster_Light_Box.name=Caisson Lumineux pour Affiches Publicitaires
+items.Furniture_Advertising_Outdoor_Signage.name=Affichage Publicitaire Extérieur
+items.Furniture_Advertising_Inclined_Ceiling.name=Écran Publicitaire Incliné
 
 items.Furniture_Angled_Led_Cyan.name=LED Coudé - Cyan
 items.Furniture_Angled_Led_Purple.name=LED Coudé - Violet

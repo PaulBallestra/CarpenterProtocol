@@ -239,6 +239,10 @@ items.Deco_Metal_Crate2x1.name=Metal Crate - Large
 
 items.Furniture_Advertising_Easel.name=Advertising Easel
 items.Furniture_Advertising_Totem.name=Advertising Totem
+items.Furniture_Advertising_Standing_Lcd.name=Advertising Standing LCD
+items.Furniture_Advertising_Poster_Light_Box.name=Advertising Poster Light Box
+items.Furniture_Advertising_Outdoor_Signage.name=Advertising Outdoor Signage
+items.Furniture_Advertising_Inclined_Ceiling.name=Advertising Inclined Ceiling Screen
 
 items.Furniture_Angled_Led_Cyan.name=Led Angled - Cyan
 items.Furniture_Angled_Led_Purple.name=Led Angled - Violet
