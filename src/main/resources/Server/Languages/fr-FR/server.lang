@@ -173,6 +173,7 @@ items.Furniture_Electrical_Boxes.name=Boîtiers Électrique
 items.Furniture_Transformer_Box.name=Boîte de Transformateur
 
 items.Furniture_Fuse_Box_Wall.name=Boîte à Fusibles - Murale
+items.Furniture_Fuse_Box_Ground.name=Boîte à Fusibles - Sol
 
 items.Furniture_Wires.name=Câbles
 

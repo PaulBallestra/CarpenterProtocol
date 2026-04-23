@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Fuse_Box_Ground.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Fuse_Box_Ground.png",
+  "Categories": [
+    "Blocks.Deco",
+    "CarpenterProtocolCategory.Deco"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Fuse_Box/Fuse_Box_Ground.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Fuse_Box/Fuse_Box_Ground_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1,
+    "HitboxType": "Fuse_Box_Ground",
+    "VariantRotation": "NESW",
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "ParticleColor": "#acacac",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -8,
+      -34
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Metal",
+  "Set": "Furniture_Cyber"
+}
