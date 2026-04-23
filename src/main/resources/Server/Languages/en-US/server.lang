@@ -172,6 +172,8 @@ items.Furniture_Electrical_Box_Connected.name=Connected Electrical Box
 items.Furniture_Electrical_Boxes.name=Electrical Boxes
 items.Furniture_Transformer_Box.name=Transformer Box
 
+items.Furniture_Fuse_Box_Wall.name=Fuse Box - Wall
+
 items.Furniture_Wires.name=Wires
 
 items.Furniture_Billboard_Light.name=Billboard Light

@@ -172,6 +172,8 @@ items.Furniture_Electrical_Box_Connected.name=Coffret Électrique Connecté
 items.Furniture_Electrical_Boxes.name=Boîtiers Électrique
 items.Furniture_Transformer_Box.name=Boîte de Transformateur
 
+items.Furniture_Fuse_Box_Wall.name=Boîte à Fusibles - Murale
+
 items.Furniture_Wires.name=Câbles
 
 items.Furniture_Billboard_Light.name=Lumière de Panneau d'Affichage
