@@ -286,6 +286,11 @@ items.Dark_Iron_Roof_Shallow.name=Dark Iron Roof - Shallow
 items.Dark_Iron_Roof_Flat.name=Dark Iron Roof - Horizontal
 items.Dark_Iron_Roof_Vertical.name=Dark Iron Roof - Vertical
 
+items.Build_Dark_Iron_Roof.name=Build Dark Iron Roof
+items.Build_Dark_Iron_Roof_Flat.name=Build Dark Iron Roof Flat
+items.Build_Dark_Iron_Roof_Shallow.name=Build Dark Iron Roof Shallow
+items.Build_Dark_Iron_Roof_Steep.name=Build Dark Iron Roof Steep
+
 ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Rocks
 ui.carpenterprotocolcategory.metal=Carpenter Protocol - Metal
 ui.carpenterprotocolcategory.deco=Carpenter Protocol - Decoration

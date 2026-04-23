@@ -285,6 +285,11 @@ items.Dark_Iron_Roof_Shallow.name=Toit en Fer Sombre - Pente Peu Raide
 items.Dark_Iron_Roof_Flat.name=Toit en Fer Sombre - Horizontal
 items.Dark_Iron_Roof_Vertical.name=Toit en Fer Sombre - Vertical
 
+items.Build_Dark_Iron_Roof.name=Toit en Fer Sombre Build
+items.Build_Dark_Iron_Roof_Flat.name=Toit en Fer Sombre Build - Plat
+items.Build_Dark_Iron_Roof_Shallow.name=Toit en Fer Sombre Build - Pente Peu Raide
+items.Build_Dark_Iron_Roof_Steep.name=Toit en Fer Sombre Build - Pente Raide
+
 ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Roches
 ui.carpenterprotocolcategory.metal=Carpenter Protocol - Métal
 ui.carpenterprotocolcategory.deco=Carpenter Protocol - Décoration
