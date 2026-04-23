@@ -24,7 +24,7 @@
         "DropList": "Barrels"
       }
     },
-    "HitboxType": "Chest_Large",
+    "HitboxType": "Control_Barrier",
     "Material": "Solid",
     "Opacity": "Transparent",
     "ParticleColor": "#4a4a4d",

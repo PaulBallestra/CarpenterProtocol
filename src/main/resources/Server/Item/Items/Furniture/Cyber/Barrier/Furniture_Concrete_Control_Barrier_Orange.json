@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Dark_Concrete_Control_Barrier_Warning.name"
+    "Name": "server.items.Furniture_Concrete_Control_Barrier_Orange.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,13 +8,13 @@
     "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Dark_Concrete_Control_Barrier_Warning.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Concrete_Control_Barrier_Orange.png",
   "BlockType": {
     "BlockParticleSetId": "Stone",
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Barrier/Concrete_Control_Barrier.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Barrier/Concrete_Control_Barrier_Warning_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Barrier/Concrete_Control_Barrier_Orange_Texture.png",
         "Weight": 1
       }
     ],
@@ -27,7 +27,7 @@
     "HitboxType": "Control_Barrier",
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#75654c",
+    "ParticleColor": "#b88e51",
     "RandomRotation": "None",
     "Support": {
       "Down": [
