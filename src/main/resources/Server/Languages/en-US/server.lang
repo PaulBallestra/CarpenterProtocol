@@ -138,7 +138,9 @@ items.Furniture_Industrial_Shelf.name=Industrial Shelf
 items.Furniture_Trash_Bin.name=Trash Bin
 items.Furniture_Smart_Trash.name=Smart Trash
 
-items.Furniture_Fake_Door.name=Fake Door
+items.Furniture_Fake_Door.name=Fake Door - Square
+items.Furniture_Fake_Door_Rectangle.name=Fake Door - Rectangle
+
 items.Furniture_Ceiling_Fan.name=Ceiling Fan
 items.Furniture_Metal_Dumpster.name=Metal Dumpster
 items.Furniture_Mechanical_Awning_Motor.name=Mechanical Awning Motor

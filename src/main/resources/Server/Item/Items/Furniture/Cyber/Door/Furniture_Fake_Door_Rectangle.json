@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Fake_Door_Rectangle.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Fake_Door_Rectangle.png",
+  "Categories": [
+    "Furniture.Doors",
+    "CarpenterProtocolCategory.Doors"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "Set": "Furniture_Cyber",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Door/Fake_Door_Rectangle.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Door/Fake_Door_Rectangle_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Door",
+    "VariantRotation": "NESW",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "BlockParticleSetId": "Metal",
+    "ParticleColor": "#646464",
+    "BlockSoundSetId": "Metal",
+    "IsDoor": false,
+    "ConnectedBlockRuleSet": {
+      "Type": "CustomTemplate",
+      "TemplateShapeAssetId": "DoorConnectedBlockTemplate",
+      "TemplateShapeBlockPatterns": {
+        "Default": "Furniture_Fake_Door_Rectangle"
+      }
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -27
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Village"
+    ]
+  },
+  "Scale": 0.8,
+  "ItemSoundSetId": "ISS_Items_Metal"
+}

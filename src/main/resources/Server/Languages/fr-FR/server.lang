@@ -138,7 +138,9 @@ items.Furniture_Industrial_Shelf.name=Étagère Industrielle
 items.Furniture_Trash_Bin.name=Poubelle
 items.Furniture_Smart_Trash.name=Poubelle Intelligente
 
-items.Furniture_Fake_Door.name=Fausse Porte
+items.Furniture_Fake_Door.name=Fausse Porte - Carrée
+items.Furniture_Fake_Door_Rectangle.name=Fausse Porte - Rectangle
+
 items.Furniture_Ceiling_Fan.name=Ventilateur de Plafond
 items.Furniture_Metal_Dumpster.name=Benne à Ordures
 items.Furniture_Mechanical_Awning_Motor.name=Moteur Mécanique de Store
