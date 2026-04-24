@@ -52,8 +52,11 @@
       ]
     },
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Chair/Cyber_Chair.blockymodel",
-    "ParticleColor": "#5b3222",
-    "BlockSoundSetId": "Metal"
+    "ParticleColor": "#597e7b",
+    "BlockSoundSetId": "Metal",
+    "Light": {
+      "Color": "#255"
+    }
   },
   "PlayerAnimationsId": "Block",
   "IconProperties": {
