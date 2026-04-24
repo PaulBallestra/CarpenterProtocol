@@ -264,7 +264,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1.1},
+                    "stretch": {"x": 1, "y": 1, "z": 1.2},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 1, "y": 1, "z": 2}
@@ -284,7 +284,7 @@
                     "unwrapMode": "custom",
                     "visible": true,
                     "doubleSided": true,
-                    "shadingMode": "flat"
+                    "shadingMode": "fullbright"
                   }
                 },
                 {
@@ -295,7 +295,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1.1},
+                    "stretch": {"x": 1, "y": 1, "z": 1.2},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 1, "y": 60, "z": 2}
@@ -320,7 +320,7 @@
                     "unwrapMode": "custom",
                     "visible": true,
                     "doubleSided": true,
-                    "shadingMode": "flat"
+                    "shadingMode": "fullbright"
                   }
                 },
                 {
@@ -331,7 +331,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1.1},
+                    "stretch": {"x": 1, "y": 1, "z": 1.2},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 1, "y": 60, "z": 2}
@@ -356,7 +356,7 @@
                     "unwrapMode": "custom",
                     "visible": true,
                     "doubleSided": true,
-                    "shadingMode": "flat"
+                    "shadingMode": "fullbright"
                   }
                 },
                 {
@@ -367,7 +367,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1.1},
+                    "stretch": {"x": 1, "y": 1, "z": 1.2},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 1, "y": 26, "z": 2}
@@ -392,7 +392,7 @@
                     "unwrapMode": "custom",
                     "visible": true,
                     "doubleSided": true,
-                    "shadingMode": "flat"
+                    "shadingMode": "fullbright"
                   }
                 },
                 {
@@ -403,7 +403,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1.1},
+                    "stretch": {"x": 1, "y": 1, "z": 1.2},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 1, "y": 1, "z": 2}
@@ -423,7 +423,7 @@
                     "unwrapMode": "custom",
                     "visible": true,
                     "doubleSided": true,
-                    "shadingMode": "flat"
+                    "shadingMode": "fullbright"
                   }
                 }
               ]

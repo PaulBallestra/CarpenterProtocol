@@ -34,7 +34,8 @@
       ]
     },
     "ParticleColor": "#8c8c8c",
-    "BlockSoundSetId": "Metal"
+    "BlockSoundSetId": "Metal",
+    "Opacity": "Transparent"
   },
   "IconProperties": {
     "Scale": 0.58823,

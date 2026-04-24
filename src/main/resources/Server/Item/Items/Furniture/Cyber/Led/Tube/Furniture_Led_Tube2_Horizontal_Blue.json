@@ -68,7 +68,7 @@
     "Light": {
       "Color": "#004"
     },
-    "ParticleColor": "#0000ff",
+    "ParticleColor": "#5bcac8",
     "Interactions": {
       "Use": {
         "Interactions": [
@@ -102,7 +102,7 @@
           ],
           "HitboxType": "Led_Tube2_Horizontal_Center",
           "Light": {
-            "Color": "#004"
+            "Color": "#067"
           }
         },
         "Top": {

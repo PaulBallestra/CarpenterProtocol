@@ -3,11 +3,11 @@
     {
       "id": "1",
       "name": "StairBase",
-      "position": {"x": 0, "y": 8, "z": 0},
+      "position": {"x": -0.875, "y": 19.25, "z": 1.075},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "box",
-        "offset": {"x": 0, "y": 0, "z": 0},
+        "offset": {"x": 0.875, "y": -11.25, "z": -1.075},
         "stretch": {"x": 1, "y": 1, "z": 1},
         "settings": {
           "isPiece": false,
@@ -36,8 +36,8 @@
           },
           "top": {
             "offset": {"x": 64, "y": 0},
-            "mirror": {"x": true, "y": true},
-            "angle": 270
+            "mirror": {"x": false, "y": false},
+            "angle": 90
           },
           "bottom": {
             "offset": {"x": 32, "y": 0},
@@ -53,98 +53,106 @@
       "children": [
         {
           "id": "2",
-          "name": "Leds",
-          "position": {"x": -0.5, "y": 22.5, "z": 11},
-          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "name": "LedFirst",
+          "position": {"x": 4.5, "y": 13, "z": 4.3},
+          "orientation": {"x": 0, "y": -1, "z": 0, "w": 0},
           "shape": {
-            "type": "box",
-            "offset": {"x": 0, "y": 1, "z": -3},
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
-              "isPiece": false,
-              "size": {"x": 2, "y": 2, "z": 8}
+              "isPiece": false
             },
-            "textureLayout": {
-              "back": {
-                "offset": {"x": 0, "y": 62},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "right": {
-                "offset": {"x": 0, "y": 62},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "front": {
-                "offset": {"x": 0, "y": 62},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "left": {
-                "offset": {"x": 0, "y": 62},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "top": {
-                "offset": {"x": 0, "y": 56},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "bottom": {
-                "offset": {"x": 0, "y": 56},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              }
-            },
+            "textureLayout": {},
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
-            "shadingMode": "fullbright"
+            "shadingMode": "flat"
           },
           "children": [
             {
               "id": "3",
-              "name": "Led2--C1",
-              "position": {"x": 11.5, "y": -1, "z": -8.5},
-              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
+              "name": "LedFirst",
+              "position": {"x": -4, "y": 0, "z": 3.8},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 1, "z": -3},
+                "offset": {"x": 0, "y": 0, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 2, "y": 2, "z": 8},
-                  "isStaticBox": true
+                  "size": {"x": 15, "y": 2, "z": 1}
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 0, "y": 62},
+                    "offset": {"x": 16, "y": 62},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 0, "y": 62},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 0, "y": 62},
+                    "offset": {"x": 4, "y": 62},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 0, "y": 62},
+                    "offset": {"x": 5, "y": 62},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 0, "y": 56},
-                    "mirror": {"x": false, "y": false},
+                    "offset": {"x": 31, "y": 63},
+                    "mirror": {"x": true, "y": true},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 0, "y": 56},
+                    "offset": {"x": 31, "y": 62},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "fullbright"
+              }
+            },
+            {
+              "id": "4",
+              "name": "LedFirst",
+              "position": {"x": 4, "y": 0, "z": -3.8},
+              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -0.1, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 16, "y": 2, "z": 1}
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 15, "y": 62},
                     "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 4, "y": 62},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 5, "y": 62},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 31, "y": 63},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 31, "y": 62},
+                    "mirror": {"x": true, "y": false},
                     "angle": 0
                   }
                 },
@@ -157,7 +165,7 @@
           ]
         },
         {
-          "id": "4",
+          "id": "5",
           "name": "StairStep",
           "position": {"x": -8, "y": 16, "z": 8},
           "orientation": {"x": 0, "y": 1, "z": 0, "w": 0},
@@ -192,8 +200,8 @@
               },
               "top": {
                 "offset": {"x": 48, "y": 64},
-                "mirror": {"x": true, "y": true},
-                "angle": 90
+                "mirror": {"x": false, "y": false},
+                "angle": 270
               }
             },
             "unwrapMode": "custom",
@@ -203,7 +211,7 @@
           }
         },
         {
-          "id": "5",
+          "id": "6",
           "name": "StairStep2",
           "position": {"x": 0, "y": 16, "z": -8},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -238,8 +246,8 @@
               },
               "top": {
                 "offset": {"x": 32, "y": 0},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               }
             },
             "unwrapMode": "custom",

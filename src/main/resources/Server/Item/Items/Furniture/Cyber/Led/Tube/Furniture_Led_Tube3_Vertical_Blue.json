@@ -66,9 +66,9 @@
     },
     "VariantRotation": "NESW",
     "Light": {
-      "Color": "#004"
+      "Color": "#067"
     },
-    "ParticleColor": "#0000ff",
+    "ParticleColor": "#5bcac8",
     "Interactions": {
       "Use": {
         "Interactions": [
