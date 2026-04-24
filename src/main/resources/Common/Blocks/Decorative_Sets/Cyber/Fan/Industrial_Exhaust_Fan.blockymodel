@@ -1175,8 +1175,8 @@
                         {
                           "id": "38",
                           "name": "Helix",
-                          "position": {"x": 0, "y": -3, "z": 0},
-                          "orientation": {"x": 0.07698, "y": -0.07698, "z": -0.7029, "w": 0.7029},
+                          "position": {"x": 1, "y": -3, "z": 0},
+                          "orientation": {"x": 0.07698, "y": 0.07698, "z": 0.7029, "w": 0.7029},
                           "shape": {
                             "type": "box",
                             "offset": {"x": 0, "y": 0, "z": 0},
@@ -1187,7 +1187,7 @@
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 18, "y": 11},
+                                "offset": {"x": 18, "y": 3},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -1197,7 +1197,7 @@
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 18, "y": 3},
+                                "offset": {"x": 18, "y": 11},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -1402,7 +1402,7 @@
                           "id": "44",
                           "name": "Helix",
                           "position": {"x": 3, "y": 0, "z": 0},
-                          "orientation": {"x": 0.10887, "y": 0, "z": 0, "w": 0.99406},
+                          "orientation": {"x": -0.10887, "y": 0, "z": 0, "w": 0.99406},
                           "shape": {
                             "type": "box",
                             "offset": {"x": 0, "y": 0, "z": 0},
@@ -1413,7 +1413,7 @@
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 18, "y": 11},
+                                "offset": {"x": 18, "y": 3},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -1423,7 +1423,7 @@
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 18, "y": 3},
+                                "offset": {"x": 18, "y": 11},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },

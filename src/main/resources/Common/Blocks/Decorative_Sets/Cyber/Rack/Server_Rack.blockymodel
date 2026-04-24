@@ -22,7 +22,7 @@
         {
           "id": "2",
           "name": "ServerRack",
-          "position": {"x": 0, "y": 20, "z": -0.5},
+          "position": {"x": 0, "y": 19.975, "z": 7.025},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",
@@ -40,8 +40,137 @@
           "children": [
             {
               "id": "3",
+              "name": "Lights",
+              "position": {"x": 0, "y": -0.075, "z": 8.075},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "none",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false
+                },
+                "textureLayout": {},
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              },
+              "children": [
+                {
+                  "id": "4",
+                  "name": "Top",
+                  "position": {"x": 0, "y": 10.5, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0.1, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 24, "y": 5},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 88, "y": 14},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                },
+                {
+                  "id": "5",
+                  "name": "Second",
+                  "position": {"x": 0, "y": 3.5, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0.1, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 24, "y": 5},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 88, "y": 27},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                },
+                {
+                  "id": "6",
+                  "name": "Third",
+                  "position": {"x": 0, "y": -3.5, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0.1, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 24, "y": 5},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 88, "y": 40},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                },
+                {
+                  "id": "7",
+                  "name": "Fourth",
+                  "position": {"x": 0, "y": -10.5, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0.1, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 24, "y": 5},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 88, "y": 53},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "8",
               "name": "Main",
-              "position": {"x": 0, "y": 0, "z": 0},
+              "position": {"x": 0, "y": 0.025, "z": -7.525},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -80,9 +209,9 @@
               }
             },
             {
-              "id": "4",
+              "id": "9",
               "name": "Top",
-              "position": {"x": 0, "y": 0, "z": 0},
+              "position": {"x": 0, "y": 0.025, "z": -7.525},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -99,7 +228,7 @@
               },
               "children": [
                 {
-                  "id": "5",
+                  "id": "10",
                   "name": "Top",
                   "position": {"x": 0, "y": 15, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -150,7 +279,7 @@
                   }
                 },
                 {
-                  "id": "6",
+                  "id": "11",
                   "name": "Bottom",
                   "position": {"x": 0, "y": -15, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -203,9 +332,9 @@
               ]
             },
             {
-              "id": "7",
+              "id": "12",
               "name": "Servers",
-              "position": {"x": 0, "y": 0, "z": 14.5},
+              "position": {"x": 0, "y": 0.025, "z": 6.975},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -222,7 +351,7 @@
               },
               "children": [
                 {
-                  "id": "8",
+                  "id": "13",
                   "name": "TopServer",
                   "position": {"x": 0, "y": 10.5, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -268,7 +397,7 @@
                   }
                 },
                 {
-                  "id": "9",
+                  "id": "14",
                   "name": "MiddleTopServer",
                   "position": {"x": 0, "y": 3.5, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -314,7 +443,7 @@
                   }
                 },
                 {
-                  "id": "10",
+                  "id": "15",
                   "name": "MiddleBottomServer",
                   "position": {"x": 0, "y": -3.5, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -360,7 +489,7 @@
                   }
                 },
                 {
-                  "id": "11",
+                  "id": "16",
                   "name": "BottomServer",
                   "position": {"x": 0, "y": -10.5, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},

@@ -15,9 +15,25 @@
       {
         "Weight": 1,
         "Texture": "Blocks/Decorative_Sets/Cyber/Rack/Server_Rack_Texture.png"
+      },
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Rack/Server_Rack02_Texture.png",
+        "Weight": 1
+      },
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Rack/Server_Rack03_Texture.png",
+        "Weight": 1
+      },
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Rack/Server_Rack04_Texture.png",
+        "Weight": 1
+      },
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Rack/Server_Rack05_Texture.png"
       }
     ],
-    "HitboxType": "Block_Vertical_Half",
+    "HitboxType": "Block",
     "VariantRotation": "NESW",
     "Flags": {},
     "Gathering": {
@@ -32,39 +48,13 @@
       "Down": [
         {
           "FaceType": "Full"
-        },
-        {
-          "FaceType": "Shelf",
-          "Support": "Ignored"
-        },
-        {
-          "FaceType": "Shelf",
-          "SelfFaceType": "Shelf"
-        }
-      ],
-      "Up": [
-        {
-          "FaceType": "Full"
-        },
-        {
-          "FaceType": "Shelf",
-          "Support": "Ignored"
-        },
-        {
-          "FaceType": "Shelf",
-          "SelfFaceType": "Shelf"
-        }
-      ],
-      "North": [
-        {
-          "FaceType": "Full"
         }
       ]
     },
     "Supporting": {
       "Up": [
         {
-          "FaceType": "Shelf"
+          "FaceType": "Full"
         }
       ]
     },
