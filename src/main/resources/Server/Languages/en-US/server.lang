@@ -131,7 +131,8 @@ items.Furniture_Vertical_Terminal.name=Vertical Terminal
 
 items.Furniture_Atm_Pod.name=ATM
 items.Furniture_Atm_Pod_Alternate.name=ATM - Alternate
-items.Furniture_Vending_Dispenser.name=Vending Machine
+items.Furniture_Vending_Dispenser.name=Vending Machine - Blue
+items.Furniture_Vending_Machine.name=Vending Machine - Green
 
 items.Furniture_Industrial_Shelf.name=Industrial Shelf
 

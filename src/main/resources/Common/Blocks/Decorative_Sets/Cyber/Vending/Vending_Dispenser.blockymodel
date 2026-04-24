@@ -81,7 +81,7 @@
                 "unwrapMode": "custom",
                 "visible": true,
                 "doubleSided": true,
-                "shadingMode": "flat"
+                "shadingMode": "fullbright"
               },
               "children": [
                 {

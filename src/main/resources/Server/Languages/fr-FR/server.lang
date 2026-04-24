@@ -131,7 +131,8 @@ items.Furniture_Vertical_Terminal.name=Borne Verticale
 
 items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
 items.Furniture_Atm_Pod_Alternate.name=Distributeur Automatique de Billets - Alterne
-items.Furniture_Vending_Dispenser.name=Distributeur Automatique
+items.Furniture_Vending_Dispenser.name=Distributeur Automatique - Bleu
+items.Furniture_Vending_Machine.name=Distributeur Automatique - Vert
 
 items.Furniture_Industrial_Shelf.name=Étagère Industrielle
 

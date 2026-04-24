@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Advertising_Totem.name"
+    "Name": "server.items.Furniture_Vending_Machine.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -8,26 +8,26 @@
     "CarpenterProtocolCategory.Furniture"
   ],
   "Set": "Furniture_Cyber",
-  "Icon": "Icons/ItemsGenerated/Furniture_Advertising_Totem.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Vending_Machine.png",
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.35,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
     "Translation": [
-      1,
-      -31
+      2,
+      -28
     ]
   },
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Totem.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Vending/Vending_Machine.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Totem_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Vending/Vending_Machine_Texture.png",
         "Weight": 1
       }
     ],
@@ -41,7 +41,7 @@
       }
     },
     "Material": "Solid",
-    "ParticleColor": "#0c9898",
+    "ParticleColor": "#4c6209",
     "Support": {
       "Down": [
         {
@@ -55,7 +55,7 @@
     "CubeShadingMode": "Flat",
     "HitboxType": "Vending_Machine",
     "Light": {
-      "Color": "#244"
+      "Color": "#352"
     }
   },
   "Tags": {
