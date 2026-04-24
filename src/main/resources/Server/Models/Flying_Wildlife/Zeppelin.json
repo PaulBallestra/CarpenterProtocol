@@ -1,0 +1,58 @@
+{
+  "Model": "NPC/Zeppelin/Zeppelin.blockymodel",
+  "Texture": "NPC/Zeppelin/Zeppelin_Texture.png",
+  "EyeHeight": 0.6,
+  "CrouchOffset": -0.2,
+  "HitBox": {
+    "Max": {
+      "X": 0.4,
+      "Y": 0.9,
+      "Z": 0.4
+    },
+    "Min": {
+      "X": -0.4,
+      "Y": 0,
+      "Z": -0.4
+    }
+  },
+  "MinScale": 48,
+  "MaxScale": 48,
+  "Camera": {
+    "Pitch": {
+      "AngleRange": {
+        "Max": 45,
+        "Min": -30
+      },
+      "TargetNodes": [
+        "Head"
+      ]
+    },
+    "Yaw": {
+      "TargetNodes": [
+        "Head"
+      ]
+    }
+  },
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Flying_Wildlife/Raven/Animations/Default/Idle.blockyanim"
+        }
+      ]
+    }
+  },
+  "Icon": "Icons/ModelsGenerated/Zeppelin.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      0,
+      33,
+      0
+    ],
+    "Translation": [
+      0,
+      -22
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Birds_Passive",
+  "Modify": {
+    "Appearance": "Zeppelin",
+    "FlockArray": [
+      "Raven"
+    ],
+    "DropList": "Drop_Raven",
+    "MaxHealth": 49,
+    "WanderRadius": 15,
+    "IsMemory": false,
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Zeppelin.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}
