@@ -49,7 +49,14 @@
     "Light": {
       "Color": "#167"
     },
-    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Cybernetics_Lab_Sign.blockyanim"
+    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Cybernetics_Lab_Sign.blockyanim",
+    "Support": {
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
   },
   "Tags": {
     "Type": [

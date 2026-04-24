@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Nightfall_Synapse_Sign.name"
+    "Name": "server.items.Furniture_Cyberbar_Sign.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -9,15 +9,15 @@
   ],
   "Set": "Furniture_Cyber",
   "IconProperties": {
-    "Scale": 0.2,
+    "Scale": 0.4,
     "Rotation": [
-      347,
-      25,
-      0
+      345,
+      27,
+      360
     ],
     "Translation": [
-      -36,
-      -29
+      1,
+      1
     ]
   },
   "Interactions": {
@@ -27,14 +27,13 @@
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Nightfall_Synapse_Sign.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Cyberbar_Sign.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Nightfall_Synapse_Sign_Texture-Sheet.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Cyberbar_Sign_Texture.png",
         "Weight": 1
       }
     ],
-    "Looping": true,
     "DrawType": "Model",
     "Gathering": {
       "Soft": {
@@ -43,15 +42,14 @@
     },
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#de4062",
+    "ParticleColor": "#282056",
     "VariantRotation": "NESW",
-    "HitboxType": "Sign_Tall1Halfx1",
+    "HitboxType": "Sign_Tall_Ceiling1x2",
     "Light": {
-      "Color": "#911"
+      "Color": "#518"
     },
-    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Nightfall_Synapse_Sign.blockyanim",
     "Support": {
-      "North": [
+      "Up": [
         {
           "FaceType": "Full"
         }
@@ -66,5 +64,5 @@
       "Lumberjack"
     ]
   },
-  "Icon": "Icons/ItemsGenerated/Furniture_Nightfall_Synapse_Sign.png"
+  "Icon": "Icons/ItemsGenerated/Furniture_Cyberbar_Sign.png"
 }

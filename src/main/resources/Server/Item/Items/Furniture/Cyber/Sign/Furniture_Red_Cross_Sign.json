@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Nightfall_Synapse_Sign.name"
+    "Name": "server.items.Furniture_Red_Cross_Sign.name"
   },
   "PlayerAnimationsId": "Block",
   "Categories": [
@@ -9,15 +9,15 @@
   ],
   "Set": "Furniture_Cyber",
   "IconProperties": {
-    "Scale": 0.2,
+    "Scale": 0.5,
     "Rotation": [
-      347,
-      25,
-      0
+      345,
+      27,
+      360
     ],
     "Translation": [
-      -36,
-      -29
+      2,
+      -16
     ]
   },
   "Interactions": {
@@ -27,14 +27,13 @@
   "BlockType": {
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Nightfall_Synapse_Sign.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Red_Cross_Sign.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Nightfall_Synapse_Sign_Texture-Sheet.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Red_Cross_Sign.png",
         "Weight": 1
       }
     ],
-    "Looping": true,
     "DrawType": "Model",
     "Gathering": {
       "Soft": {
@@ -43,15 +42,14 @@
     },
     "Material": "Solid",
     "Opacity": "Transparent",
-    "ParticleColor": "#de4062",
+    "ParticleColor": "#751e15",
     "VariantRotation": "NESW",
-    "HitboxType": "Sign_Tall1Halfx1",
+    "HitboxType": "Sign_Small",
     "Light": {
-      "Color": "#911"
+      "Color": "#a33"
     },
-    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Nightfall_Synapse_Sign.blockyanim",
     "Support": {
-      "North": [
+      "West": [
         {
           "FaceType": "Full"
         }
@@ -66,5 +64,5 @@
       "Lumberjack"
     ]
   },
-  "Icon": "Icons/ItemsGenerated/Furniture_Nightfall_Synapse_Sign.png"
+  "Icon": "Icons/ItemsGenerated/Furniture_Red_Cross_Sign.png"
 }

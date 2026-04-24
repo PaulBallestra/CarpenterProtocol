@@ -48,6 +48,13 @@
     "HitboxType": "Quickfix_Med_Sign",
     "Light": {
       "Color": "#754"
+    },
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
     }
   },
   "Tags": {

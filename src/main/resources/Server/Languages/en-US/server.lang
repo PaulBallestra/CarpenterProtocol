@@ -223,6 +223,8 @@ items.Furniture_Synth_Mart_Sign.name="Synth Mart" Sign
 items.Furniture_Quickfix_Med_Sign.name="Quickfix Med" Sign
 items.Furniture_Personnel_Only_Sign.name="Authorized Personnel Only" Sign
 items.Furniture_No_Entry_Sign.name="No Entry" Sign
+items.Furniture_Cyberbar_Sign.name="Cyber Bar" Sign
+items.Furniture_Red_Cross_Sign.name=Cross Sign - Red
 
 items.Furniture_Directionnal_Arrows_Sign.name=Directionnal Arrows Sign
 items.Furniture_Directionnal45_Arrows_Sign.name=Directionnal Arrows Sign (45°)

@@ -48,6 +48,13 @@
     "HitboxType": "City_Ramen_Sign",
     "Light": {
       "Color": "#954"
+    },
+    "Support": {
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
     }
   },
   "Tags": {

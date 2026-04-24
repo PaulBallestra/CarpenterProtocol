@@ -34,7 +34,6 @@
         "Weight": 1
       }
     ],
-    "Looping": true,
     "DrawType": "Model",
     "Gathering": {
       "Soft": {
@@ -48,6 +47,13 @@
     "HitboxType": "Sign_Tall2x1",
     "Light": {
       "Color": "#684"
+    },
+    "Support": {
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
     }
   },
   "Tags": {

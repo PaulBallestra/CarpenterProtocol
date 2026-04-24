@@ -1,8 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Directionnal45_Arrows_Sign.name"
+    "Name": "server.items.Furniture_No_Entry_Sign.name"
   },
-  "Icon": "Icons/ItemsGenerated/Furniture_Directionnal45_Arrows_Sign.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_No_Entry_Sign.png",
   "Categories": [
     "Blocks.Deco",
     "CarpenterProtocolCategory.Signs"
@@ -11,16 +11,16 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Directionnal_Arrows/Directionnal_45_Arrows_Sign.blockymodel",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/No_Entry_Sign.blockymodel",
     "CustomModelTexture": [
       {
         "Weight": 1,
-        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Directionnal_Arrows/Directionnal_Arrows_Sign_Texture.png"
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/No_Entry_Sign_Texture.png"
       }
     ],
     "CustomModelScale": 1,
     "HitboxType": "Directionnal_Arrows_Sign",
-    "VariantRotation": "UpDownNESW",
+    "VariantRotation": "NESW",
     "Gathering": {
       "Soft": {}
     },
@@ -33,24 +33,33 @@
         }
       ]
     },
-    "ParticleColor": "#cb84dd",
+    "ParticleColor": "#3f1f1f",
+    "Looping": true,
     "Light": {
-      "Color": "#304"
+      "Color": "#047"
     }
   },
   "PlayerAnimationsId": "Block",
   "IconProperties": {
-    "Scale": 0.6,
+    "Scale": 0.7,
     "Rotation": [
-      0,
-      341,
+      347,
+      24,
       0
     ],
     "Translation": [
-      -6,
-      -16
+      7,
+      -12
     ]
   },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
   "Tags": {
     "Type": [
       "Furniture"
