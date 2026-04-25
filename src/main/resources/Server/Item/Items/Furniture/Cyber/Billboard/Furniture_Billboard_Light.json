@@ -49,9 +49,9 @@
     },
     "VariantRotation": "UpDownNESW",
     "Light": {
-      "Color": "#999"
+      "Color": "#9a3"
     },
-    "ParticleColor": "#616262"
+    "ParticleColor": "#535352"
   },
   "Tags": {
     "Type": [

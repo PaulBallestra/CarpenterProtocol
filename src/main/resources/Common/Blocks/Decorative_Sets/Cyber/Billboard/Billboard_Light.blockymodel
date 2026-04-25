@@ -476,7 +476,7 @@
                   "shape": {
                     "type": "box",
                     "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 0.995, "y": 1, "z": 1},
+                    "stretch": {"x": 0.99, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
                       "size": {"x": 14, "y": 9, "z": 9}
