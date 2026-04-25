@@ -1,14 +1,17 @@
 package fr.seeeek.carpenterprotocol.events;
 
 import com.hypixel.hytale.component.Store;
+import com.hypixel.hytale.math.vector.Transform;
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
+import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.World;
+import com.hypixel.hytale.server.core.universe.world.spawn.ISpawnProvider;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
@@ -76,7 +79,15 @@ public class MiniGamePlayerComponentEvent {
 
                 MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 0, 0);
 
-                player.getHudManager().setCustomHud(playerRef, miniGameInGameHud);
+                player.getHudManager().setCustomHud (playerRef, miniGameInGameHud);
+
+                // Spawn override fallback
+                ISpawnProvider spawnProvider = player.getWorld().getWorldConfig().getSpawnProvider();
+                if (spawnProvider == null) return;
+
+                Transform spawnTransform = spawnProvider.getSpawnPoint(player.getWorld(), playerRef.getUuid());
+                Teleport teleport = Teleport.createForPlayer(player.getWorld(), spawnTransform);
+                store.addComponent(event.getPlayerRef(), Teleport.getComponentType(), teleport);
             });
         }
     }

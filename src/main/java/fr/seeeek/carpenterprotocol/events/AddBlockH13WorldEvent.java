@@ -80,7 +80,6 @@ public class AddBlockH13WorldEvent {
 
         worldConfig.setSpawnProvider(new GlobalSpawnProvider(new Transform(waitingZonePortalSpawnPoint)));
 
-        // Don't save on disk
         worldConfig.setCanSaveChunks(false);
         worldConfig.setSavingConfig(false);
         worldConfig.setDeleteOnRemove(true);
