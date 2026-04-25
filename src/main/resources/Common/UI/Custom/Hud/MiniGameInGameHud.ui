@@ -9,7 +9,7 @@ $C.@DecoratedContainer {
     Background: #000000(0.0);
 
     #Title {
-      $C.@Title #LobbyDisplayName { @Text = "Lobby"; }
+      $C.@Title #LobbyDisplayName { @Text = "Carpenter Protocol"; }
     }
 
     #Content {
@@ -20,7 +20,7 @@ $C.@DecoratedContainer {
       Group {
         Background: #000000(0.5);
 
-        Label #MiniGameType { Text: "Laser Tag"; Style: (FontSize: 16, HorizontalAlignment: Center); }
+        Label #MiniGameType { Text: "Block H13"; Style: (FontSize: 16, HorizontalAlignment: Center); }
       }
 
       Group { Anchor: (Height: 8); } // Spacer

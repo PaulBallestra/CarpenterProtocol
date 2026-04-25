@@ -208,15 +208,15 @@
   },
   "ItemSoundSetId": "ISS_Items_Metal",
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.4,
     "Rotation": [
-      8,
-      48,
-      8
+      22.5,
+      45,
+      22.5
     ],
     "Translation": [
-      1,
-      -28
+      0,
+      -24
     ]
   },
   "Set": "Furniture_Cyber"

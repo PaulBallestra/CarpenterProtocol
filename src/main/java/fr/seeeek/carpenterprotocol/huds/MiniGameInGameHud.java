@@ -29,9 +29,9 @@ public class MiniGameInGameHud extends CustomUIHud {
 
         UICommandBuilder commandBuilder = new UICommandBuilder();
 
-        commandBuilder.set("#LobbyDisplayName.Text", lobby.getLobbyDisplayName());
+        commandBuilder.set("#LobbyDisplayName.Text", "Carpenter Protocol");
 
-        commandBuilder.set("#MiniGameType.Text", "Laser Tag");
+        commandBuilder.set("#MiniGameType.Text", "Block H13");
 
         commandBuilder.set("#MiniGameState.Text",
                 "State: " + game.getState());
