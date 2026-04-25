@@ -21,6 +21,7 @@ public class MiniGameHudComponent implements Component<EntityStore> {
     private MiniGameState lastState;
     private LaserTagPlayerComponent lastLaserTagPlayerComponent;
     private int lastAliveCount;
+    private int lastPlayersCount;
 
     @Override
     public Component<EntityStore> clone() {
@@ -30,6 +31,7 @@ public class MiniGameHudComponent implements Component<EntityStore> {
     public void cache(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent) {
         lastState = game.getState();
         lastAliveCount = game.getAlivePlayers().size();
+        lastPlayersCount = game.getPlayers().size();
         lastLaserTagPlayerComponent = (LaserTagPlayerComponent) laserTagPlayerComponent.clone();
     }
 
@@ -38,6 +40,7 @@ public class MiniGameHudComponent implements Component<EntityStore> {
 
         return lastState != game.getState()
                 || lastAliveCount != game.getAlivePlayers().size()
+                || lastPlayersCount != game.getPlayers().size()
                 || lastLaserTagPlayerComponent.getKills() != laserTagPlayerComponent.getKills()
                 || lastLaserTagPlayerComponent.getDeaths() != laserTagPlayerComponent.getDeaths();
     }

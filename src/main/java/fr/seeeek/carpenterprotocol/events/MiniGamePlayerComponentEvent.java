@@ -1,21 +1,15 @@
 package fr.seeeek.carpenterprotocol.events;
 
-import com.buuz135.mhud.MultipleHUD;
-import com.hypixel.hytale.common.plugin.PluginIdentifier;
-import com.hypixel.hytale.common.semver.SemverRange;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
-import com.hypixel.hytale.server.core.plugin.PluginManager;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
-import fr.seeeek.carpenterprotocol.common.MessageType;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGamePlayerComponent;
@@ -37,14 +31,13 @@ public class MiniGamePlayerComponentEvent {
         if(player.getReference() == null || player.getWorld() == null) return;
 
         PlayerRef playerRef = player.getWorld().getEntityStore().getStore().getComponent(event.getPlayerRef(), PlayerRef.getComponentType());
-        // player.sendMessage(Message.raw("COMPONENT " + player.getWorld().getEntityStore().getStore().getComponent(event.getPlayerRef(), MiniGamePlayerComponent.getComponentType())));
 
-        // remove MiniGamePlayerComponent
         if(playerRef == null || playerRef.getReference() == null || !playerRef.isValid()) return;
 
         if(player.getWorld().getName().equals(defaultWorldName)) {
             player.getWorld().execute(() -> {
                 MiniGameHudComponent miniGameHudComponent = player.getReference().getStore().getComponent(player.getReference(), MiniGameHudComponent.getComponentType());
+
                 if(miniGameHudComponent != null){
                     CustomUIHud customHud = player.getHudManager().getCustomHud();
                     if (customHud != null) {
@@ -52,20 +45,20 @@ public class MiniGamePlayerComponentEvent {
                         customHud.update(true, builder);
                     }
 
-                    player.getReference().getStore().removeComponent(player.getReference(), MiniGameHudComponent.getComponentType());
-                    // BroadcastMessage.toPlayer(playerRef, "- Removed MiniGameHudComponent", MessageType.DEBUG);
+                    player.getReference().getStore().removeComponent(
+                            player.getReference(),
+                            MiniGameHudComponent.getComponentType()
+                    );
                 }
 
                 MiniGamePlayerComponent miniGamePlayerComponent = player.getReference().getStore().getComponent(player.getReference(), MiniGamePlayerComponent.getComponentType());
                 if (miniGamePlayerComponent != null) {
                     player.getReference().getStore().removeComponent(player.getReference(), MiniGamePlayerComponent.getComponentType());
-                    // BroadcastMessage.toPlayer(playerRef, "- Removed MiniGamePlayerComponent", MessageType.DEBUG);
                 }
 
                 LaserTagPlayerComponent laserTagPlayerComponent = player.getReference().getStore().getComponent(player.getReference(), LaserTagPlayerComponent.getComponentType());
                 if (laserTagPlayerComponent != null) {
                     player.getReference().getStore().removeComponent(player.getReference(), LaserTagPlayerComponent.getComponentType());
-                    // BroadcastMessage.toPlayer(playerRef, "- Removed LaserTagPlayerComponent", MessageType.DEBUG);
                 }
             });
         }
@@ -81,19 +74,7 @@ public class MiniGamePlayerComponentEvent {
                 store.addComponent(event.getPlayerRef(), MiniGamePlayerComponent.getComponentType(), miniGamePlayerComponent);
                 store.addComponent(event.getPlayerRef(), MiniGameHudComponent.getComponentType(), miniGameHudComponent);
 
-                MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 0, 0, "10:00");
-
-                PluginIdentifier multipleHudPluginId = PluginIdentifier.fromString("Buuz135:MultipleHUD");
-
-                boolean hasMultipleHUD = PluginManager.get().hasPlugin(multipleHudPluginId, SemverRange.WILDCARD);
-                BroadcastMessage.toPlayer(playerRef, "hasMultipleHUD: " + hasMultipleHUD, MessageType.DEBUG);
-                if (hasMultipleHUD) {
-                    MultipleHUD multipleHUD = MultipleHUD.getInstance();
-                    if (multipleHUD != null && multipleHUD.isEnabled()) {
-                        multipleHUD.setCustomHud(player, playerRef, "MiniGameInGameHud", miniGameInGameHud);
-                        return;
-                    }
-                }
+                MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 0, 0);
 
                 player.getHudManager().setCustomHud(playerRef, miniGameInGameHud);
             });

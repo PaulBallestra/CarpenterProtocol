@@ -175,7 +175,5 @@ public class LaserTagCreateCommand extends AbstractPlayerCommand {
         gameWorld.getEntityStore().getStore().addEntity(miniGameEntityHolder, AddReason.SPAWN);
 
         initCubeLeds(gameWorld.getEntityStore().getStore(), miniGameComponent);
-
-//        LobbyCreatedEvent.dispatch(ref, lobby);
     }
 }

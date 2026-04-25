@@ -70,6 +70,7 @@ public class MiniGameComponent implements Component<EntityStore> {
     private int minPlayers;
     private int maxPlayers;
     private final Set<Ref<EntityStore>> alivePlayers = new HashSet<>();
+    private final Set<Ref<EntityStore>> players = new HashSet<>();
 
     private boolean isStartingTitleShown = false;
     private boolean isWinnerTitleShown = false;
@@ -154,4 +155,5 @@ public class MiniGameComponent implements Component<EntityStore> {
     public Set<Ref<EntityStore>> getAlivePlayers() {
         return alivePlayers;
     }
+    public Set<Ref<EntityStore>> getPlayers() { return players; }
 }

@@ -13,13 +13,11 @@ public class MiniGameInGameHud extends CustomUIHud {
     // Data to display - passed via constructor
     private final int dataValue1;
     private final int dataValue2;
-    private final String dataValue3;
 
-    public MiniGameInGameHud(@NonNullDecl PlayerRef playerRef, int dataValue1, int dataValue2, String dataValue3) {
+    public MiniGameInGameHud(@NonNullDecl PlayerRef playerRef, int dataValue1, int dataValue2) {
         super(playerRef);
         this.dataValue1 = dataValue1;
         this.dataValue2 = dataValue2;
-        this.dataValue3 = dataValue3;
     }
 
     @Override
@@ -33,7 +31,7 @@ public class MiniGameInGameHud extends CustomUIHud {
 
         commandBuilder.set("#LobbyDisplayName.Text", lobby.getLobbyDisplayName());
 
-        commandBuilder.set("#MiniGameType.Text", game.getMiniGameType().toString());
+        commandBuilder.set("#MiniGameType.Text", "Laser Tag");
 
         commandBuilder.set("#MiniGameState.Text",
                 "State: " + game.getState());
@@ -41,16 +39,13 @@ public class MiniGameInGameHud extends CustomUIHud {
         commandBuilder.set("#PlayerCount.Text",
                 game.getAlivePlayers().size()
                         + "/" +
-                        game.getMaxPlayers());
+                        game.getMinPlayers());
 
         commandBuilder.set("#Stat1Value.Text", String.valueOf(laserTagPlayerComponent.getKills()));
         commandBuilder.set("#Stat1Key.Text", "Kills");
 
         commandBuilder.set("#Stat2Value.Text", String.valueOf(laserTagPlayerComponent.getDeaths()));
         commandBuilder.set("#Stat2Key.Text", "Deaths");
-
-        commandBuilder.set("#Stat3Value.Text", dataValue3);
-        commandBuilder.set("#Stat3Key.Text", "Timer");
 
         update(false, commandBuilder);
     }
