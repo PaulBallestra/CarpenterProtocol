@@ -122,7 +122,7 @@ public class InstanceService {
         return universe.makeWorld(worldKey, worldPath, config)
                 .thenCompose(world -> {
                     // Load and spawn the prefab
-                    BlockSelection prefabFromAssets = PrefabStore.get().getServerPrefab(prefabKey);
+                    BlockSelection prefabFromAssets = PrefabStore.get().getAssetPrefabFromAnyPack(prefabKey);
                     if (prefabFromAssets == null) {
                         return CompletableFuture.failedFuture(new IllegalArgumentException("Prefab not found: " + prefabKey));
                     }

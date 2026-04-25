@@ -106,7 +106,7 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
     // HELPERS METHODS
     private void spawnArena(World world, Store<EntityStore> store){
-        BlockSelection prefabFromAssets = PrefabStore.get().getServerPrefab("Prefabs/Laser_Tag_Arena.prefab.json");
+        BlockSelection prefabFromAssets = PrefabStore.get().getAssetPrefabFromAnyPack("Laser_Tag_Arena.prefab.json");
         BlockSelection prefab = new BlockSelection(prefabFromAssets);
 
         world.execute(() -> {

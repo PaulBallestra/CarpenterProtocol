@@ -59,7 +59,7 @@ public class LaserTagCreateCommand extends AbstractPlayerCommand {
 
         String prefabKey = "Laser_Tag_Waiting_Zone.prefab.json";
         Vector3d waitingZoneSpawnPoint = new Vector3d(0, 78, 0);
-        CompletableFuture<World> worldCompletableFuture = instanceService.createInstance("mini_game-laser_tag-" + playerName, prefabKey, true, false, null, waitingZoneSpawnPoint, "Zone3_Cave_Deep", true, "LaserTag_GameplayConfig.json");
+        CompletableFuture<World> worldCompletableFuture = instanceService.createInstance("mini_game-laser_tag-" + playerName, prefabKey, true, false, null, waitingZoneSpawnPoint, "Zone3_Cave_Deep", true, "LaserTag_GameplayConfig");
 
         worldCompletableFuture.thenApply(gameWorld -> {
             Store<EntityStore> gameWorldStore = gameWorld.getEntityStore().getStore();
