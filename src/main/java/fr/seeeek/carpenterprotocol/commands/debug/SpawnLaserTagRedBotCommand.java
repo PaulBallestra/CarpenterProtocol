@@ -14,6 +14,7 @@ import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import com.hypixel.hytale.server.npc.util.InventoryHelper;
 import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
 import fr.seeeek.carpenterprotocol.common.MessageType;
+import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import it.unimi.dsi.fastutil.Pair;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
