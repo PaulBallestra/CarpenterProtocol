@@ -1,15 +1,21 @@
 package fr.seeeek.carpenterprotocol.events;
 
+import com.buuz135.mhud.MultipleHUD;
+import com.hypixel.hytale.common.plugin.PluginIdentifier;
+import com.hypixel.hytale.common.semver.SemverRange;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
+import com.hypixel.hytale.server.core.plugin.PluginManager;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
+import fr.seeeek.carpenterprotocol.common.MessageType;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGamePlayerComponent;
@@ -76,14 +82,20 @@ public class MiniGamePlayerComponentEvent {
                 store.addComponent(event.getPlayerRef(), MiniGameHudComponent.getComponentType(), miniGameHudComponent);
 
                 MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 0, 0, "10:00");
+
+                PluginIdentifier multipleHudPluginId = PluginIdentifier.fromString("Buuz135:MultipleHUD");
+
+                boolean hasMultipleHUD = PluginManager.get().hasPlugin(multipleHudPluginId, SemverRange.WILDCARD);
+                BroadcastMessage.toPlayer(playerRef, "hasMultipleHUD: " + hasMultipleHUD, MessageType.DEBUG);
+                if (hasMultipleHUD) {
+                    MultipleHUD multipleHUD = MultipleHUD.getInstance();
+                    if (multipleHUD != null && multipleHUD.isEnabled()) {
+                        multipleHUD.setCustomHud(player, playerRef, "MiniGameInGameHud", miniGameInGameHud);
+                        return;
+                    }
+                }
+
                 player.getHudManager().setCustomHud(playerRef, miniGameInGameHud);
-
-//                if(player.getWorld().getName().startsWith("epixia-mini_game-laser_tag")){
-//                    LaserTagInGameHud laserTagInGameHud = new LaserTagInGameHud(playerRef);
-//                    player.getHudManager().setCustomHud(playerRef, laserTagInGameHud);
-//                }
-
-                // BroadcastMessage.toPlayer(playerRef, "+ Added MiniGameHudComponent", MessageType.DEBUG);
             });
         }
     }
