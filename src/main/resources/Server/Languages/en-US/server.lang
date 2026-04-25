@@ -295,6 +295,9 @@ items.Build_Dark_Iron_Roof_Flat.name=Build Dark Iron Roof Flat
 items.Build_Dark_Iron_Roof_Shallow.name=Build Dark Iron Roof Shallow
 items.Build_Dark_Iron_Roof_Steep.name=Build Dark Iron Roof Steep
 
+items.Block_H13_Portal.name=Portal to Block H13
+items.Block_H13_Portal.description=A Portal from Carpenter Protocol that lets you play a Laser Tag game on the map : Block H13
+
 ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Rocks
 ui.carpenterprotocolcategory.metal=Carpenter Protocol - Metal
 ui.carpenterprotocolcategory.deco=Carpenter Protocol - Decoration
@@ -305,3 +308,4 @@ ui.carpenterprotocolcategory.lighting=Carpenter Protocol - Lighting
 ui.carpenterprotocolcategory.armors=Carpenter Protocol - Armors
 ui.carpenterprotocolcategory.weapons=Carpenter Protocol - Weapons
 ui.carpenterprotocolcategory.technicalBlocks=Carpenter Protocol - Technical Blocks
+ui.carpenterprotocolcategory.portals=Carpenter Protocol - Portals

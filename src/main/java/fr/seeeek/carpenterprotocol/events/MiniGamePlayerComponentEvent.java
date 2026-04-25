@@ -64,7 +64,7 @@ public class MiniGamePlayerComponentEvent {
         }
 
         // add MiniGamePlayerComponent if it's a mini game instance
-        if(player.getWorld().getName().startsWith("mini_game-")){
+        if(player.getWorld().getName().startsWith("block_h13") || player.getWorld().getName().startsWith("mini_game-laser_tag-")){
             MiniGamePlayerComponent miniGamePlayerComponent = new MiniGamePlayerComponent();
             MiniGameHudComponent miniGameHudComponent = new MiniGameHudComponent();
             Store<EntityStore> store = player.getReference().getStore();

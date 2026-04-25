@@ -10,13 +10,17 @@ import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.plugin.registry.AssetRegistry;
 import com.hypixel.hytale.server.core.universe.Universe;
+import com.hypixel.hytale.server.core.universe.world.events.AddWorldEvent;
+import com.hypixel.hytale.server.core.universe.world.events.StartWorldEvent;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.commands.*;
+import fr.seeeek.carpenterprotocol.commands.debug.GetConfigCommand;
 import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagBlueBotCommand;
 import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagBotsCommand;
 import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagRedBotCommand;
 import fr.seeeek.carpenterprotocol.components.*;
+import fr.seeeek.carpenterprotocol.events.AddBlockH13WorldEvent;
 import fr.seeeek.carpenterprotocol.events.MiniGamePlayerComponentEvent;
 import fr.seeeek.carpenterprotocol.services.InstanceService;
 import fr.seeeek.carpenterprotocol.systems.*;
@@ -98,8 +102,11 @@ public class CarpenterProtocol extends JavaPlugin {
         commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
         commandRegistry.registerCommand(new OverridePlayerStateCommand());
         commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
+        commandRegistry.registerCommand(new GetConfigCommand());
 
         eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);
+        eventRegistry.registerGlobal(AddWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Added);
+        eventRegistry.registerGlobal(StartWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Start);
 
         entityStoreRegistry.registerSystem(new MiniGameSystem());
         entityStoreRegistry.registerSystem(new MiniGameUISystem());

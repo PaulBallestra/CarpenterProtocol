@@ -294,6 +294,9 @@ items.Build_Dark_Iron_Roof_Flat.name=Toit en Fer Sombre Build - Plat
 items.Build_Dark_Iron_Roof_Shallow.name=Toit en Fer Sombre Build - Pente Peu Raide
 items.Build_Dark_Iron_Roof_Steep.name=Toit en Fer Sombre Build - Pente Raide
 
+items.Block_H13_Portal.name=Portail vers le Bloc H13
+items.Block_H13_Portal.description=Un Portail de CarpenterProtocol qui permet de faire une partie de Laser Tag sur la map : Bloc H13
+
 ui.carpenterprotocolcategory.rocks=Carpenter Protocol - Roches
 ui.carpenterprotocolcategory.metal=Carpenter Protocol - Métal
 ui.carpenterprotocolcategory.deco=Carpenter Protocol - Décoration
@@ -304,3 +307,4 @@ ui.carpenterprotocolcategory.lighting=Carpenter Protocol - Éclairages
 ui.carpenterprotocolcategory.armors=Carpenter Protocol - Armures
 ui.carpenterprotocolcategory.weapons=Carpenter Protocol - Armes
 ui.carpenterprotocolcategory.technicalBlocks=Carpenter Protocol - Blocs Technique
+ui.carpenterprotocolcategory.portals=Carpenter Protocol - Portails

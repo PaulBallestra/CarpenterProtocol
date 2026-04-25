@@ -51,6 +51,11 @@
       "Id": "TechnicalBlocks",
       "Name": "server.ui.carpenterprotocolcategory.technicalBlocks",
       "Icon": "Icons/ItemCategories/TechnicalBlocks.png"
+    },
+    {
+      "Id": "Portals",
+      "Name": "server.ui.carpenterprotocolcategory.portals",
+      "Icon": "Icons/ItemCategories/Portal.png"
     }
   ],
   "Id": "CarpenterProtocolCategory",
