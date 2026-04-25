@@ -1,0 +1,17 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Skeleton_Rifle",
+    "ItemAnimationId": "ShootFlintlock"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 2,
+  "Next": {
+    "Type": "LaunchProjectile",
+    "RunTime": 0.333,
+    "Effects": {
+      "WorldSoundEventId": "SFX_Laser_Gun_Shoot"
+    },
+    "ProjectileId": "Laser_Tag_Blue_Bot_Bullet"
+  }
+}

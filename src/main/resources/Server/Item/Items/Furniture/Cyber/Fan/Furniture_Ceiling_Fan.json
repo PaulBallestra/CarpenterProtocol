@@ -87,9 +87,8 @@
     },
     "HitboxType": "Ceiling_Fan",
     "InteractionHint": "server.interactionHints.turnoff",
-    "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
-    "Looping": true,
-    "CustomModelAnimation": "Blocks/Animations/Cyber/Fan/Ceiling_Fan.blockyanim"
+    "CustomModelAnimation": "Blocks/Animations/Cyber/Fan/Ceiling_Fan.blockyanim",
+    "Looping": true
   },
   "Tags": {
     "Type": [

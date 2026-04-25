@@ -1,0 +1,11 @@
+{
+  "Interactions": [
+    "Laser_Tag_Blue_Bot_Gun_Shoot"
+  ],
+  "Tags": {
+    "Attack": [
+      "Ranged"
+    ]
+  },
+  "RequireNewClick": true
+}

@@ -1,0 +1,55 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Parameters": {
+    "DisableDamageGroups": {
+      "Value": [
+        "Self",
+        "Blue_Team"
+      ],
+      "Description": "Groups not to take damage from."
+    },
+    "FlockArray": {
+      "Value": [
+        "Laser_Tag_Blue_Bot"
+      ],
+      "TypeHint": "String",
+      "Description": "Array containing NPCs for this flock type."
+    },
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Skeleton_Burnt_Gunner.name",
+      "Description": "Translation key for NPC name display"
+    }
+  },
+  "Modify": {
+    "MaxHealth": 80,
+    "Appearance": "Player",
+    "AttitudeGroup": "Blue_Team",
+    "WakingPeriod": [0.00, 24.00],
+
+    "Weapons": ["Laser_Tag_Weapon_Gun_Blue"],
+    "Attack": "Laser_Tag_Blue_Bot_Gun_Shoot",
+
+    "ViewRange": 50,
+    "HearingRange": 25,
+    "AlertedTime": [0.2, 0.5],
+
+    "MaxSpeed": 12,
+
+    "AttackDistance": 50,
+
+    "CombatStrafeWeight": 60,
+    "CombatDirectWeight": 20,
+    "CombatAlwaysMovingWeight": 5,
+
+    "CombatStrafingDurationRange": [0.3, 0.8],
+    "CombatStrafingFrequencyRange": [0.5, 1.2],
+
+    "CombatBackOffAfterAttack": true,
+
+    "CombatAttackPreDelay": [0.1, 0.4],
+    "CombatAttackPostDelay": [0.2, 0.6],
+
+    "CombatFleeIfTooCloseDistance": 3
+  }
+}

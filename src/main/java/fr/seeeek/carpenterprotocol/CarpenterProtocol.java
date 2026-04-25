@@ -13,6 +13,8 @@ import com.hypixel.hytale.server.core.universe.Universe;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.commands.*;
+import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagBlueBotCommand;
+import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagRedBotCommand;
 import fr.seeeek.carpenterprotocol.components.*;
 import fr.seeeek.carpenterprotocol.events.MiniGamePlayerComponentEvent;
 import fr.seeeek.carpenterprotocol.services.InstanceService;
@@ -73,6 +75,10 @@ public class CarpenterProtocol extends JavaPlugin {
 //        commandRegistry.registerCommand(new GetLaserTagSpawnMarkers());
 //        commandRegistry.registerCommand(new GetConfigCommand());
         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
+
+        // bots
+        commandRegistry.registerCommand(new SpawnLaserTagBlueBotCommand());
+        commandRegistry.registerCommand(new SpawnLaserTagRedBotCommand());
 
         // MINI-GAMES
         ComponentType<EntityStore, MiniGameComponent> miniGameComponentComponentType = entityStoreRegistry.registerComponent(MiniGameComponent.class, MiniGameComponent::new);

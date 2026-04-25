@@ -1,0 +1,10 @@
+{
+  "Groups": {
+    "Friendly": [
+      "Red_Team"
+    ],
+    "Hostile": [
+      "Blue_Team"
+    ]
+  }
+}
