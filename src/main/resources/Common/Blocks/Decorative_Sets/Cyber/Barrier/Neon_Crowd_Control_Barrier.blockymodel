@@ -478,7 +478,7 @@
                       "shape": {
                         "type": "box",
                         "offset": {"x": 0, "y": 0, "z": 0},
-                        "stretch": {"x": 1, "y": 1, "z": 1},
+                        "stretch": {"x": 0.995, "y": 1, "z": 1},
                         "settings": {
                           "isPiece": false,
                           "size": {"x": 60, "y": 6, "z": 4}
@@ -514,7 +514,7 @@
                       "shape": {
                         "type": "box",
                         "offset": {"x": 0, "y": 0, "z": 0},
-                        "stretch": {"x": 1, "y": 0.95, "z": 1},
+                        "stretch": {"x": 1, "y": 0.95, "z": 0.99},
                         "settings": {
                           "isPiece": false,
                           "size": {"x": 4, "y": 6, "z": 10}
@@ -550,7 +550,7 @@
                       "shape": {
                         "type": "box",
                         "offset": {"x": 0, "y": 0, "z": 0},
-                        "stretch": {"x": 1, "y": 0.95, "z": 1},
+                        "stretch": {"x": 1, "y": 0.95, "z": 0.99},
                         "settings": {
                           "isPiece": false,
                           "size": {"x": 4, "y": 6, "z": 10}
@@ -586,7 +586,7 @@
                       "shape": {
                         "type": "box",
                         "offset": {"x": 0, "y": 0, "z": 0},
-                        "stretch": {"x": 1, "y": 1, "z": 1},
+                        "stretch": {"x": 0.995, "y": 1, "z": 1},
                         "settings": {
                           "isPiece": false,
                           "size": {"x": 60, "y": 6, "z": 4}
