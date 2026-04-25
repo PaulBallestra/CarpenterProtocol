@@ -67,13 +67,12 @@ public class CarpenterProtocol extends JavaPlugin {
         entityStoreRegistry.registerSystem(new LaserTagRotatingLedsCubeSystem());
         entityStoreRegistry.registerSystem(new LaserTagPlayerDeathSystem());
         entityStoreRegistry.registerSystem(new LaserTagPlayerComponentSystem());
-        // entityStoreRegistry.registerSystem(new LaserTagHudSystem());
+        entityStoreRegistry.registerSystem(new LaserTagFriendlyFireSystem());
 
         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
         commandRegistry.registerCommand(new GetLaserTagGameCommand());
         commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
-//        commandRegistry.registerCommand(new GetLaserTagSpawnMarkers());
-//        commandRegistry.registerCommand(new GetConfigCommand());
+
         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
 
         // bots
