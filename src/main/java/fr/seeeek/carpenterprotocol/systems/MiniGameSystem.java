@@ -115,7 +115,7 @@ public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
     }
 
     private void teleportsBackAllPlayersToLobby(World world) {
-        World lobbyWorld = Universe.get().getWorld("default");
+        World lobbyWorld = Universe.get().getDefaultWorld();
         assert lobbyWorld != null;
 
         Collection<PlayerRef> playersRef = world.getPlayerRefs();

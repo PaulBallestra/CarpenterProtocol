@@ -7,6 +7,8 @@ import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
+import com.hypixel.hytale.server.core.universe.Universe;
+import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
@@ -20,6 +22,12 @@ public class MiniGamePlayerComponentEvent {
     public static void onPlayerReady(PlayerReadyEvent event){
         Player player = event.getPlayer();
 
+        World defaultWorld = Universe.get().getDefaultWorld();
+
+        assert defaultWorld != null;
+
+        String defaultWorldName = Universe.get().getDefaultWorld().getName();
+
         if(player.getReference() == null || player.getWorld() == null) return;
 
         PlayerRef playerRef = player.getWorld().getEntityStore().getStore().getComponent(event.getPlayerRef(), PlayerRef.getComponentType());
@@ -28,7 +36,7 @@ public class MiniGamePlayerComponentEvent {
         // remove MiniGamePlayerComponent
         if(playerRef == null || playerRef.getReference() == null || !playerRef.isValid()) return;
 
-        if(player.getWorld().getName().startsWith("default")) {
+        if(player.getWorld().getName().equals(defaultWorldName)) {
             player.getWorld().execute(() -> {
                 MiniGameHudComponent miniGameHudComponent = player.getReference().getStore().getComponent(player.getReference(), MiniGameHudComponent.getComponentType());
                 if(miniGameHudComponent != null){
