@@ -55,8 +55,6 @@ $C.@DecoratedContainer {
 
       Group { Anchor: (Height: 8); } // Spacer
 
-      Label { Text: "Alive Players:"; Style: (FontSize: 12); }
-
       // The container where we will dynamically inject player names
       Group #PlayerList {
         LayoutMode: Top;

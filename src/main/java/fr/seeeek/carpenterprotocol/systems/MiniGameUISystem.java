@@ -1,14 +1,13 @@
 package fr.seeeek.carpenterprotocol.systems;
 
-import com.hypixel.hytale.builtin.ambience.resources.AmbienceResource;
 import com.hypixel.hytale.component.ArchetypeChunk;
 import com.hypixel.hytale.component.CommandBuffer;
+import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
 import com.hypixel.hytale.protocol.SoundCategory;
 import com.hypixel.hytale.server.core.Message;
-import com.hypixel.hytale.server.core.asset.type.ambiencefx.config.AmbienceFX;
 import com.hypixel.hytale.server.core.asset.type.soundevent.config.SoundEvent;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.SoundUtil;
@@ -17,14 +16,13 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.util.EventTitleUtil;
 import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
 import fr.seeeek.carpenterprotocol.common.MessageType;
+import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGamePlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameUIComponent;
 import fr.seeeek.carpenterprotocol.enums.MiniGamePlayerState;
 import fr.seeeek.carpenterprotocol.enums.MiniGameState;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
-
-import java.util.Collection;
 
 public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
 
@@ -78,12 +76,24 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
 
                     assert playerComp != null;
                     if (playerComp.getPlayerState() == MiniGamePlayerState.WINNER) {
-                        // We need to resolve the name.
-                        // Note: Components store data, not the player name usually.
-                        // We can get the player reference from the chunk to find the name.
                         PlayerRef playerRef = chunk.getComponent(j, PlayerRef.getComponentType());
+
                         if (playerRef != null && playerRef.isValid()) {
-                            winnerDisplayName = playerRef.getUsername();
+                            Ref<EntityStore> entityStoreRef = playerRef.getReference();
+                            if(entityStoreRef != null && entityStoreRef.isValid()){
+                                LaserTagPlayerComponent laserTagPlayerComponent = cb.getComponent(playerRef.getReference(), LaserTagPlayerComponent.getComponentType());
+
+                                if(laserTagPlayerComponent != null){
+                                    switch (laserTagPlayerComponent.getTeamId()){
+                                        case 0:
+                                            winnerDisplayName = "Red";
+                                            break;
+                                        case 1:
+                                            winnerDisplayName = "Blue";
+                                            break;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

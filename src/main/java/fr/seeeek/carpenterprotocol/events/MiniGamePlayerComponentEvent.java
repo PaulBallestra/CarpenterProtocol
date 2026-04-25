@@ -67,7 +67,7 @@ public class MiniGamePlayerComponentEvent {
                 store.addComponent(event.getPlayerRef(), MiniGamePlayerComponent.getComponentType(), miniGamePlayerComponent);
                 store.addComponent(event.getPlayerRef(), MiniGameHudComponent.getComponentType(), miniGameHudComponent);
 
-                MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 12, 2, "10:00");
+                MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 0, 0, "10:00");
                 player.getHudManager().setCustomHud(playerRef, miniGameInGameHud);
 
 //                if(player.getWorld().getName().startsWith("epixia-mini_game-laser_tag")){

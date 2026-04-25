@@ -68,7 +68,10 @@
     "Light": {
       "Color": "#90a"
     },
-    "ParticleColor": "#63909a"
+    "ParticleColor": "#63909a",
+    "MovementSettings": {
+      "IsClimbable": false
+    }
   },
   "Tags": {
     "Type": [

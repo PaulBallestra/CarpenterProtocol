@@ -19,6 +19,7 @@ public class MiniGameHudComponent implements Component<EntityStore> {
 
     // Cache last displayed values to avoid spam
     private MiniGameState lastState;
+    private LaserTagPlayerComponent lastLaserTagPlayerComponent;
     private int lastAliveCount;
 
     @Override
@@ -26,13 +27,18 @@ public class MiniGameHudComponent implements Component<EntityStore> {
         return new MiniGameHudComponent();
     }
 
-    public void cache(MiniGameComponent game) {
+    public void cache(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent) {
         lastState = game.getState();
         lastAliveCount = game.getAlivePlayers().size();
+        lastLaserTagPlayerComponent = (LaserTagPlayerComponent) laserTagPlayerComponent.clone();
     }
 
-    public boolean isDifferent(MiniGameComponent game) {
+    public boolean isDifferent(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent) {
+        if (lastLaserTagPlayerComponent == null) return true;
+
         return lastState != game.getState()
-                || lastAliveCount != game.getAlivePlayers().size();
+                || lastAliveCount != game.getAlivePlayers().size()
+                || lastLaserTagPlayerComponent.getKills() != laserTagPlayerComponent.getKills()
+                || lastLaserTagPlayerComponent.getDeaths() != laserTagPlayerComponent.getDeaths();
     }
 }

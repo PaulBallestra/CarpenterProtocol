@@ -32,7 +32,7 @@
       }
     },
     "VariantRotation": "Wall",
-    "BlockParticleSetId": "Metal",
+    "BlockParticleSetId": "Stone",
     "Supporting": {
       "Down": [
         {
@@ -45,7 +45,7 @@
         }
       ]
     },
-    "ParticleColor": "#02027b",
+    "ParticleColor": "#5bcac8",
     "BlockSoundSetId": "Stone",
     "State": {
       "Definitions": {
@@ -77,7 +77,7 @@
     },
     "CubeShadingMode": "Standard",
     "Light": {
-      "Color": "#00c",
+      "Color": "#067",
       "Radius": 0
     }
   },

@@ -38,9 +38,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static fr.seeeek.carpenterprotocol.utils.LobbyUtils.updateLobby;
-
-
 public class LaserTagMiniGameLogic implements MiniGameLogic {
     private final Map<Integer, List<Transform>> markerTeamSpawnPoints = new ConcurrentHashMap<>();
     private final Vector3i arenaTargetSpawnPosition = new Vector3i(64, 120, 64);
@@ -56,25 +53,56 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
     @Override
     public void running(CommandBuffer<EntityStore> commandBuffer, World world, MiniGameComponent miniGameComponent, float dt, Store<EntityStore> store, Ref<EntityStore> entityRef) {
-        // Gameplay loop
+
+        if (miniGameComponent.getState() != MiniGameState.RUNNING) return;
+
+        int team0Score = 0;
+        int team1Score = 0;
+
+        // Calculate scores
         for (Ref<EntityStore> playerRef : miniGameComponent.getAlivePlayers()) {
             if (playerRef == null || !playerRef.isValid()) continue;
 
-            MiniGamePlayerComponent playerComponent = commandBuffer.getComponent(playerRef, MiniGamePlayerComponent.getComponentType());
-            assert playerComponent != null;
+            LaserTagPlayerComponent laserTag =
+                    commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
 
-            LaserTagPlayerComponent laserTagPlayerComponent = commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
-            assert laserTagPlayerComponent != null;
+            if (laserTag == null) continue;
 
-            // TODO : Win condition check (the player with 50 kills wins for now instead of the full team when 50 kills along all team players)
-            if(laserTagPlayerComponent.getKills() == maxKills){
-                playerComponent.setPlayerState(MiniGamePlayerState.WINNER);
-                miniGameComponent.setState(MiniGameState.ENDING);
-                updateLobby(store, entityRef);
+            switch (laserTag.getTeamId()) {
+                case 0 -> team0Score += laserTag.getKills();
+                case 1 -> team1Score += laserTag.getKills();
             }
         }
-    }
 
+        int winningTeam = -1;
+
+        if (team0Score >= maxKills) {
+            winningTeam = 0;
+        } else if (team1Score >= maxKills) {
+            winningTeam = 1;
+        }
+
+        if (winningTeam != -1) {
+
+            for (Ref<EntityStore> playerRef : miniGameComponent.getAlivePlayers()) {
+                if (playerRef == null || !playerRef.isValid()) continue;
+
+                LaserTagPlayerComponent laserTag =
+                        commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
+
+                MiniGamePlayerComponent playerComponent =
+                        commandBuffer.getComponent(playerRef, MiniGamePlayerComponent.getComponentType());
+
+                if (laserTag == null || playerComponent == null) continue;
+
+                if (laserTag.getTeamId() == winningTeam) {
+                    playerComponent.setPlayerState(MiniGamePlayerState.WINNER);
+                }
+            }
+
+            miniGameComponent.setState(MiniGameState.ENDING);
+        }
+    }
 
     // HELPERS METHODS
     private void spawnArena(World world, Store<EntityStore> store){

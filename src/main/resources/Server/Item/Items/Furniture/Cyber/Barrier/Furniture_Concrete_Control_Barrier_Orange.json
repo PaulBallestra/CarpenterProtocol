@@ -19,11 +19,6 @@
       }
     ],
     "DrawType": "Model",
-    "Gathering": {
-      "Soft": {
-        "DropList": "Barrels"
-      }
-    },
     "HitboxType": "Control_Barrier",
     "Material": "Solid",
     "Opacity": "Transparent",

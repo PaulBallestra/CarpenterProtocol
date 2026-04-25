@@ -10,6 +10,9 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
+import fr.seeeek.carpenterprotocol.common.MessageType;
+import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.LobbyComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
@@ -39,11 +42,16 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
             Ref<EntityStore> playerEntity = playerRef.getReference();
 
             MiniGameHudComponent hudComponent = commandBuffer.getComponent(playerEntity, MiniGameHudComponent.getComponentType());
-
             if (hudComponent == null)
                 continue;
 
-            if (!hudComponent.isDifferent(miniGameComponent))
+            LaserTagPlayerComponent laserTagPlayerComponent = commandBuffer.getComponent(playerEntity, LaserTagPlayerComponent.getComponentType());
+
+
+            if(laserTagPlayerComponent == null)
+                continue;
+
+            if (!hudComponent.isDifferent(miniGameComponent, laserTagPlayerComponent))
                 continue;
 
             Player player = commandBuffer.getComponent(playerEntity, Player.getComponentType());
@@ -52,8 +60,8 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
                 continue;
 
             if (player.getHudManager().getCustomHud() instanceof MiniGameInGameHud miniGameInGameHud) {
-                miniGameInGameHud.refresh(miniGameComponent, lobbyComponent);
-                hudComponent.cache(miniGameComponent);
+                miniGameInGameHud.refresh(miniGameComponent, lobbyComponent, laserTagPlayerComponent);
+                hudComponent.cache(miniGameComponent, laserTagPlayerComponent);
             }
         }
     }

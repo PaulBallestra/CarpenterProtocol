@@ -19,7 +19,7 @@
       }
     ],
     "CustomModelScale": 1,
-    "HitboxType": "Painting",
+    "HitboxType": "Industrial_Exhaust_Fan",
     "VariantRotation": "NESW",
     "Gathering": {
       "Soft": {}
