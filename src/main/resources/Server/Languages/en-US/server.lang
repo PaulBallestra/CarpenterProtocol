@@ -129,6 +129,10 @@ items.Furniture_Cyber_Video_Grounded_Sign.name=Cyber ​​Video Ground Advertis
 items.Furniture_Access_Terminal.name=Access Terminal
 items.Furniture_Vertical_Terminal.name=Vertical Terminal
 
+items.Furniture_Speaker_Tall.name=Speaker - Tall
+items.Furniture_Speaker_Medium.name=Speaker - Medium
+items.Furniture_Speaker_Small.name=Speaker - Small
+
 items.Furniture_Atm_Pod.name=ATM
 items.Furniture_Atm_Pod_Alternate.name=ATM - Alternate
 items.Furniture_Vending_Dispenser.name=Vending Machine - Blue

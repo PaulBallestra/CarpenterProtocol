@@ -129,6 +129,10 @@ items.Furniture_Cyber_Video_Grounded_Sign.name=Publicité Sol Cyber Vidéo
 items.Furniture_Access_Terminal.name=Terminal d'Accès
 items.Furniture_Vertical_Terminal.name=Borne Verticale
 
+items.Furniture_Speaker_Tall.name=Baffle - Grande
+items.Furniture_Speaker_Medium.name=Baffle - Medium
+items.Furniture_Speaker_Small.name=Baffle - Petite
+
 items.Furniture_Atm_Pod.name=Distributeur Automatique de Billets
 items.Furniture_Atm_Pod_Alternate.name=Distributeur Automatique de Billets - Alterne
 items.Furniture_Vending_Dispenser.name=Distributeur Automatique - Bleu
