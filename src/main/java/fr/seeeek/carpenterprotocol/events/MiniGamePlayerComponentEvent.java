@@ -3,9 +3,13 @@ package fr.seeeek.carpenterprotocol.events;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.math.vector.Transform;
 import com.hypixel.hytale.protocol.GameMode;
+import com.hypixel.hytale.protocol.packets.inventory.InventoryAction;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
+import com.hypixel.hytale.server.core.inventory.Inventory;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
+import com.hypixel.hytale.server.core.inventory.container.ItemContainer;
 import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
@@ -80,6 +84,13 @@ public class MiniGamePlayerComponentEvent {
                 MiniGameInGameHud miniGameInGameHud = new MiniGameInGameHud(playerRef, 0, 0);
 
                 player.getHudManager().setCustomHud (playerRef, miniGameInGameHud);
+
+                // inventory
+                Inventory inventory = player.getInventory();
+                if(inventory != null){
+                    inventory.clear();
+                    inventory.setUsingToolsItem(false);
+                }
 
                 // Spawn override fallback
                 ISpawnProvider spawnProvider = player.getWorld().getWorldConfig().getSpawnProvider();

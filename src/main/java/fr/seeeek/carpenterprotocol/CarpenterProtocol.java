@@ -28,8 +28,8 @@ import fr.seeeek.carpenterprotocol.systems.*;
 import javax.annotation.Nonnull;
 
 public class CarpenterProtocol extends JavaPlugin {
-
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
+
 
     public CarpenterProtocol(@Nonnull JavaPluginInit init) {
         super(init);
@@ -54,9 +54,6 @@ public class CarpenterProtocol extends JavaPlugin {
         LobbyComponent.setComponentType(lobbyComponentComponentType);
 
         // LASER TAG
-        // ArmorSlotHandler armorSlotHandler = new ArmorSlotHandler();
-        // inboundFilter = PacketAdapters.registerInbound(armorSlotHandler);
-
         ComponentType<EntityStore, LaserTagRotatingLedsCubeComponent> rotatingLedsCubeComponentComponentType = entityStoreRegistry.registerComponent(LaserTagRotatingLedsCubeComponent.class, LaserTagRotatingLedsCubeComponent::new);
         LaserTagRotatingLedsCubeComponent.setComponentType(rotatingLedsCubeComponentComponentType);
 

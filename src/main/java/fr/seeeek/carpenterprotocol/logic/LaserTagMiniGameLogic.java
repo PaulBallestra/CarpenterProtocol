@@ -11,6 +11,9 @@ import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.math.vector.Vector3f;
 import com.hypixel.hytale.math.vector.Vector3i;
 import com.hypixel.hytale.server.core.entity.entities.Player;
+import com.hypixel.hytale.server.core.inventory.Inventory;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
+import com.hypixel.hytale.server.core.inventory.container.ItemContainer;
 import com.hypixel.hytale.server.core.modules.block.BlockModule;
 import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
 import com.hypixel.hytale.server.core.prefab.PrefabStore;
@@ -87,17 +90,18 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
             for (Ref<EntityStore> playerRef : miniGameComponent.getAlivePlayers()) {
                 if (playerRef == null || !playerRef.isValid()) continue;
 
-                LaserTagPlayerComponent laserTag =
-                        commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
 
-                MiniGamePlayerComponent playerComponent =
-                        commandBuffer.getComponent(playerRef, MiniGamePlayerComponent.getComponentType());
+                LaserTagPlayerComponent laserTag = commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
+                MiniGamePlayerComponent playerComponent = commandBuffer.getComponent(playerRef, MiniGamePlayerComponent.getComponentType());
 
                 if (laserTag == null || playerComponent == null) continue;
 
                 if (laserTag.getTeamId() == winningTeam) {
                     playerComponent.setPlayerState(MiniGamePlayerState.WINNER);
                 }
+
+                Player player = commandBuffer.getComponent(playerRef, Player.getComponentType());
+                removeStuff(player, laserTag.getTeamId());
             }
 
             miniGameComponent.setState(MiniGameState.ENDING);
@@ -253,5 +257,44 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
             BroadcastMessage.toWorld(world, "Teleporting players to team spawns...", MessageType.SUCCESS);
         });
+    }
+
+    private void removeStuff(Player player, int teamId){
+        if(player == null) return;
+
+        String weaponItemId = "", armorHeadItemId = "", armorChestItemId = "", armorHandsItemId = "", armorLegsItemId = "";
+
+        switch (teamId){
+            case 0:
+                weaponItemId = "Laser_Tag_Weapon_Gun_Red";
+                armorHeadItemId = "Armor_Laser_Tag_Head_Red";
+                armorChestItemId = "Armor_Laser_Tag_Chest_Red";
+                armorHandsItemId = "Armor_Laser_Tag_Hands";
+                armorLegsItemId = "Armor_Laser_Tag_Legs_Red";
+                break;
+            case 1:
+                weaponItemId = "Laser_Tag_Weapon_Gun_Blue";
+                armorHeadItemId = "Armor_Laser_Tag_Head_Blue";
+                armorChestItemId = "Armor_Laser_Tag_Chest_Blue";
+                armorHandsItemId = "Armor_Laser_Tag_Hands";
+                armorLegsItemId = "Armor_Laser_Tag_Legs_Blue";
+                break;
+        }
+
+        ItemStack laserTagWeaponGunItem = new ItemStack(weaponItemId);
+        ItemStack laserTagArmorHeadItem = new ItemStack(armorHeadItemId);
+        ItemStack laserTagArmorChestItem = new ItemStack(armorChestItemId);
+        ItemStack laserTagArmorHandsItem = new ItemStack(armorHandsItemId);
+        ItemStack laserTagArmorLegsItem = new ItemStack(armorLegsItemId);
+
+        Inventory playerInventory = player.getInventory();
+        ItemContainer hotbarContainer = playerInventory.getHotbar();
+        hotbarContainer.removeItemStack(laserTagWeaponGunItem);
+
+        ItemContainer armorContainer = playerInventory.getArmor();
+        armorContainer.removeItemStack(laserTagArmorHeadItem);
+        armorContainer.removeItemStack(laserTagArmorChestItem);
+        armorContainer.removeItemStack(laserTagArmorHandsItem);
+        armorContainer.removeItemStack(laserTagArmorLegsItem);
     }
 }
