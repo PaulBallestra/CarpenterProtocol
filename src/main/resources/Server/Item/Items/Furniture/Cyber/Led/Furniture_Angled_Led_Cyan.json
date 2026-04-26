@@ -38,7 +38,7 @@
     "DrawType": "Model",
     "Flags": {},
     "HitboxType": "Led_Tube1_Horizontal_Center",
-    "Material": "Solid",
+    "Material": "Empty",
     "Opacity": "Transparent",
     "Support": {
       "East": [

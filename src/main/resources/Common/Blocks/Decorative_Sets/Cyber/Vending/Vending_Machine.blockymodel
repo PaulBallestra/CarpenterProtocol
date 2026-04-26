@@ -22,7 +22,7 @@
         {
           "id": "2",
           "name": "VendingMachine",
-          "position": {"x": -2.595, "y": 40.27928, "z": 2.12744},
+          "position": {"x": -1.10694, "y": 43.28829, "z": 4.4562},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",
@@ -41,7 +41,7 @@
             {
               "id": "3",
               "name": "Top",
-              "position": {"x": 2.595, "y": 26.22072, "z": -2.12744},
+              "position": {"x": 1.10694, "y": 23.21171, "z": -4.4562},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -92,7 +92,7 @@
             {
               "id": "4",
               "name": "Back",
-              "position": {"x": 2.595, "y": 0.72072, "z": -10.12744},
+              "position": {"x": 1.10694, "y": -2.28829, "z": -12.4562},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -133,7 +133,7 @@
             {
               "id": "5",
               "name": "Angles",
-              "position": {"x": -12.38, "y": 0.74211, "z": 1.50976},
+              "position": {"x": -13.86806, "y": -2.2669, "z": -0.819},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -216,7 +216,7 @@
             {
               "id": "8",
               "name": "Panels",
-              "position": {"x": 4.595, "y": 0.72072, "z": 5.37256},
+              "position": {"x": 3.10694, "y": -2.28829, "z": 3.0438},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -303,8 +303,8 @@
             },
             {
               "id": "11",
-              "name": "BottomDoor",
-              "position": {"x": 2.595, "y": -28.40428, "z": 5.37256},
+              "name": "Screens",
+              "position": {"x": 7.44028, "y": 15.04505, "z": 11.6438},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "none",
@@ -322,6 +322,108 @@
               "children": [
                 {
                   "id": "12",
+                  "name": "TopScreen",
+                  "position": {"x": -6.33333, "y": 8.16667, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 30, "y": 5},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 136, "y": 34},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                },
+                {
+                  "id": "13",
+                  "name": "LittleScreen",
+                  "position": {"x": 3.16667, "y": -8.33333, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 5, "y": 4},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 158, "y": 51},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                },
+                {
+                  "id": "14",
+                  "name": "MiddleScreen",
+                  "position": {"x": 3.16667, "y": 0.16667, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "quad",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 9, "y": 5},
+                      "normal": "+Z"
+                    },
+                    "textureLayout": {
+                      "front": {
+                        "offset": {"x": 156, "y": 42},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "fullbright"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "15",
+              "name": "BottomDoor",
+              "position": {"x": 1.10694, "y": -31.41329, "z": 3.0438},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "none",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false
+                },
+                "textureLayout": {},
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              },
+              "children": [
+                {
+                  "id": "16",
                   "name": "BottomDoor",
                   "position": {"x": 0, "y": 1.625, "z": 7.5},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -367,7 +469,7 @@
                   }
                 },
                 {
-                  "id": "13",
+                  "id": "17",
                   "name": "FloorSocle",
                   "position": {"x": 0, "y": -1.625, "z": -7.5},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -386,7 +488,7 @@
                   },
                   "children": [
                     {
-                      "id": "14",
+                      "id": "18",
                       "name": "FloorSocle",
                       "position": {"x": 0, "y": -3.25, "z": 0},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -432,7 +534,7 @@
                       }
                     },
                     {
-                      "id": "15",
+                      "id": "19",
                       "name": "Socle",
                       "position": {"x": 0, "y": 3.25, "z": 0},
                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
