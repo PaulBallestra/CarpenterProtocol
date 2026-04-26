@@ -78,6 +78,11 @@
           "Material": "Solid",
           "DrawType": "Cube",
           "HitboxType": "Full",
+          "Supporting": {
+            "BlockSides": [
+              {}
+            ]
+          },
           "Textures": [
             {
               "All": "BlockTextures/Metal_Dark_Iron_Texture.png",
