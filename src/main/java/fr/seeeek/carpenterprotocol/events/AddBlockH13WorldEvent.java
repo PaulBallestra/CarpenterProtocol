@@ -42,24 +42,13 @@ public class AddBlockH13WorldEvent {
 
     public static void onBlockH13Added(AddWorldEvent addWorldEvent){
         World world = addWorldEvent.getWorld();
-
         if(!world.getName().equals("block_h13")) return;
-
-        Store<EntityStore> store = world.getEntityStore().getStore();
-
-        BlockSelection prefabFromAssets = PrefabStore.get().getAssetPrefabFromAnyPack(waitingZonePrefabKey);
-        assert prefabFromAssets != null;
-        BlockSelection prefab = new BlockSelection(prefabFromAssets);
 
         setWorldConfig(world);
 
         // Configure Instance-specific settings
         InstanceWorldConfig instanceConfig = InstanceWorldConfig.ensureAndGet(world.getWorldConfig());
         instanceConfig.setRemovalConditions(WorldEmptyCondition.REMOVE_WHEN_EMPTY);
-
-        world.execute(() -> {
-            prefab.placeNoReturn(world, waitingZoneSpawnPoint, store);
-        });
     }
 
     public static void onBlockH13Start(StartWorldEvent startWorldEvent){
@@ -69,7 +58,12 @@ public class AddBlockH13WorldEvent {
 
         Store<EntityStore> store = world.getEntityStore().getStore();
 
+        BlockSelection prefabFromAssets = PrefabStore.get().getAssetPrefabFromAnyPack(waitingZonePrefabKey);
+        assert prefabFromAssets != null;
+        BlockSelection prefab = new BlockSelection(prefabFromAssets);
+
         world.execute(() -> {
+            prefab.placeNoReturn(world, waitingZoneSpawnPoint, store);
             initTime(world, store);
             initECS(world, store);
         });
@@ -192,5 +186,13 @@ public class AddBlockH13WorldEvent {
 
         // Spawn entity
         store.addEntity(holder, AddReason.SPAWN);
+    }
+
+    private static void spawnWaitingZone(World world, Store<EntityStore> store, BlockSelection prefab){
+        if(world == null) return;
+
+        world.execute(() -> {
+            prefab.placeNoReturn(world, waitingZoneSpawnPoint, store);
+        });
     }
 }
