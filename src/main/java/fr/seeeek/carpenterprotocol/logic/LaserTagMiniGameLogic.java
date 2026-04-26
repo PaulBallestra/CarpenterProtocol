@@ -43,7 +43,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class LaserTagMiniGameLogic implements MiniGameLogic {
     private final Map<Integer, List<Transform>> markerTeamSpawnPoints = new ConcurrentHashMap<>();
-    private final Vector3i arenaTargetSpawnPosition = new Vector3i(64, 120, 64);
+    private final Vector3i arenaTargetSpawnPosition = new Vector3i(128, 196, 128);
     private final int maxKills = 50;
 
     public void setup(CommandBuffer<EntityStore> commandBuffer, World world, MiniGameComponent miniGameComponent, float dt, Store<EntityStore> store, Ref<EntityStore> ref, Collection<PlayerRef> allPlayerRefs){
@@ -110,7 +110,7 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
     // HELPERS METHODS
     private void spawnArena(World world, Store<EntityStore> store){
-        BlockSelection prefabFromAssets = PrefabStore.get().getAssetPrefabFromAnyPack("Laser_Tag_Arena.prefab.json");
+        BlockSelection prefabFromAssets = PrefabStore.get().getAssetPrefabFromAnyPack("Block_H13_Arena.prefab.json");
         BlockSelection prefab = new BlockSelection(prefabFromAssets);
 
         world.execute(() -> {
