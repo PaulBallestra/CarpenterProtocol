@@ -1,7 +1,8 @@
 {
   "Music": {
     "Tracks": [
-      "Music/Laser_Tag/Combat_01.ogg"
+      "Music/Laser_Tag/Combat_01.ogg",
+      "Music/Laser_Tag/Combat_02.ogg"
     ],
     "Volume": 3.3
   },
