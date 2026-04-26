@@ -72,6 +72,7 @@ public class AddBlockH13WorldEvent {
     private static void setWorldConfig(World world) {
         WorldConfig worldConfig = world.getWorldConfig();
 
+
         worldConfig.setSpawnProvider(new GlobalSpawnProvider(new Transform(waitingZonePortalSpawnPoint)));
 
         worldConfig.setCanSaveChunks(false);
@@ -80,6 +81,7 @@ public class AddBlockH13WorldEvent {
         worldConfig.setDeleteOnUniverseStart(true);
         worldConfig.setForcedWeather(weatherKey);
         worldConfig.setPvpEnabled(true);
+        worldConfig.setSpawningNPC(false);
 
         worldConfig.setCompassUpdating(false);
         worldConfig.setSavingPlayers(false);
@@ -188,11 +190,11 @@ public class AddBlockH13WorldEvent {
         store.addEntity(holder, AddReason.SPAWN);
     }
 
-    private static void spawnWaitingZone(World world, Store<EntityStore> store, BlockSelection prefab){
-        if(world == null) return;
-
-        world.execute(() -> {
-            prefab.placeNoReturn(world, waitingZoneSpawnPoint, store);
-        });
-    }
+//    private static void spawnWaitingZone(World world, Store<EntityStore> store, BlockSelection prefab){
+//        if(world == null) return;
+//
+//        world.execute(() -> {
+//            prefab.placeNoReturn(world, waitingZoneSpawnPoint, store);
+//        });
+//    }
 }

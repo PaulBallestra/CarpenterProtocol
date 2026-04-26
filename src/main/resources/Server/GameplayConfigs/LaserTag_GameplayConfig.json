@@ -15,7 +15,7 @@
     "ItemsDurabilityLossPercentage": 0.0
   },
   "ItemEntity": {
-    "Lifetime": 600.0
+    "Lifetime": 0
   },
   "ItemDurability": {
     "BrokenPenalties": {
@@ -24,17 +24,9 @@
       "Tool": 0.75
     }
   },
-  "Plugin": {
-    "Stamina": {
-      "SprintRegenDelay": {
-        "EntityStatId": "StaminaRegenDelay",
-        "Value": -0.75
-      }
-    }
-  },
   "Respawn": {
     "RadiusLimitRespawnPoint": 500,
-    "MaxRespawnPointsPerPlayer": 3
+    "MaxRespawnPointsPerPlayer": 20
   },
   "World": {
     "AllowBlockBreaking": false,
@@ -50,7 +42,7 @@
     }
   },
   "Player": {
-    "MovementConfig": "Default",
+    "MovementConfig": "LaserTag_MovementConfig",
     "ArmorVisibilityOption": "None",
     "HitboxCollisionConfig": "SoftCollision"
   },
@@ -81,5 +73,14 @@
   },
   "Combat": {
     "DisplayHealthBars": false
+  },
+  "MaxEnvironmentalNPCSpawns": 0,
+  "Plugin": {
+    "Stamina": {
+      "SprintRegenDelay": {
+        "EntityStatId": "LaserTagStaminaRegenDelay",
+        "Value": 0
+      }
+    }
   }
 }
