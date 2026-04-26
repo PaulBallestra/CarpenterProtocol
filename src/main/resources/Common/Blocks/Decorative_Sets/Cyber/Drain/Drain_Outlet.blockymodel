@@ -45,7 +45,7 @@
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0},
+                "offset": {"x": 0, "y": -0.1, "z": 0},
                 "stretch": {"x": 0.995, "y": 0.995, "z": 0.995},
                 "settings": {
                   "isPiece": false,
