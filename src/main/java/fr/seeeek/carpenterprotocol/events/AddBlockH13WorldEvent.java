@@ -180,12 +180,4 @@ public class AddBlockH13WorldEvent {
         // Spawn entity
         store.addEntity(holder, AddReason.SPAWN);
     }
-
-//    private static void spawnWaitingZone(World world, Store<EntityStore> store, BlockSelection prefab){
-//        if(world == null) return;
-//
-//        world.execute(() -> {
-//            prefab.placeNoReturn(world, waitingZoneSpawnPoint, store);
-//        });
-//    }
 }

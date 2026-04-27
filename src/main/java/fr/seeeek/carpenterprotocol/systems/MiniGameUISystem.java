@@ -26,7 +26,7 @@ import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
 
-    private String winnerDisplayName = "WINNER DISPLAY NAME";
+    private String winnerDisplayName = "Forced ending";
 
     @Override
     public void tick(float dt, int i,

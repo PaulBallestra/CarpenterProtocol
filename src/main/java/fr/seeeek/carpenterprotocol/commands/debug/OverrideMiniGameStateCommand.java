@@ -11,6 +11,7 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
 import fr.seeeek.carpenterprotocol.common.MessageType;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
+import fr.seeeek.carpenterprotocol.enums.MiniGameState;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -36,8 +37,13 @@ public class OverrideMiniGameStateCommand extends AbstractPlayerCommand {
                 MiniGameComponent miniGameComponent = chunk.getComponent(i, MiniGameComponent.getComponentType());
                 if(miniGameComponent != null){
                     miniGameComponentExists.set(true);
-                    miniGameComponent.setMinPlayers(1);
-                    BroadcastMessage.toPlayer(playerRef, "MiniGameComponent.MinPlayers set to 1", MessageType.DEBUG);
+
+                    switch (miniGameComponent.getState()){
+                        case MiniGameState.PENDING -> miniGameComponent.setMinPlayers(1);
+                        case MiniGameState.RUNNING -> miniGameComponent.setState(MiniGameState.ENDING);
+                    }
+
+                    BroadcastMessage.toPlayer(playerRef, "MiniGameComponent state overridden ", MessageType.DEBUG);
                     return;
                 }
             }

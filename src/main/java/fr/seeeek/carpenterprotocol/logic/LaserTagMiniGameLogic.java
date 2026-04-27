@@ -56,7 +56,6 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
     @Override
     public void running(CommandBuffer<EntityStore> commandBuffer, World world, MiniGameComponent miniGameComponent, float dt, Store<EntityStore> store, Ref<EntityStore> entityRef) {
-
         if (miniGameComponent.getState() != MiniGameState.RUNNING) return;
 
         int team0Score = 0;
