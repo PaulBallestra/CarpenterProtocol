@@ -90,7 +90,7 @@ public class MiniGamePlayerComponentEvent {
                 }
 
                 // TODO : Check if a game is running, if not go to spawn override fallback, else --> auto join team
-
+                
 
                 // Spawn override fallback
                 ISpawnProvider spawnProvider = player.getWorld().getWorldConfig().getSpawnProvider();

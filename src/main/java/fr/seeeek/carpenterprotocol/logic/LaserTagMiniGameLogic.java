@@ -35,6 +35,7 @@ import fr.seeeek.carpenterprotocol.enums.MiniGamePlayerState;
 import fr.seeeek.carpenterprotocol.enums.MiniGameState;
 import fr.seeeek.carpenterprotocol.interfaces.LaserTagTeamSpawnProvider;
 import fr.seeeek.carpenterprotocol.interfaces.MiniGameLogic;
+import fr.seeeek.carpenterprotocol.utils.LaserTagTeamUtils;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -189,10 +190,8 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
                     if(store.getComponent(playerRef.getReference(), LaserTagPlayerComponent.getComponentType()) != null) return;
 
-                    LaserTagPlayerComponent laserTagPlayerComponent = new LaserTagPlayerComponent();
-                    laserTagPlayerComponent.setTeamId(team.get());
+                    LaserTagTeamUtils.assignTeam(team.get(), store, playerRef.getReference());
 
-                    store.addComponent(playerRef.getReference(), LaserTagPlayerComponent.getComponentType(), laserTagPlayerComponent);
                     team.set((team.get() + 1) % 2);
                 }
             });
@@ -216,8 +215,7 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
                 Ref<EntityStore> playerEntity = playerRef.getReference();
                 if (playerEntity == null) continue;
 
-                LaserTagPlayerComponent laserTag =
-                        store.getComponent(playerEntity, LaserTagPlayerComponent.getComponentType());
+                LaserTagPlayerComponent laserTag = store.getComponent(playerEntity, LaserTagPlayerComponent.getComponentType());
 
                 if (laserTag == null) continue;
 
