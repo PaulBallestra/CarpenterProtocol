@@ -4,6 +4,7 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractPlayerCommand;
+import com.hypixel.hytale.server.core.permissions.HytalePermissions;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -17,6 +18,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class OverrideMiniGameStateCommand extends AbstractPlayerCommand {
     public OverrideMiniGameStateCommand(){
         super("overridegame", "Override mini-game state to STARTING");
+
+        requirePermission(
+                HytalePermissions.fromCommand("admin")
+        );
     }
 
 

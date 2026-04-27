@@ -28,7 +28,7 @@ $C.@DecoratedContainer {
       }
       //Group { Anchor: (Height: 8); } // Spacer
 
-      Label #MiniGameState { Text: "Waiting for players... (4 minimum)"; Style: (FontSize: 12, HorizontalAlignment: Center); }
+      Label #MiniGameState { Text: "Waiting for players..."; Style: (FontSize: 12, HorizontalAlignment: Center); }
 
       Group { Anchor: (Height: 8); } // Spacer
 

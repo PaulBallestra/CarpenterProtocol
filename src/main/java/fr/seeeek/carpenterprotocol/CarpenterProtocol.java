@@ -70,7 +70,7 @@ public class CarpenterProtocol extends JavaPlugin {
         entityStoreRegistry.registerSystem(new LaserTagFriendlyFireSystem());
 
         // bots
-        commandRegistry.registerCommand(new SpawnLaserTagBlueBotCommand());
+//        commandRegistry.registerCommand(new SpawnLaserTagBlueBotCommand());
 //        commandRegistry.registerCommand(new SpawnLaserTagRedBotCommand());
 //        commandRegistry.registerCommand(new SpawnLaserTagBotsCommand());
 
@@ -89,7 +89,7 @@ public class CarpenterProtocol extends JavaPlugin {
 
         // debugs commands
          commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
-         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
+//         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
 //         commandRegistry.registerCommand(new GetMiniGameStateCommand());
 //         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
 //         commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
