@@ -1,11 +1,5 @@
 items.Black_Cloth_Half.name=Black Cloth Slab
 
-items.Falling_Block_Rock_Chalk.name=Falling Chalk Block
-items.Falling_Block_Rock_Chalk.description=Chalk block that can fall when interacting with a player (TntRun).
-
-items.Falling_Block_Rock_Salt.name=Falling Salt Block
-items.Falling_Block_Rock_Salt.description=Salt block that can fall when interacting with a player (TntRun).
-
 items.Rock_Dark_Concrete_Brick.name=Dark Concrete
 items.Rock_Dark_Concrete_Brick_Smooth.name=Dark Concrete Smooth
 items.Rock_Dark_Concrete_Brick_Half.name=Dark Concrete Slab
@@ -48,8 +42,6 @@ items.Metal_Iron_Block_Grid.name=Iron Grid Block
 
 items.Metal_Awning.name=Metal Awning
 items.Metal_Shutter.name=Metal Shutter
-
-items.Warning_Block.name=Warning Block
 
 items.Laser_Tag_Marker_Team_Spawn0.name=Team 0 Marker Spawn
 items.Laser_Tag_Marker_Team_Spawn1.name=Team 1 Marker Spawn

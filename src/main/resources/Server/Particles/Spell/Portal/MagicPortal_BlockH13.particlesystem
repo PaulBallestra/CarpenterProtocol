@@ -1,0 +1,57 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "BlockH13Portal_Spawn"
+    },
+    {
+      "SpawnerId": "BlockH13Portal_Flash"
+    },
+    {
+      "SpawnerId": "BlockH13Portal_CenterCircle"
+    },
+    {
+      "SpawnerId": "BlockH13Portal_Waves",
+      "StartDelay": 0,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "BlockH13Portal_SmokeAlpha",
+      "StartDelay": 0,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    },
+    {
+      "SpawnerId": "BlockH13Portal_Sparks",
+      "StartDelay": 0
+    },
+    {
+      "SpawnerId": "MagicPortal_SparksRunes"
+    },
+    {
+      "SpawnerId": "BlockH13Portal_Center",
+      "StartDelay": 0.5
+    },
+    {
+      "SpawnerId": "BlockH13Portal_CenterGlow",
+      "StartDelay": 0.5
+    },
+    {
+      "SpawnerId": "BlockH13Portal_SmokeMiddle",
+      "RotationOffset": {
+        "Pitch": 90.0
+      }
+    },
+    {
+      "SpawnerId": "BlockH13_Default",
+      "PositionOffset": {
+        "X": 0,
+        "Z": 0.3
+      }
+    }
+  ],
+  "CullDistance": 50.0,
+  "IsImportant": false
+}

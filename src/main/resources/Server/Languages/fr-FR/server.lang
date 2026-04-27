@@ -1,11 +1,5 @@
 items.Black_Cloth_Half.name=Dalle de Tissu Noir
 
-items.Falling_Block_Rock_Chalk.name=Bloc de Craie Tombant
-items.Falling_Block_Rock_Chalk.description=Bloc de craie qui peut tomber lors d'une interaction avec un joueur (TntRun).
-
-items.Falling_Block_Rock_Salt.name=Bloc de Sel Tombant
-items.Falling_Block_Rock_Salt.description=Bloc de sel qui peut tomber lors d'une interaction avec un joueur (TntRun).
-
 items.Rock_Dark_Concrete_Brick.name=Béton Foncé
 items.Rock_Dark_Concrete_Brick_Smooth.name=Béton Foncé Lisse
 items.Rock_Dark_Concrete_Brick_Half.name=Dalle de Béton Foncé
@@ -48,8 +42,6 @@ items.Metal_Iron_Block_Grid.name=Bloc de Grille de Fer
 
 items.Metal_Awning.name=Store Mécanique de Métal
 items.Metal_Shutter.name=Rideau Mécanique de Métal
-
-items.Warning_Block.name=Bloc d'Avertissement
 
 items.Laser_Tag_Marker_Team_Spawn0.name=Team 0 Spawn Marqueur
 items.Laser_Tag_Marker_Team_Spawn1.name=Team 1 Spawn Marqueur

@@ -32,13 +32,13 @@
       }
     },
     "Light": {
-      "Color": "#77f",
+      "Color": "#a6d",
       "Radius": 3
     },
-    "AmbientSoundEventId": "SFX_Portal_Neutral",
+    "AmbientSoundEventId": "SFX_Portal_Void",
     "Particles": [
       {
-        "SystemId": "MagicPortal_Default",
+        "SystemId": "MagicPortal_BlockH13",
         "PositionOffset": {
           "Y": 2.0
         },
