@@ -1,9 +1,10 @@
-package fr.seeeek.carpenterprotocol.commands;
+package fr.seeeek.carpenterprotocol.commands.debug;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractPlayerCommand;
+import com.hypixel.hytale.server.core.permissions.HytalePermissions;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -14,10 +15,13 @@ import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class GetMiniGameStateCommand extends AbstractPlayerCommand {
+public class OverrideMiniGameStateCommand extends AbstractPlayerCommand {
+    public OverrideMiniGameStateCommand(){
+        super("overridegame", "Override mini-game state to STARTING");
 
-    public GetMiniGameStateCommand(){
-        super("getgame", "Returns all the actual parameters for the mini game");
+        requirePermission(
+                HytalePermissions.fromCommand("admin")
+        );
     }
 
 
@@ -32,9 +36,8 @@ public class GetMiniGameStateCommand extends AbstractPlayerCommand {
                 MiniGameComponent miniGameComponent = chunk.getComponent(i, MiniGameComponent.getComponentType());
                 if(miniGameComponent != null){
                     miniGameComponentExists.set(true);
-                    BroadcastMessage.toPlayer(playerRef, "----- MiniGameComponent -----", MessageType.DEBUG);
-                    BroadcastMessage.toPlayer(playerRef, "Type : " + miniGameComponent.getMiniGameType(), MessageType.DEBUG);
-                    BroadcastMessage.toPlayer(playerRef, "State : " + miniGameComponent.getState(), MessageType.DEBUG);
+                    miniGameComponent.setMinPlayers(1);
+                    BroadcastMessage.toPlayer(playerRef, "MiniGameComponent.MinPlayers set to 1", MessageType.DEBUG);
                     return;
                 }
             }

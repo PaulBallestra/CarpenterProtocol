@@ -51,7 +51,6 @@
     "State": {
       "Definitions": {
         "On": {
-          "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
           "DrawType": "Model",
           "CustomModelTexture": [
             {

@@ -19,6 +19,7 @@ import com.hypixel.hytale.server.core.modules.entity.component.PersistentModel;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.entity.tracker.NetworkId;
 import com.hypixel.hytale.server.core.modules.time.WorldTimeResource;
+import com.hypixel.hytale.server.core.permissions.HytalePermissions;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.spawn.ISpawnProvider;
@@ -41,6 +42,10 @@ public class LaserTagCreateCommand extends AbstractPlayerCommand {
     public LaserTagCreateCommand(InstanceService instanceService) {
         super("lasertag", "Create a laser tag mini-game");
         this.instanceService = instanceService;
+
+        requirePermission(
+                HytalePermissions.fromCommand("admin")
+        );
     }
 
     @Override

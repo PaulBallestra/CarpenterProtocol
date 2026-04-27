@@ -31,7 +31,7 @@ public class MiniGameInGameHud extends CustomUIHud {
         String teamName = getTeamName(laserTagPlayerComponent.getTeamId());
         String teamColor = getTeamColorHex(laserTagPlayerComponent.getTeamId());
 
-        commandBuilder.set("#MiniGameState.Text", "State: " + game.getState());
+        commandBuilder.set("#MiniGameState.Text", game.getState().toString());
 
         commandBuilder.set("#Team.Text", "Team: " + teamName);
         commandBuilder.set("#Team.Background", teamColor);

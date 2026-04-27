@@ -36,7 +36,7 @@ import fr.seeeek.carpenterprotocol.enums.MiniGameType;
 
 public class AddBlockH13WorldEvent {
 
-    static String waitingZonePrefabKey = "Laser_Tag_Waiting_Zone.prefab.json", weatherKey = "Zone3_Cave_Deep", gameplayConfig = "LaserTag_GameplayConfig";
+    static String waitingZonePrefabKey = "Laser_Tag_Waiting_Zone.prefab.json", weatherKey = "ZoneBlockH13_Map", gameplayConfig = "LaserTag_GameplayConfig";
     static Vector3i waitingZoneSpawnPoint = new Vector3i(0, 78, 0);
     static Vector3i waitingZonePortalSpawnPoint = new Vector3i(1, 78, 1);
 

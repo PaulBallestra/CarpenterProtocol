@@ -1,4 +1,4 @@
-package fr.seeeek.carpenterprotocol.commands;
+package fr.seeeek.carpenterprotocol.commands.debug;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;

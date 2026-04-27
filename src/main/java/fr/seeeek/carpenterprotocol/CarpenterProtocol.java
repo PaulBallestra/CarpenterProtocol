@@ -15,9 +15,7 @@ import com.hypixel.hytale.server.core.universe.world.events.StartWorldEvent;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.commands.*;
-import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagBlueBotCommand;
-import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagBotsCommand;
-import fr.seeeek.carpenterprotocol.commands.debug.SpawnLaserTagRedBotCommand;
+import fr.seeeek.carpenterprotocol.commands.debug.OverrideMiniGameStateCommand;
 import fr.seeeek.carpenterprotocol.components.*;
 import fr.seeeek.carpenterprotocol.events.AddBlockH13WorldEvent;
 import fr.seeeek.carpenterprotocol.events.MiniGamePlayerComponentEvent;
@@ -89,7 +87,7 @@ public class CarpenterProtocol extends JavaPlugin {
 
         // debugs commands
          commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
-//         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
+        commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
 //         commandRegistry.registerCommand(new GetMiniGameStateCommand());
 //         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
 //         commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());

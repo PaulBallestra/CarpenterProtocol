@@ -1,7 +1,7 @@
 {
   "Conditions": {
     "WeatherIds": [
-      "Zone3_Cave_Deep"
+      "ZoneBlockH13_Map"
     ],
     "Altitude": {
       "Max": 85

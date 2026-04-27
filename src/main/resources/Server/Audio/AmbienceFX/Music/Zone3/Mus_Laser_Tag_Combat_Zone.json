@@ -9,12 +9,12 @@
   "AudioCategory": "AudioCat_Music",
   "Conditions": {
     "WeatherIds": [
-      "Zone3_Cave_Deep"
+      "ZoneBlockH13_Map"
     ],
     "Never": false,
     "Altitude": {
-      "Min": 90,
-      "Max": 130
+      "Min": 150,
+      "Max": 250
     }
   },
   "Priority": 100
