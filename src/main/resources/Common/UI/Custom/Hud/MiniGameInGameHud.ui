@@ -32,7 +32,7 @@ $C.@DecoratedContainer {
 
       Group { Anchor: (Height: 8); } // Spacer
 
-      Label #Team { Text: "Team: Unassigned"; Style: (FontSize: 12); }
+      Label #Team { Text: "Team: Unassigned"; Style: (FontSize: 15, HorizontalAlignment: Center; }
 
       Group { Anchor: (Height: 8); } // Spacer
       Group {
@@ -55,11 +55,11 @@ $C.@DecoratedContainer {
           }
         }
       }
-      //      Group #PlayerList {
-      //        LayoutMode: Top;
-      //        FlexWeight: 1;
-      //        Anchor: (Left: 0, Right: 0);
-      //      }
+//      Group #TeamList {
+//        LayoutMode: Top;
+//        FlexWeight: 1;
+//        Anchor: (Left: 0, Right: 0);
+//      }
       Group {
         Anchor: (Height: 1);
         Background: #2b3542;

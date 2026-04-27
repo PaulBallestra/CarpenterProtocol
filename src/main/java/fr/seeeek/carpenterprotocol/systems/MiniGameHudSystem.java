@@ -10,6 +10,7 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import fr.seeeek.carpenterprotocol.components.LaserTagGameComponent;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
@@ -42,7 +43,6 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
                 continue;
 
             LaserTagPlayerComponent laserTagPlayerComponent = commandBuffer.getComponent(playerEntity, LaserTagPlayerComponent.getComponentType());
-
 
             if(laserTagPlayerComponent == null)
                 continue;

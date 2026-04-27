@@ -63,6 +63,9 @@ public class CarpenterProtocol extends JavaPlugin {
         ComponentType<EntityStore, LaserTagPlayerComponent> laserTagPlayerComponentComponentType = entityStoreRegistry.registerComponent(LaserTagPlayerComponent.class, LaserTagPlayerComponent::new);
         LaserTagPlayerComponent.setComponentType(laserTagPlayerComponentComponentType);
 
+        ComponentType<EntityStore, LaserTagTeamComponent> laserTagTeamComponentComponentType = entityStoreRegistry.registerComponent(LaserTagTeamComponent.class, LaserTagTeamComponent::new);
+        LaserTagTeamComponent.setComponentType(laserTagTeamComponentComponentType);
+
         ComponentType<ChunkStore, LaserTagMarkerTeamSpawnerComponent> laserTagMarkerTeamSpawnerComponentComponentType = chunkStoreRegistry.registerComponent(LaserTagMarkerTeamSpawnerComponent.class, "LaserTagMarkerTeamSpawnerComponent", LaserTagMarkerTeamSpawnerComponent.CODEC);
         LaserTagMarkerTeamSpawnerComponent.setComponentType(laserTagMarkerTeamSpawnerComponentComponentType);
 

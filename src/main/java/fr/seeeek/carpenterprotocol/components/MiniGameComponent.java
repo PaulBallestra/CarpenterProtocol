@@ -16,8 +16,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MiniGameComponent implements Component<EntityStore> {
-
-    // 1. Define the Component Type (Registered in your Main class)
     private static ComponentType<EntityStore, MiniGameComponent> type;
     public static ComponentType<EntityStore, MiniGameComponent> getComponentType() {
         return type;
