@@ -18,7 +18,7 @@ $C.@DecoratedContainer {
       Group {
         Background: #000000(0.5);
 
-        Label #MapName { Text: "H13 Block"; Style: (FontSize: 16, HorizontalAlignment: Center); }
+        Label #MapName { Text: "Block H13"; Style: (FontSize: 16, HorizontalAlignment: Center); }
       }
 
       Group { Anchor: (Height: 8); } // Spacer
@@ -28,7 +28,7 @@ $C.@DecoratedContainer {
       }
       //Group { Anchor: (Height: 8); } // Spacer
 
-      Label #MiniGameState { Text: "Waiting for players..."; Style: (FontSize: 12, HorizontalAlignment: Center); }
+      Label #MiniGameState { Text: "Waiting for players... (4 minimum)"; Style: (FontSize: 12, HorizontalAlignment: Center); }
 
       Group { Anchor: (Height: 8); } // Spacer
 

@@ -11,13 +11,13 @@
   "IconProperties": {
     "Scale": 0.3,
     "Rotation": [
-      5,
-      24,
-      4
+      22.5,
+      45,
+      22.5
     ],
     "Translation": [
-      -30,
-      -19
+      -24,
+      -26
     ]
   },
   "Interactions": {

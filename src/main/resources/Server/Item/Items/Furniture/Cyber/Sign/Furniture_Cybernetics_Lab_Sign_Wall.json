@@ -1,0 +1,70 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Cybernetics_Lab_Sign_Wall.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Signs",
+    "CarpenterProtocolCategory.Signs"
+  ],
+  "Set": "Furniture_Cyber",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -21,
+      -26
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Metal",
+    "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Cybernetics_Lab_Sign_Wall.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Decorative_Sets/Cyber/Sign/Cybernetics_Lab_Sign_Texture-Sheet.png",
+        "Weight": 1
+      }
+    ],
+    "Looping": true,
+    "DrawType": "Model",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#4bf0f0",
+    "VariantRotation": "NESW",
+    "HitboxType": "Sign_Tall3x1",
+    "Light": {
+      "Color": "#167"
+    },
+    "CustomModelAnimation": "Blocks/Animations/Cyber/Sign/Cybernetics_Lab_Sign.blockyanim",
+    "Support": {
+      "North": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Lumberjack"
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Cybernetics_Lab_Sign_Wall.png"
+}

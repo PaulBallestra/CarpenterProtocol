@@ -5,6 +5,7 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractPlayerCommand;
 import com.hypixel.hytale.server.core.inventory.Inventory;
+import com.hypixel.hytale.server.core.permissions.HytalePermissions;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.npc.INonPlayerCharacter;
@@ -18,12 +19,17 @@ import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import it.unimi.dsi.fastutil.Pair;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
+import java.security.Permission;
 import java.util.Objects;
 
 public class SpawnLaserTagBlueBotCommand extends AbstractPlayerCommand {
 
     public SpawnLaserTagBlueBotCommand(){
         super("spawnlasertagbluebot", "Spawn a Blue Bot for Laser Tag");
+
+        requirePermission(
+                HytalePermissions.fromCommand("admin")
+        );
     }
 
     @Override

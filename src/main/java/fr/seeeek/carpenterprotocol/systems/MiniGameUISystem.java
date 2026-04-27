@@ -60,7 +60,7 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
 
         if(!game.isStartingTitleShown() && game.getState() == MiniGameState.RUNNING){
             game.setIsStartingTitleShown(true);
-            showMajorUITitle(store, "Game started", "GO!", 1.6f);
+            showMajorUITitle(store, "Game has started", "GO!", 1.6f);
         }
 
         if (game.getState() == MiniGameState.ENDING && !game.isWinnerTitleShown()) {
@@ -100,7 +100,7 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
             });
 
             // --- SECURE ECS ITERATION END ---
-            showMajorUITitle(store, "Game's ended !", "Winner: " + winnerDisplayName, 6.4f);
+            showMajorUITitle(store, "Game over !", "Winner: " + winnerDisplayName, 6.4f);
         }
 
         if(game.getState() == MiniGameState.ENDING){

@@ -31,10 +31,6 @@ public class MiniGameInGameHud extends CustomUIHud {
         String teamName = getTeamName(laserTagPlayerComponent.getTeamId());
         String teamColor = getTeamColorHex(laserTagPlayerComponent.getTeamId());
 
-        commandBuilder.set("#PluginName.Text", "Carpenter Protocol");
-
-        commandBuilder.set("#MapName.Text", "H13 Block");
-
         commandBuilder.set("#MiniGameState.Text", "State: " + game.getState());
 
         commandBuilder.set("#Team.Text", "Team: " + teamName);

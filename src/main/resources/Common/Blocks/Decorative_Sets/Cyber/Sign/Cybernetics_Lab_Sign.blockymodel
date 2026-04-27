@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Origin",
-      "position": {"x": 32, "y": 2, "z": 1},
+      "position": {"x": 32, "y": -6, "z": 1},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,7 +22,7 @@
         {
           "id": "2",
           "name": "Panel",
-          "position": {"x": 1, "y": 14, "z": -1},
+          "position": {"x": 1, "y": 22, "z": -1},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
@@ -73,7 +73,7 @@
         {
           "id": "3",
           "name": "Screen",
-          "position": {"x": 1, "y": 14, "z": -1},
+          "position": {"x": 1, "y": 22, "z": -1},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
@@ -124,7 +124,7 @@
         {
           "id": "4",
           "name": "TopAttach",
-          "position": {"x": -45, "y": 22, "z": -1},
+          "position": {"x": -45, "y": 30, "z": -1},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
@@ -175,7 +175,7 @@
         {
           "id": "5",
           "name": "Attach",
-          "position": {"x": -47, "y": 14, "z": -1},
+          "position": {"x": -47, "y": 22, "z": -1},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
@@ -226,7 +226,7 @@
         {
           "id": "6",
           "name": "BottomAttach",
-          "position": {"x": -45, "y": 6, "z": -1},
+          "position": {"x": -45, "y": 14, "z": -1},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
@@ -277,7 +277,7 @@
         {
           "id": "7",
           "name": "NeonLetters",
-          "position": {"x": -13, "y": 14, "z": -6},
+          "position": {"x": -13, "y": 22, "z": -6},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",

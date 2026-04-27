@@ -212,7 +212,8 @@ items.Furniture_Cyber_Bar.name=Bar Cyber
 items.Furniture_Nightclub_Sofa.name=Canapé de Boîte de Nuit
 
 items.Furniture_Bar_Sign.name=Panneau "Bar"
-items.Furniture_Cybernetics_Lab_Sign.name=Panneau "Cybernetics Labs"
+items.Furniture_Cybernetics_Lab_Sign.name=Panneau "Cybernetics Labs" - Côté
+items.Furniture_Cybernetics_Lab_Sign_Wall.name=Panneau "Cybernetics Labs" - Dos
 items.Furniture_Nightfall_Synapse_Sign.name=Panneau "Nightfall Synapse"
 items.Furniture_Zone_Locked_Sign.name=Panneau "Zone Locked"
 items.Furniture_City_Ramen_Sign.name=Panneau "City Ramen"

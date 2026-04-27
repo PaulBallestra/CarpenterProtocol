@@ -7,6 +7,30 @@
   "blocks": [
     {
       "x": -8,
+      "y": 2,
+      "z": -4,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
+      "y": 3,
+      "z": -4,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
+      "y": 2,
+      "z": -3,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
+      "y": 3,
+      "z": -3,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
       "y": 1,
       "z": 0,
       "name": "Cloth_Block_Wool_Black"
@@ -30,6 +54,30 @@
       "name": "Cloth_Block_Wool_Black"
     },
     {
+      "x": -8,
+      "y": 2,
+      "z": 3,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
+      "y": 3,
+      "z": 3,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
+      "y": 2,
+      "z": 4,
+      "name": "Barrier"
+    },
+    {
+      "x": -8,
+      "y": 3,
+      "z": 4,
+      "name": "Barrier"
+    },
+    {
       "x": -7,
       "y": -1,
       "z": -7,
@@ -1938,6 +1986,18 @@
     },
     {
       "x": -4,
+      "y": 2,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
+      "x": -4,
       "y": -2,
       "z": -7,
       "name": "Cloth_Block_Wool_Black"
@@ -2293,6 +2353,30 @@
       "name": "Cloth_Block_Wool_Black"
     },
     {
+      "x": -4,
+      "y": 2,
+      "z": 8,
+      "name": "Barrier"
+    },
+    {
+      "x": -4,
+      "y": 3,
+      "z": 8,
+      "name": "Barrier"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
       "x": -3,
       "y": -2,
       "z": -7,
@@ -2647,6 +2731,18 @@
       "y": 7,
       "z": 7,
       "name": "Cloth_Block_Wool_Black"
+    },
+    {
+      "x": -3,
+      "y": 2,
+      "z": 8,
+      "name": "Barrier"
+    },
+    {
+      "x": -3,
+      "y": 3,
+      "z": 8,
+      "name": "Barrier"
     },
     {
       "x": -2,
@@ -3769,12 +3865,6 @@
     },
     {
       "x": 0,
-      "y": 0,
-      "z": 0,
-      "name": "Cloth_Block_Wool_Black"
-    },
-    {
-      "x": 0,
       "y": 5,
       "z": 0,
       "name": "Black_Cloth_Half",
@@ -4901,6 +4991,18 @@
     },
     {
       "x": 3,
+      "y": 2,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
+      "x": 3,
       "y": -2,
       "z": -7,
       "name": "Cloth_Block_Wool_Black"
@@ -5256,6 +5358,30 @@
       "name": "Cloth_Block_Wool_Black"
     },
     {
+      "x": 3,
+      "y": 2,
+      "z": 8,
+      "name": "Barrier"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "z": 8,
+      "name": "Barrier"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": -8,
+      "name": "Barrier"
+    },
+    {
       "x": 4,
       "y": -2,
       "z": -7,
@@ -5610,6 +5736,18 @@
       "y": 7,
       "z": 7,
       "name": "Cloth_Block_Wool_Black"
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "z": 8,
+      "name": "Barrier"
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "z": 8,
+      "name": "Barrier"
     },
     {
       "x": 5,
@@ -7520,6 +7658,30 @@
     },
     {
       "x": 8,
+      "y": 2,
+      "z": -4,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": -4,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": -3,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": -3,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
       "y": 1,
       "z": 0,
       "name": "Cloth_Block_Wool_Black"
@@ -7541,6 +7703,30 @@
       "y": 4,
       "z": 0,
       "name": "Cloth_Block_Wool_Black"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 3,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 3,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "z": 4,
+      "name": "Barrier"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "z": 4,
+      "name": "Barrier"
     }
   ]
 }
