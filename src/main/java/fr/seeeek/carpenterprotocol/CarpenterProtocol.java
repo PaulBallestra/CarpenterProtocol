@@ -86,8 +86,8 @@ public class CarpenterProtocol extends JavaPlugin {
         MiniGameHudComponent.setComponentType(miniGameHudComponentComponentType);
 
         // debugs commands
-         commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
-        commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
+        commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
+//         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
 //         commandRegistry.registerCommand(new GetMiniGameStateCommand());
 //         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
 //         commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
