@@ -20,27 +20,23 @@ public class LaserTagPlayerComponent implements Component<EntityStore> {
     private int teamId;
     private int kills;
     private int deaths;
-    private float respawnTimer;
 
     public LaserTagPlayerComponent(){
         this.teamId = 0;
         this.kills = 0;
         this.deaths = 0;
-        this.respawnTimer = 3f;
     }
 
-    public LaserTagPlayerComponent(int teamId, int kills, int deaths, float respawnTimer) {
+    public LaserTagPlayerComponent(int teamId, int kills, int deaths) {
         this.teamId = teamId;
         this.kills = kills;
         this.deaths = deaths;
-        this.respawnTimer = respawnTimer;
     }
 
     public LaserTagPlayerComponent(LaserTagPlayerComponent other){
         this.teamId = other.teamId;
         this.kills = other.kills;
         this.deaths = other.deaths;
-        this.respawnTimer = other.respawnTimer;
     }
 
     @NullableDecl
@@ -65,11 +61,6 @@ public class LaserTagPlayerComponent implements Component<EntityStore> {
                     (component, value) -> component.deaths = value,
                     component -> component.deaths
             ).add()
-            .append(
-                    new KeyedCodec<>("RespawnTimer", Codec.FLOAT),
-                    (component, value) -> component.respawnTimer = value,
-                    component -> component.respawnTimer
-            ).add()
             .build();
 
     public int getTeamId() {
@@ -90,7 +81,4 @@ public class LaserTagPlayerComponent implements Component<EntityStore> {
     public void addDeath() {
         deaths++;
     }
-
-    public float getRespawnTimer() { return respawnTimer; }
-    public void setRespawnTimer(float timer) { this.respawnTimer = timer; }
 }

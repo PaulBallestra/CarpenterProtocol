@@ -27,7 +27,6 @@ public class GetLaserTagPlayerCommand extends AbstractPlayerCommand {
             BroadcastMessage.toPlayer(playerRef,"TeamId : " + laserTagPlayerComponent.getTeamId(), MessageType.DEBUG);
             BroadcastMessage.toPlayer(playerRef,"Kills : " + laserTagPlayerComponent.getKills(), MessageType.DEBUG);
             BroadcastMessage.toPlayer(playerRef,"Deaths : " + laserTagPlayerComponent.getDeaths(), MessageType.DEBUG);
-            BroadcastMessage.toPlayer(playerRef,"RespawnTimer : " + laserTagPlayerComponent.getRespawnTimer(), MessageType.DEBUG);
             BroadcastMessage.toPlayer(playerRef,"Reference : " + laserTagPlayerComponent, MessageType.DEBUG);
         }else{
             BroadcastMessage.toPlayer(playerRef,"No LaserTagPlayerComponent found on Player : " + playerRef.getUsername(), MessageType.ERROR);

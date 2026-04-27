@@ -11,7 +11,6 @@ import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
-import fr.seeeek.carpenterprotocol.components.LobbyComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
 import fr.seeeek.carpenterprotocol.huds.MiniGameInGameHud;
@@ -25,10 +24,9 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
                      Store<EntityStore> store,
                      CommandBuffer<EntityStore> commandBuffer) {
 
-        LobbyComponent lobbyComponent = chunk.getComponent(i, LobbyComponent.getComponentType());
         MiniGameComponent miniGameComponent = chunk.getComponent(i, MiniGameComponent.getComponentType());
 
-        if (miniGameComponent == null || lobbyComponent == null) return;
+        if (miniGameComponent == null) return;
 
         World world = store.getExternalData().getWorld();
 
@@ -58,7 +56,7 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
                 continue;
 
             if (player.getHudManager().getCustomHud() instanceof MiniGameInGameHud miniGameInGameHud) {
-                miniGameInGameHud.refresh(miniGameComponent, lobbyComponent, laserTagPlayerComponent);
+                miniGameInGameHud.refresh(miniGameComponent, laserTagPlayerComponent);
                 hudComponent.cache(miniGameComponent, laserTagPlayerComponent);
             }
         }

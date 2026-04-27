@@ -4,7 +4,6 @@ import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
-import fr.seeeek.carpenterprotocol.components.LobbyComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
@@ -25,21 +24,23 @@ public class MiniGameInGameHud extends CustomUIHud {
         builder.append("Hud/MiniGameInGameHud.ui");
     }
 
-    public void refresh(MiniGameComponent game, LobbyComponent lobby, LaserTagPlayerComponent laserTagPlayerComponent) {
+    public void refresh(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent) {
 
         UICommandBuilder commandBuilder = new UICommandBuilder();
 
-        commandBuilder.set("#LobbyDisplayName.Text", "Carpenter Protocol");
+        String teamName = getTeamName(laserTagPlayerComponent.getTeamId());
+        String teamColor = getTeamColorHex(laserTagPlayerComponent.getTeamId());
 
-        commandBuilder.set("#MiniGameType.Text", "Block H13");
+        commandBuilder.set("#PluginName.Text", "Carpenter Protocol");
 
-        commandBuilder.set("#MiniGameState.Text",
-                "State: " + game.getState());
+        commandBuilder.set("#MapName.Text", "H13 Block");
 
-        commandBuilder.set("#PlayerCount.Text",
-                game.getAlivePlayers().size()
-                        + "/" +
-                        game.getMinPlayers());
+        commandBuilder.set("#MiniGameState.Text", "State: " + game.getState());
+
+        commandBuilder.set("#Team.Text", "Team: " + teamName);
+        commandBuilder.set("#Team.Background", teamColor);
+
+        commandBuilder.set("#PlayerCount.Text", game.getAlivePlayers().size() + "/" + game.getMinPlayers());
 
         commandBuilder.set("#Stat1Value.Text", String.valueOf(laserTagPlayerComponent.getKills()));
         commandBuilder.set("#Stat1Key.Text", "Kills");
@@ -48,5 +49,23 @@ public class MiniGameInGameHud extends CustomUIHud {
         commandBuilder.set("#Stat2Key.Text", "Deaths");
 
         update(false, commandBuilder);
+    }
+
+    private String getTeamName(int teamId){
+        return switch (teamId){
+            case 0 -> "Red";
+            case 1 -> "Blue";
+            default -> "Unassigned";
+        };
+    }
+
+    private String getTeamColorHex(int teamId) {
+        return switch (teamId) {
+            case 0 -> "#FF5555"; //red
+            case 1 -> "#4a9eff"; // blue
+            case 2 -> "#4aff7f"; // green
+            case 3 -> "#FFFF55"; // yellow
+            default -> "#FFFFFF";
+        };
     }
 }
