@@ -49,10 +49,6 @@ public class CarpenterProtocol extends JavaPlugin {
         EventRegistry eventRegistry = this.getEventRegistry();
         AssetRegistry assetRegistry = this.getAssetRegistry();
 
-        // LOBBY
-        ComponentType<EntityStore, LobbyComponent> lobbyComponentComponentType = entityStoreRegistry.registerComponent(LobbyComponent.class, LobbyComponent::new);
-        LobbyComponent.setComponentType(lobbyComponentComponentType);
-
         // LASER TAG
         ComponentType<EntityStore, LaserTagRotatingLedsCubeComponent> rotatingLedsCubeComponentComponentType = entityStoreRegistry.registerComponent(LaserTagRotatingLedsCubeComponent.class, LaserTagRotatingLedsCubeComponent::new);
         LaserTagRotatingLedsCubeComponent.setComponentType(rotatingLedsCubeComponentComponentType);
@@ -74,12 +70,6 @@ public class CarpenterProtocol extends JavaPlugin {
         entityStoreRegistry.registerSystem(new LaserTagPlayerComponentSystem());
         entityStoreRegistry.registerSystem(new LaserTagFriendlyFireSystem());
 
-        commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
-        commandRegistry.registerCommand(new GetLaserTagGameCommand());
-        commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
-
-        commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
-
         // bots
         commandRegistry.registerCommand(new SpawnLaserTagBlueBotCommand());
         commandRegistry.registerCommand(new SpawnLaserTagRedBotCommand());
@@ -98,11 +88,16 @@ public class CarpenterProtocol extends JavaPlugin {
         ComponentType<EntityStore, MiniGameHudComponent> miniGameHudComponentComponentType = entityStoreRegistry.registerComponent(MiniGameHudComponent.class, MiniGameHudComponent::new);
         MiniGameHudComponent.setComponentType(miniGameHudComponentComponentType);
 
-        commandRegistry.registerCommand(new GetMiniGameStateCommand());
-        commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
-        commandRegistry.registerCommand(new OverridePlayerStateCommand());
-        commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
-        commandRegistry.registerCommand(new GetConfigCommand());
+        // debugs commands
+//         commandRegistry.registerCommand(new GetMiniGameStateCommand());
+//         commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
+//         commandRegistry.registerCommand(new OverridePlayerStateCommand());
+//         commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
+//         commandRegistry.registerCommand(new GetConfigCommand());
+//         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
+//         commandRegistry.registerCommand(new GetLaserTagGameCommand());
+//         commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
+//         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
 
         eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);
         eventRegistry.registerGlobal(AddWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Added);

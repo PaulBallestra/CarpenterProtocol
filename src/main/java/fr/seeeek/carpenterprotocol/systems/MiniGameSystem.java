@@ -11,7 +11,6 @@ import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
 import fr.seeeek.carpenterprotocol.common.MessageType;
-import fr.seeeek.carpenterprotocol.components.LobbyComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGamePlayerComponent;
 import fr.seeeek.carpenterprotocol.enums.MiniGamePlayerState;
@@ -23,7 +22,6 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
 import java.util.*;
 
-import static fr.seeeek.carpenterprotocol.utils.LobbyUtils.updateLobby;
 import static fr.seeeek.carpenterprotocol.utils.MiniGameUtils.*;
 
 public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
@@ -43,14 +41,14 @@ public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
         switch (game.getState()) {
             case CREATED:
                 game.setState(MiniGameState.PENDING);
-                updateLobby(store, entityRef);
+                //updateLobby(store, entityRef);
                 break;
 
             case PENDING:
                 // Check if enough players are in the world
                 if (world.getPlayerCount() >= game.getMinPlayers()) {
                     game.setState(MiniGameState.STARTING);
-                    updateLobby(store, entityRef);
+                    //updateLobby(store, entityRef);
                     game.setStartingTimer(game.getStartingTimer());
                     game.setEndingTimer(game.getEndingTimer());
 
@@ -77,7 +75,7 @@ public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
                     minigameLogic.starting(commandBuffer, world, game, dt, store, entityRef, allPlayerRefs);
 
                     game.setState(MiniGameState.RUNNING);
-                    updateLobby(store, entityRef);
+                    //updateLobby(store, entityRef);
                 }
                 break;
 
@@ -101,13 +99,11 @@ public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
 
                     teleportsBackAllPlayersToLobby(world);
                     game.setState(MiniGameState.FINISHED);
-                    updateLobby(store, entityRef);
                 }
                 break;
 
             case FINISHED:
                 world.execute(() -> {
-                    commandBuffer.removeComponent(entityRef, LobbyComponent.getComponentType());
                     commandBuffer.removeComponent(entityRef, MiniGameComponent.getComponentType());
                 });
                 break;

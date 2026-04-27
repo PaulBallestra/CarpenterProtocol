@@ -119,15 +119,6 @@ public class AddBlockH13WorldEvent {
 
         LaserTagGameComponent laserTagGameComponent = new LaserTagGameComponent();
 
-        LobbyComponent lobby = new LobbyComponent(
-                "lobby-" + gameWorld.getWorldConfig().getUuid(),
-                "Block H13",
-                miniGameComponent,
-                "127.0.0.1",
-                5520
-        );
-
-        miniGameEntityHolder.addComponent(LobbyComponent.getComponentType(), lobby);
         miniGameEntityHolder.addComponent(MiniGameComponent.getComponentType(), miniGameComponent);
         miniGameEntityHolder.addComponent(MiniGameUIComponent.getComponentType(), miniGameUIComponent);
         miniGameEntityHolder.addComponent(LaserTagGameComponent.getComponentType(), laserTagGameComponent);

@@ -26,13 +26,13 @@ $C.@DecoratedContainer {
         Anchor: (Height: 1);
         Background: #2b3542;
       }
-      Group { Anchor: (Height: 8); } // Spacer
+      //Group { Anchor: (Height: 8); } // Spacer
 
       Label #MiniGameState { Text: "Waiting for players..."; Style: (FontSize: 12, HorizontalAlignment: Center); }
 
       Group { Anchor: (Height: 8); } // Spacer
 
-      Label #Team { Text: "Team: Unassigned"; Style: (FontSize: 15, HorizontalAlignment: Center; }
+      Label #Team { Text: "Team: Unassigned"; Style: (FontSize: 15, HorizontalAlignment: Center); }
 
       Group { Anchor: (Height: 8); } // Spacer
       Group {
@@ -50,7 +50,7 @@ $C.@DecoratedContainer {
           FlexWeight: 1;
           LayoutMode: Right;
           Label #PlayerCount {
-            Text: "1/12";
+            Text: "1/4";
             Style: (FontSize: 12);
           }
         }
@@ -78,7 +78,7 @@ $C.@DecoratedContainer {
           Label #Stat1Value {
             Anchor: (Height: 32);
             Text: "0";
-            Style: (FontSize: 26, TextColor: #4a9eff, RenderBold: true, Alignment: Center);
+            Style: (FontSize: 26, TextColor: #55ff4c, RenderBold: true, Alignment: Center);
           }
           Label #Stat1Key {
             Anchor: (Height: 18);
@@ -94,7 +94,7 @@ $C.@DecoratedContainer {
           Label #Stat2Value {
             Anchor: (Height: 32);
             Text: "0";
-            Style: (FontSize: 26, TextColor: #4aff7f, RenderBold: true, Alignment: Center);
+            Style: (FontSize: 26, TextColor: #ff4c4c, RenderBold: true, Alignment: Center);
           }
           Label #Stat2Key {
             Anchor: (Height: 18);

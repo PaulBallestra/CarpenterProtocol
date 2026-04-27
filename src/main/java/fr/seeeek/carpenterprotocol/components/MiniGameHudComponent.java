@@ -42,6 +42,7 @@ public class MiniGameHudComponent implements Component<EntityStore> {
                 || lastAliveCount != game.getAlivePlayers().size()
                 || lastPlayersCount != game.getPlayers().size()
                 || lastLaserTagPlayerComponent.getKills() != laserTagPlayerComponent.getKills()
-                || lastLaserTagPlayerComponent.getDeaths() != laserTagPlayerComponent.getDeaths();
+                || lastLaserTagPlayerComponent.getDeaths() != laserTagPlayerComponent.getDeaths()
+                || lastLaserTagPlayerComponent.getTeamId() != laserTagPlayerComponent.getTeamId();
     }
 }

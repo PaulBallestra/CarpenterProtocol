@@ -86,10 +86,10 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
                                 if(laserTagPlayerComponent != null){
                                     switch (laserTagPlayerComponent.getTeamId()){
                                         case 0:
-                                            winnerDisplayName = "Red";
+                                            winnerDisplayName = "Red Team";
                                             break;
                                         case 1:
-                                            winnerDisplayName = "Blue";
+                                            winnerDisplayName = "Blue Team";
                                             break;
                                     }
                                 }
@@ -100,7 +100,7 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
             });
 
             // --- SECURE ECS ITERATION END ---
-            showMajorUITitle(store, "Game ended", winnerDisplayName, 6.4f);
+            showMajorUITitle(store, "Game's ended !", "Winner: " + winnerDisplayName, 6.4f);
         }
 
         if(game.getState() == MiniGameState.ENDING){

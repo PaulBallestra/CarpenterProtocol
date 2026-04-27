@@ -61,10 +61,10 @@ public class MiniGameInGameHud extends CustomUIHud {
 
     private String getTeamColorHex(int teamId) {
         return switch (teamId) {
-            case 0 -> "#FF5555"; //red
-            case 1 -> "#4a9eff"; // blue
-            case 2 -> "#4aff7f"; // green
-            case 3 -> "#FFFF55"; // yellow
+            case 0 -> "#960000"; //red
+            case 1 -> "#000096"; // blue
+            case 2 -> "#009600"; // green
+            case 3 -> "#969600"; // yellow
             default -> "#FFFFFF";
         };
     }
