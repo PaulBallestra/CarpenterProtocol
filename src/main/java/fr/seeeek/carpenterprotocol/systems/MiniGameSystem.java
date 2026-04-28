@@ -41,14 +41,12 @@ public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
         switch (game.getState()) {
             case CREATED:
                 game.setState(MiniGameState.PENDING);
-                //updateLobby(store, entityRef);
                 break;
 
             case PENDING:
                 // Check if enough players are in the world
                 if (world.getPlayerCount() >= game.getMinPlayers()) {
                     game.setState(MiniGameState.STARTING);
-                    //updateLobby(store, entityRef);
                     game.setStartingTimer(game.getStartingTimer());
                     game.setEndingTimer(game.getEndingTimer());
 
@@ -70,12 +68,10 @@ public class MiniGameSystem extends EntityTickingSystem<EntityStore> {
                             playerComponent.setPlayerState(MiniGamePlayerState.ALIVE);
                             game.getAlivePlayers().add(playerRef.getReference());
                         });
-
                     });
                     minigameLogic.starting(commandBuffer, world, game, dt, store, entityRef, allPlayerRefs);
 
                     game.setState(MiniGameState.RUNNING);
-                    //updateLobby(store, entityRef);
                 }
                 break;
 
