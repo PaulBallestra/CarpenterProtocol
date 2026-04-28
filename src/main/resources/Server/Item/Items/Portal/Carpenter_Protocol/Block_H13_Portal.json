@@ -38,7 +38,7 @@
     "AmbientSoundEventId": "SFX_Portal_Void",
     "Particles": [
       {
-        "SystemId": "MagicPortal_BlockH13",
+        "SystemId": "BlockH13_Portal",
         "PositionOffset": {
           "Y": 2.0
         },

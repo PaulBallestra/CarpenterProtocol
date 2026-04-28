@@ -5,6 +5,8 @@ import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.event.EventRegistry;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.command.system.CommandRegistry;
+import com.hypixel.hytale.server.core.entity.entities.Player;
+import com.hypixel.hytale.server.core.event.events.ecs.DropItemEvent;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
@@ -87,18 +89,23 @@ public class CarpenterProtocol extends JavaPlugin {
 
         // debugs commands
         commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
-//         commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
-//         commandRegistry.registerCommand(new GetMiniGameStateCommand());
-//         commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
-//         commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
-//         commandRegistry.registerCommand(new OverridePlayerStateCommand());
-//         commandRegistry.registerCommand(new GetConfigCommand());
-//         commandRegistry.registerCommand(new GetLaserTagGameCommand());
-//         commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
+        // commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
+        // commandRegistry.registerCommand(new GetMiniGameStateCommand());
+        // commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
+        // commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
+        // commandRegistry.registerCommand(new OverridePlayerStateCommand());
+        // commandRegistry.registerCommand(new GetConfigCommand());
+        // commandRegistry.registerCommand(new GetLaserTagGameCommand());
+        // commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
 
         eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);
         eventRegistry.registerGlobal(AddWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Added);
         eventRegistry.registerGlobal(StartWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Start);
+
+        getEventRegistry().register(DropItemEvent.class, event -> {
+            // DropItemEvent is cancellable
+            event.setCancelled(true);  // Prevent drop
+        });
 
         entityStoreRegistry.registerSystem(new MiniGameSystem());
         entityStoreRegistry.registerSystem(new MiniGameUISystem());

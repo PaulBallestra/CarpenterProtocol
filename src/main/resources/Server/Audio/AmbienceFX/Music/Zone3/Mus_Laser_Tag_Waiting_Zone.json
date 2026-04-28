@@ -5,6 +5,10 @@
     ],
     "Altitude": {
       "Max": 85
+    },
+    "EnvironmentTagPattern": {
+      "Op": "Equals",
+      "Tag": "ZoneBlockH13"
     }
   },
   "Music": {

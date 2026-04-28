@@ -24,8 +24,7 @@ public class LaserTagTeamSpawnProvider implements ISpawnProvider {
     }
 
     @Override
-    public Transform getSpawnPoint(World world, UUID playerUuid) {
-
+    public Transform getSpawnPoint(World world, @NonNullDecl UUID playerUuid) {
         Store<EntityStore> store = world.getEntityStore().getStore();
         Ref<EntityStore> playerRef = world.getEntityStore().getRefFromUUID(playerUuid);
 

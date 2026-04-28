@@ -166,6 +166,7 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
                     spawner.setPosition(position);
 
                     Transform transform = new Transform(position);
+
                     markerTeamSpawnPoints.computeIfAbsent(
                             spawner.getTeamId(),
                             id -> new ArrayList<>()

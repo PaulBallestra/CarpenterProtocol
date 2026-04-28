@@ -36,7 +36,7 @@ import fr.seeeek.carpenterprotocol.enums.MiniGameType;
 
 public class AddBlockH13WorldEvent {
 
-    static String waitingZonePrefabKey = "Laser_Tag_Waiting_Zone.prefab.json", weatherKey = "ZoneBlockH13_Map", gameplayConfig = "LaserTag_GameplayConfig";
+    static String waitingZonePrefabKey = "Laser_Tag_Waiting_Zone.prefab.json", weatherKey = "ZoneBlockH13_Map", gameplayConfig = "LaserTag_GameplayConfig", environmentKey = "Env_BlockH13";
     static Vector3i waitingZoneSpawnPoint = new Vector3i(0, 78, 0);
     static Vector3i waitingZonePortalSpawnPoint = new Vector3i(1, 78, 1);
 
@@ -90,7 +90,7 @@ public class AddBlockH13WorldEvent {
         if(gameplayConfig != null) worldConfig.setGameplayConfig(gameplayConfig);
 
         // Use Void generator and Empty storage for a clean slate
-        worldConfig.setWorldGenProvider(new VoidWorldGenProvider(new Color((byte)91, (byte)-98, (byte)40), "Env_Zone1_Plains"));
+        worldConfig.setWorldGenProvider(new VoidWorldGenProvider(new Color((byte)91, (byte)-98, (byte)40), environmentKey));
         worldConfig.setChunkStorageProvider(EmptyChunkStorageProvider.INSTANCE);
         worldConfig.setResourceStorageProvider(EmptyResourceStorageProvider.INSTANCE);
     }

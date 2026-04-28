@@ -15,6 +15,10 @@
     "Altitude": {
       "Min": 150,
       "Max": 250
+    },
+    "EnvironmentTagPattern": {
+      "Op": "Equals",
+      "Tag": "ZoneBlockH13"
     }
   },
   "Priority": 100
