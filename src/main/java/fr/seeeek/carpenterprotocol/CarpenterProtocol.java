@@ -68,6 +68,7 @@ public class CarpenterProtocol extends JavaPlugin {
         entityStoreRegistry.registerSystem(new LaserTagPlayerDeathSystem());
         entityStoreRegistry.registerSystem(new LaserTagPlayerComponentSystem());
         entityStoreRegistry.registerSystem(new LaserTagFriendlyFireSystem());
+        entityStoreRegistry.registerSystem(new LaserTagDropSystem());
 
         // bots
 //        commandRegistry.registerCommand(new SpawnLaserTagBlueBotCommand());
@@ -101,11 +102,6 @@ public class CarpenterProtocol extends JavaPlugin {
         eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);
         eventRegistry.registerGlobal(AddWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Added);
         eventRegistry.registerGlobal(StartWorldEvent.class, AddBlockH13WorldEvent::onBlockH13Start);
-
-        getEventRegistry().register(DropItemEvent.class, event -> {
-            // DropItemEvent is cancellable
-            event.setCancelled(true);  // Prevent drop
-        });
 
         entityStoreRegistry.registerSystem(new MiniGameSystem());
         entityStoreRegistry.registerSystem(new MiniGameUISystem());

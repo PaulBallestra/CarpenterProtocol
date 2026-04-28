@@ -70,7 +70,7 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
             if (laserTag == null) continue;
 
-            if(isPlayerAlone) winningTeam = laserTag.getTeamId();
+            //if(isPlayerAlone) winningTeam = laserTag.getTeamId();
 
             switch (laserTag.getTeamId()) {
                 case 0 -> team0Score += laserTag.getKills();
