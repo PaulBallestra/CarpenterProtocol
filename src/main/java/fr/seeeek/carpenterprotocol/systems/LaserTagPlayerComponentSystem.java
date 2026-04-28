@@ -9,7 +9,7 @@ import com.hypixel.hytale.component.system.RefChangeSystem;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
-import fr.seeeek.carpenterprotocol.utils.LaserTagTeamUtils;
+import fr.seeeek.carpenterprotocol.utils.LaserTagUtils;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
@@ -25,7 +25,7 @@ public class LaserTagPlayerComponentSystem extends RefChangeSystem<EntityStore, 
         Player player = commandBuffer.getComponent(ref, Player.getComponentType());
         assert player != null;
 
-        LaserTagTeamUtils.assignLaserTagStuff(player, laserTagPlayerComponent.getTeamId());
+        LaserTagUtils.assignLaserTagPlayerInventory(store, player, laserTagPlayerComponent.getTeamId());
     }
 
     @Override
@@ -37,7 +37,7 @@ public class LaserTagPlayerComponentSystem extends RefChangeSystem<EntityStore, 
         Player player = commandBuffer.getComponent(ref, Player.getComponentType());
         assert player != null;
 
-        LaserTagTeamUtils.removeStuff(player, laserTagPlayerComponent.getTeamId());
+        LaserTagUtils.clearLaserTagPlayerInventory(store, player);
     }
 
     @NullableDecl

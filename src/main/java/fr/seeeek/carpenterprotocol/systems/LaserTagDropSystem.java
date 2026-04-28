@@ -19,22 +19,7 @@ public class LaserTagDropSystem extends EntityEventSystem<EntityStore, DropItemE
         return Archetype.of(this.laserTagPlayerComponentComponentType);
     }
 
-//    public void handle(int index, ArchetypeChunk<EntityStore> chunk, Store<EntityStore> store, CommandBuffer<EntityStore> commandBuffer, DropItemEvent.PlayerRequest event) {
-//        NoDropConfig currentConfig = this.plugin.config;
-//        if (currentConfig.enabled) {
-//            PlayerRef playerRef = (PlayerRef)chunk.getComponent(index, this.playerRefType);
-//            if (playerRef != null) {
-//                if (!NoDropItemsPlugin.hasBypassPermission(playerRef.getUuid())) {
-//                    event.setCancelled(true);
-//                    String message = currentConfig.blockMessage;
-//                    if (message != null && !message.isEmpty()) {
-//                        playerRef.sendMessage(NoDropItemsPlugin.parseColoredMessage(message, "#FFFFFF", false));
-//                    }
-//
-//                }
-//            }
-//        }
-//    }
+
 
     @Override
     public void handle(int index, @NonNullDecl ArchetypeChunk<EntityStore> archetypeChunk, @NonNullDecl Store<EntityStore> store, @NonNullDecl CommandBuffer<EntityStore> commandBuffer, @NonNullDecl DropItemEvent.PlayerRequest playerRequest) {

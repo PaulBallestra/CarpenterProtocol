@@ -11,7 +11,6 @@ import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.hud.CustomUIHud;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
-import com.hypixel.hytale.server.core.inventory.Inventory;
 import com.hypixel.hytale.server.core.modules.block.BlockModule;
 import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
@@ -32,7 +31,7 @@ import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGamePlayerComponent;
 import fr.seeeek.carpenterprotocol.huds.MiniGameInGameHud;
 import fr.seeeek.carpenterprotocol.interfaces.LaserTagTeamSpawnProvider;
-import fr.seeeek.carpenterprotocol.utils.LaserTagTeamUtils;
+import fr.seeeek.carpenterprotocol.utils.LaserTagUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -130,20 +129,15 @@ public class MiniGamePlayerComponentEvent {
 
                 player.getHudManager().setCustomHud (playerRef, miniGameInGameHud);
 
-                // inventory
-                Inventory inventory = player.getInventory();
-                if(inventory != null){
-                    inventory.clear();
-                    inventory.setUsingToolsItem(false);
-                }
+                LaserTagUtils.clearLaserTagPlayerInventory(store, player);
 
                 if(numberOfPlayerWithLaserTagPlayerComponent > 0){
                     if(team1PlayerCount.get() >= team0PlayerCount.get()){
                         List<Transform> spawns = markerTeamSpawnPoints.get(0);
                         Transform spawn = spawns.get(ThreadLocalRandom.current().nextInt(spawns.size()));
 
-                        LaserTagTeamUtils.assignTeam(0, store, playerRef.getReference());
-                        LaserTagTeamUtils.assignLaserTagStuff(player, 0);
+                        LaserTagUtils.assignTeam(0, store, playerRef.getReference());
+                        LaserTagUtils.assignLaserTagPlayerInventory(store, player, 0);
 
                         Teleport teleport = Teleport.createForPlayer(player.getWorld(), spawn);
                         store.addComponent(event.getPlayerRef(), Teleport.getComponentType(), teleport);
@@ -153,8 +147,8 @@ public class MiniGamePlayerComponentEvent {
                         List<Transform> spawns = markerTeamSpawnPoints.get(1);
                         Transform spawn = spawns.get(ThreadLocalRandom.current().nextInt(spawns.size()));
 
-                        LaserTagTeamUtils.assignTeam(1, store, playerRef.getReference());
-                        LaserTagTeamUtils.assignLaserTagStuff(player, 1);
+                        LaserTagUtils.assignTeam(1, store, playerRef.getReference());
+                        LaserTagUtils.assignLaserTagPlayerInventory(store, player, 1);
 
                         Teleport teleport = Teleport.createForPlayer(player.getWorld(), spawn);
                         store.addComponent(event.getPlayerRef(), Teleport.getComponentType(), teleport);

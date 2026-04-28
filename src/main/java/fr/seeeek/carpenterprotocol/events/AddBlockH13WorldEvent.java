@@ -72,7 +72,6 @@ public class AddBlockH13WorldEvent {
     private static void setWorldConfig(World world) {
         WorldConfig worldConfig = world.getWorldConfig();
 
-
         worldConfig.setSpawnProvider(new GlobalSpawnProvider(new Transform(waitingZonePortalSpawnPoint)));
 
         worldConfig.setCanSaveChunks(false);

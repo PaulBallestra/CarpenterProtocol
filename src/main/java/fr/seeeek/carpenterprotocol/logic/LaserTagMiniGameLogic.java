@@ -32,7 +32,7 @@ import fr.seeeek.carpenterprotocol.enums.MiniGamePlayerState;
 import fr.seeeek.carpenterprotocol.enums.MiniGameState;
 import fr.seeeek.carpenterprotocol.interfaces.LaserTagTeamSpawnProvider;
 import fr.seeeek.carpenterprotocol.interfaces.MiniGameLogic;
-import fr.seeeek.carpenterprotocol.utils.LaserTagTeamUtils;
+import fr.seeeek.carpenterprotocol.utils.LaserTagUtils;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -91,17 +91,18 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
                 if (playerRef == null || !playerRef.isValid()) continue;
 
 
-                LaserTagPlayerComponent laserTag = commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
+                LaserTagPlayerComponent laserTagPlayerComponent = commandBuffer.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
                 MiniGamePlayerComponent playerComponent = commandBuffer.getComponent(playerRef, MiniGamePlayerComponent.getComponentType());
 
-                if (laserTag == null || playerComponent == null) continue;
+                if (laserTagPlayerComponent == null || playerComponent == null) continue;
 
-                if (laserTag.getTeamId() == winningTeam) {
+                if (laserTagPlayerComponent.getTeamId() == winningTeam) {
                     playerComponent.setPlayerState(MiniGamePlayerState.WINNER);
                 }
 
                 Player player = commandBuffer.getComponent(playerRef, Player.getComponentType());
-                LaserTagTeamUtils.removeStuff(player, laserTag.getTeamId());
+                assert player != null;
+                LaserTagUtils.clearLaserTagPlayerInventory(store, player);
             }
 
             miniGameComponent.setState(MiniGameState.ENDING);
@@ -191,7 +192,7 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
                     if(store.getComponent(playerRef.getReference(), LaserTagPlayerComponent.getComponentType()) != null) return;
 
-                    LaserTagTeamUtils.assignTeam(team.get(), store, playerRef.getReference());
+                    LaserTagUtils.assignTeam(team.get(), store, playerRef.getReference());
 
                     team.set((team.get() + 1) % 2);
                 }
