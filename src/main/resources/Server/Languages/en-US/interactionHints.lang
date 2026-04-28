@@ -5,3 +5,7 @@ turnmiddleright=Enable Side : Middle Right
 turnright=Enable Side : Right
 turntop=Enable Side : Top
 turnbottom=Enable Side : Bottom
+
+turntostate1=Turn to State : 1
+turntostate2=Turn to State : 2
+turntostate3=Turn to State : 3

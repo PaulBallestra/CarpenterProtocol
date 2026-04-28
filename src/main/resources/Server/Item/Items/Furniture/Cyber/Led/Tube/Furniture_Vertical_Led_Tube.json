@@ -15,6 +15,7 @@
   },
   "BlockType": {
     "BlockParticleSetId": "Metal",
+    "InteractionHint": "interactionHints.turntostate2",
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube.blockymodel",
     "CustomModelTexture": [
       {
@@ -43,7 +44,7 @@
     },
     "VariantRotation": "NESW",
     "RandomRotation": "YawStep1",
-    "ParticleColor": "#cc9393",
+    "ParticleColor": "#ad2828",
     "BlockSoundSetId": "Metal",
     "Interactions": {
       "Use": {
@@ -63,8 +64,7 @@
     "State": {
       "Definitions": {
         "State1": {
-          "InteractionHint": "server.interactionHints.turntostate2",
-          "AmbientSoundEventId": "SFX_Portal_Neutral",
+          "InteractionHint": "interactionHints.turntostate2",
           "CustomModelTexture": [
             {
               "Texture": "Blocks/Decorative_Sets/Cyber/Led/Tube/Vertical_Led_Tube_Texture-Sheet.png"
@@ -74,7 +74,7 @@
           "Looping": true
         },
         "State2": {
-          "InteractionHint": "server.interactionHints.turntostate3",
+          "InteractionHint": "interactionHints.turntostate3",
           "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Led_Tube_Flash_2.blockyanim",
           "CustomModelTexture": [
             {
@@ -84,7 +84,7 @@
           "Looping": true
         },
         "State3": {
-          "InteractionHint": "server.interactionHints.turntostate1",
+          "InteractionHint": "interactionHints.turntostate1",
           "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Led_Tube_Flash_3.blockyanim",
           "CustomModelTexture": [
             {
