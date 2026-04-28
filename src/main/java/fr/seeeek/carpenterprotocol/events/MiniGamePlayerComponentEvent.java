@@ -30,7 +30,6 @@ import fr.seeeek.carpenterprotocol.components.LaserTagMarkerTeamSpawnerComponent
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGamePlayerComponent;
-import fr.seeeek.carpenterprotocol.enums.MiniGamePlayerState;
 import fr.seeeek.carpenterprotocol.huds.MiniGameInGameHud;
 import fr.seeeek.carpenterprotocol.interfaces.LaserTagTeamSpawnProvider;
 import fr.seeeek.carpenterprotocol.utils.LaserTagTeamUtils;

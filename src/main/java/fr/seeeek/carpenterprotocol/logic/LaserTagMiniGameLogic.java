@@ -56,10 +56,11 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
     public void running(CommandBuffer<EntityStore> commandBuffer, World world, MiniGameComponent miniGameComponent, float dt, Store<EntityStore> store, Ref<EntityStore> entityRef) {
         if (miniGameComponent.getState() != MiniGameState.RUNNING) return;
 
-        if(store.getEntityCountFor(LaserTagPlayerComponent.getComponentType()) == 1) miniGameComponent.setState(MiniGameState.ENDING);
+        boolean isPlayerAlone = store.getEntityCountFor(LaserTagPlayerComponent.getComponentType()) == 1;
 
         int team0Score = 0;
         int team1Score = 0;
+        int winningTeam = -1;
 
         // Calculate scores
         for (Ref<EntityStore> playerRef : miniGameComponent.getAlivePlayers()) {
@@ -69,13 +70,14 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
             if (laserTag == null) continue;
 
+            if(isPlayerAlone) winningTeam = laserTag.getTeamId();
+
             switch (laserTag.getTeamId()) {
                 case 0 -> team0Score += laserTag.getKills();
                 case 1 -> team1Score += laserTag.getKills();
             }
         }
 
-        int winningTeam = -1;
 
         if (team0Score >= maxKills) {
             winningTeam = 0;
