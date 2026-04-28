@@ -187,14 +187,21 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
             // BroadcastMessage.toWorld(world, "Assigning teams", MessageType.DEBUG);
             allPlayerRefs.forEach(playerRef -> {
                 if(playerRef.getReference() != null){
-                    Player player = store.getComponent(playerRef.getReference(), Player.getComponentType());
-                    if(player == null) return;
+//                    Player player = store.getComponent(playerRef.getReference(), Player.getComponentType());
+//                    if(player == null) return;
+//
+//                    if(store.getComponent(playerRef.getReference(), LaserTagPlayerComponent.getComponentType()) != null) return;
+//
+//                    LaserTagUtils.assignTeam(team.get(), store, playerRef.getReference());
+//
+//                    team.set((team.get() + 1) % 2);
 
-                    if(store.getComponent(playerRef.getReference(), LaserTagPlayerComponent.getComponentType()) != null) return;
+                    int assignedTeam = team.get();
 
-                    LaserTagUtils.assignTeam(team.get(), store, playerRef.getReference());
+                    LaserTagUtils.assignTeam(assignedTeam, store, playerRef.getReference());
+                    registerSpawnTeam(world, playerRef.getUuid(), assignedTeam);
 
-                    team.set((team.get() + 1) % 2);
+                    team.set((assignedTeam + 1) % 2);
                 }
             });
 
@@ -222,6 +229,8 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
                 if (laserTag == null) continue;
 
                 int teamId = laserTag.getTeamId();
+
+                registerSpawnTeam(world, playerRef.getUuid(), teamId);
 
                 List<Transform> spawns = markerTeamSpawnPoints.get(teamId);
 
@@ -256,5 +265,11 @@ public class LaserTagMiniGameLogic implements MiniGameLogic {
 
             BroadcastMessage.toWorld(world, "Teleporting players to team spawns...", MessageType.SUCCESS);
         });
+    }
+
+    private void registerSpawnTeam(World world, UUID playerUuid, int teamId) {
+        if (world.getWorldConfig().getSpawnProvider() instanceof LaserTagTeamSpawnProvider spawnProvider) {
+            spawnProvider.setPlayerTeam(playerUuid, teamId);
+        }
     }
 }

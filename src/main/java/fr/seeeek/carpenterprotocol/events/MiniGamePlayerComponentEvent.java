@@ -33,10 +33,7 @@ import fr.seeeek.carpenterprotocol.huds.MiniGameInGameHud;
 import fr.seeeek.carpenterprotocol.interfaces.LaserTagTeamSpawnProvider;
 import fr.seeeek.carpenterprotocol.utils.LaserTagUtils;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -136,10 +133,12 @@ public class MiniGamePlayerComponentEvent {
                         List<Transform> spawns = markerTeamSpawnPoints.get(0);
                         Transform spawn = spawns.get(ThreadLocalRandom.current().nextInt(spawns.size()));
 
+                        registerSpawnTeam(playerWorld, playerRef.getUuid(), 0);
+
                         LaserTagUtils.assignTeam(0, store, playerRef.getReference());
                         LaserTagUtils.assignLaserTagPlayerInventory(store, player, 0);
 
-                        Teleport teleport = Teleport.createForPlayer(player.getWorld(), spawn);
+                        Teleport teleport = Teleport.createForPlayer(playerWorld, spawn);
                         store.addComponent(event.getPlayerRef(), Teleport.getComponentType(), teleport);
 
                         BroadcastMessage.toPlayer(playerRef, "Joined Red Team", MessageType.SUCCESS);
@@ -147,21 +146,23 @@ public class MiniGamePlayerComponentEvent {
                         List<Transform> spawns = markerTeamSpawnPoints.get(1);
                         Transform spawn = spawns.get(ThreadLocalRandom.current().nextInt(spawns.size()));
 
+                        registerSpawnTeam(playerWorld, playerRef.getUuid(), 1);
+
                         LaserTagUtils.assignTeam(1, store, playerRef.getReference());
                         LaserTagUtils.assignLaserTagPlayerInventory(store, player, 1);
 
-                        Teleport teleport = Teleport.createForPlayer(player.getWorld(), spawn);
+                        Teleport teleport = Teleport.createForPlayer(playerWorld, spawn);
                         store.addComponent(event.getPlayerRef(), Teleport.getComponentType(), teleport);
 
                         BroadcastMessage.toPlayer(playerRef, "Joined Blue Team", MessageType.SUCCESS);
                     }
                 }else{
                     // Spawn override fallback
-                    ISpawnProvider spawnProvider = player.getWorld().getWorldConfig().getSpawnProvider();
+                    ISpawnProvider spawnProvider = playerWorld.getWorldConfig().getSpawnProvider();
                     if (spawnProvider == null) return;
 
-                    Transform spawnTransform = spawnProvider.getSpawnPoint(player.getWorld(), playerRef.getUuid());
-                    Teleport teleport = Teleport.createForPlayer(player.getWorld(), spawnTransform);
+                    Transform spawnTransform = spawnProvider.getSpawnPoint(playerWorld, playerRef.getUuid());
+                    Teleport teleport = Teleport.createForPlayer(playerWorld, spawnTransform);
                     store.addComponent(event.getPlayerRef(), Teleport.getComponentType(), teleport);
                 }
             });
@@ -225,4 +226,9 @@ public class MiniGamePlayerComponentEvent {
         });
     }
 
+    private static void registerSpawnTeam(World world, UUID playerUuid, int teamId) {
+        if (world.getWorldConfig().getSpawnProvider() instanceof LaserTagTeamSpawnProvider spawnProvider) {
+            spawnProvider.setPlayerTeam(playerUuid, teamId);
+        }
+    }
 }

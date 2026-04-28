@@ -1,49 +1,79 @@
 package fr.seeeek.carpenterprotocol.interfaces;
 
-import com.hypixel.hytale.component.Ref;
-import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.math.vector.Transform;
 import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.spawn.ISpawnProvider;
-import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class LaserTagTeamSpawnProvider implements ISpawnProvider {
-
     private final Map<Integer, List<Transform>> teamSpawns;
+    private final Map<UUID, Integer> playerTeams = new ConcurrentHashMap<>();
 
     public LaserTagTeamSpawnProvider(Map<Integer, List<Transform>> teamSpawns) {
-        this.teamSpawns = teamSpawns;
+        Map<Integer, List<Transform>> copy = new HashMap<>();
+
+        for (Map.Entry<Integer, List<Transform>> entry : teamSpawns.entrySet()) {
+            List<Transform> spawns = new ArrayList<>();
+            for (Transform spawn : entry.getValue()) {
+                if (spawn != null) {
+                    spawns.add(spawn.clone());
+                }
+            }
+            copy.put(entry.getKey(), Collections.unmodifiableList(spawns));
+        }
+
+        this.teamSpawns = Collections.unmodifiableMap(copy);
+    }
+
+    public void setPlayerTeam(UUID playerUuid, int teamId) {
+        playerTeams.put(playerUuid, teamId);
+    }
+
+    public void clearPlayerTeam(UUID playerUuid) {
+        playerTeams.remove(playerUuid);
     }
 
     @Override
-    public Transform getSpawnPoint(World world, @NonNullDecl UUID playerUuid) {
-        Store<EntityStore> store = world.getEntityStore().getStore();
-        Ref<EntityStore> playerRef = world.getEntityStore().getRefFromUUID(playerUuid);
+    public Transform getSpawnPoint(@NonNullDecl World world, @NonNullDecl UUID playerUuid) {
+        Integer teamId = playerTeams.get(playerUuid);
 
-        assert playerRef != null;
-        LaserTagPlayerComponent player = store.getComponent(playerRef, LaserTagPlayerComponent.getComponentType());
-
-        if (player == null) {
-            return fallbackSpawn();
+        if (teamId != null) {
+            Transform teamSpawn = randomSpawn(teamSpawns.get(teamId));
+            if (teamSpawn != null) {
+                return teamSpawn;
+            }
         }
 
-        int teamId = player.getTeamId();
+        Transform anySpawn = randomAnySpawn();
+        return anySpawn != null ? anySpawn : fallbackSpawn();
+    }
 
-        List<Transform> spawns = teamSpawns.get(teamId);
-
+    private Transform randomSpawn(List<Transform> spawns) {
         if (spawns == null || spawns.isEmpty()) {
-            return fallbackSpawn();
+            return null;
         }
 
-        return spawns.get(ThreadLocalRandom.current().nextInt(spawns.size()));
+        return spawns.get(ThreadLocalRandom.current().nextInt(spawns.size())).clone();
+    }
+
+    private Transform randomAnySpawn() {
+        List<Transform> allSpawns = new ArrayList<>();
+
+        for (List<Transform> spawns : teamSpawns.values()) {
+            allSpawns.addAll(spawns);
+        }
+
+        return randomSpawn(allSpawns);
     }
 
     private Transform fallbackSpawn() {
@@ -52,10 +82,15 @@ public class LaserTagTeamSpawnProvider implements ISpawnProvider {
 
     @Override
     public Transform[] getSpawnPoints() {
-        return teamSpawns.values()
-                .stream()
-                .flatMap(List::stream)
-                .toArray(Transform[]::new);
+        List<Transform> spawns = new ArrayList<>();
+
+        for (List<Transform> teamSpawnList : teamSpawns.values()) {
+            for (Transform spawn : teamSpawnList) {
+                spawns.add(spawn.clone());
+            }
+        }
+
+        return spawns.toArray(Transform[]::new);
     }
 
     @Override
