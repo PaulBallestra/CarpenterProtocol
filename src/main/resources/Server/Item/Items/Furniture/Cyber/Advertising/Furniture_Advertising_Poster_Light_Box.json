@@ -16,6 +16,10 @@
       {
         "Weight": 1,
         "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Poster_Light_Box_Texture.png"
+      },
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Poster_Light_Box_Cybernetics_Lab_Texture.png"
       }
     ],
     "CustomModelScale": 1,
@@ -37,15 +41,15 @@
   },
   "PlayerAnimationsId": "Block",
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.4,
     "Rotation": [
-      347,
-      18,
-      0
+      22.5,
+      45,
+      22.5
     ],
     "Translation": [
-      7,
-      -30
+      10,
+      -32
     ]
   },
   "ResourceTypes": [

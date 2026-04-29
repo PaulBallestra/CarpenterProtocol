@@ -10,15 +10,15 @@
   "Set": "Furniture_Cyber",
   "Icon": "Icons/ItemsGenerated/Furniture_Advertising_Totem.png",
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.35,
     "Rotation": [
       22.5,
       45,
       22.5
     ],
     "Translation": [
-      1,
-      -31
+      0,
+      -33
     ]
   },
   "BlockType": {
