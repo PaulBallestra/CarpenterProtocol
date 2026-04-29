@@ -99,7 +99,7 @@
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 2, "y": 7},
+                    "offset": {"x": 36, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },

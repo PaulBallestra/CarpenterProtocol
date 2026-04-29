@@ -29,6 +29,10 @@
       {
         "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Outdoor_Signage_Synth_Mart_Texture.png",
         "Weight": 1
+      },
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Outdoor_Signage_Cybernetics_Lab_Texture.png"
       }
     ],
     "DrawType": "Model",
