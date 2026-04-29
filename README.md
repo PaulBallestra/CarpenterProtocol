@@ -85,3 +85,5 @@ Everything you see here has been learned step by step during development, often 
 Because of that, some models don’t fully match Hytale’s art style. They reflect different stages of learning rather than a perfectly consistent pipeline, but they’re also part of the journey that shaped the mod into what it is today.  
   
 Thanks for who plays it !
+
+SeeeeK
