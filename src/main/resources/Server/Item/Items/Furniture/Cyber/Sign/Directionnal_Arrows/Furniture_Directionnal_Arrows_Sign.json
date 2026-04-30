@@ -21,6 +21,9 @@
     "CustomModelScale": 1,
     "HitboxType": "Directionnal_Arrows_Sign",
     "VariantRotation": "UpDownNESW",
+    "MovementSettings": {
+      "IsClimbable": false
+    },
     "Gathering": {
       "Soft": {}
     },

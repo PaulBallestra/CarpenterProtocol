@@ -11,6 +11,9 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
+    "MovementSettings": {
+      "IsClimbable": false
+    },
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Directionnal_Arrows/Directionnal_Minus45_Arrows_Sign.blockymodel",
     "CustomModelTexture": [
       {

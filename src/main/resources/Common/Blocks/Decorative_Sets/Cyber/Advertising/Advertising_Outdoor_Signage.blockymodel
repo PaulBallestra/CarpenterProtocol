@@ -53,27 +53,27 @@
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 80, "y": 3},
+                    "offset": {"x": 46, "y": 1},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 104, "y": 9},
+                    "offset": {"x": 70, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 80, "y": 9},
+                    "offset": {"x": 46, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 76, "y": 9},
+                    "offset": {"x": 42, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 80, "y": 15},
+                    "offset": {"x": 46, "y": 13},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -99,32 +99,32 @@
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 36, "y": 7},
+                    "offset": {"x": 7, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 64, "y": 7},
+                    "offset": {"x": 35, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 36, "y": 7},
+                    "offset": {"x": 7, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 30, "y": 7},
+                    "offset": {"x": 1, "y": 7},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 36, "y": 1},
+                    "offset": {"x": 7, "y": 1},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 36, "y": 64},
+                    "offset": {"x": 7, "y": 64},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -150,32 +150,32 @@
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 37, "y": 8},
+                    "offset": {"x": 8, "y": 8},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 63, "y": 8},
+                    "offset": {"x": 34, "y": 8},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 37, "y": 8},
+                    "offset": {"x": 8, "y": 8},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 31, "y": 8},
+                    "offset": {"x": 2, "y": 8},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 37, "y": 2},
+                    "offset": {"x": 8, "y": 2},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 37, "y": 63},
+                    "offset": {"x": 8, "y": 63},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -185,81 +185,6 @@
                 "doubleSided": false,
                 "shadingMode": "fullbright"
               }
-            },
-            {
-              "id": "6",
-              "name": "Screens",
-              "position": {"x": 0, "y": 10.5, "z": 0},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-              "shape": {
-                "type": "none",
-                "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false
-                },
-                "textureLayout": {},
-                "unwrapMode": "custom",
-                "visible": false,
-                "doubleSided": false,
-                "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "7",
-                  "name": "FrontScreen",
-                  "position": {"x": 0, "y": 0, "z": 3.2},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "quad",
-                    "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 26, "y": 55},
-                      "normal": "+Z"
-                    },
-                    "textureLayout": {
-                      "front": {
-                        "offset": {"x": 79, "y": 20},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": false,
-                    "doubleSided": false,
-                    "shadingMode": "fullbright"
-                  }
-                },
-                {
-                  "id": "8",
-                  "name": "BackScreen",
-                  "position": {"x": 0, "y": 0, "z": -3.2},
-                  "orientation": {"x": 0, "y": 1, "z": 0, "w": 0},
-                  "shape": {
-                    "type": "quad",
-                    "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 26, "y": 55},
-                      "normal": "+Z"
-                    },
-                    "textureLayout": {
-                      "front": {
-                        "offset": {"x": 79, "y": 20},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": false,
-                    "doubleSided": false,
-                    "shadingMode": "fullbright"
-                  }
-                }
-              ]
             }
           ]
         }

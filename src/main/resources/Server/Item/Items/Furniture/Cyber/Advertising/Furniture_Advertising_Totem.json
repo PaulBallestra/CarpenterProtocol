@@ -27,7 +27,7 @@
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Totem.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Totem_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Totem_Texture.png",
         "Weight": 1
       }
     ],

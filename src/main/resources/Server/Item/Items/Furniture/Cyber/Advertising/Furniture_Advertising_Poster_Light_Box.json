@@ -15,11 +15,19 @@
     "CustomModelTexture": [
       {
         "Weight": 1,
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Poster_Light_Box_Texture.png"
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Poster_Light_Box_Synth_Mart_Texture.png"
       },
       {
         "Weight": 1,
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Poster_Light_Box_Cybernetics_Lab_Texture.png"
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Poster_Light_Box_Cybernetics_Lab_Texture.png"
+      },
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Poster_Light_Box_City_Ramen_Texture.png"
+      },
+      {
+        "Weight": 1,
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Poster_Light_Box_Quickfix_Texture.png"
       }
     ],
     "CustomModelScale": 1,

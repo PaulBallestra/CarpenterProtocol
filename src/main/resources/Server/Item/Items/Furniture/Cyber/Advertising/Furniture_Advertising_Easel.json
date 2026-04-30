@@ -27,7 +27,7 @@
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Easel.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Easel_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Easel_Texture.png",
         "Weight": 1
       }
     ],

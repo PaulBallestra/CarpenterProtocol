@@ -27,7 +27,7 @@
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Inclined_Ceiling.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Inclined_Ceiling_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Inclined_Ceiling_Texture.png",
         "Weight": 1
       }
     ],

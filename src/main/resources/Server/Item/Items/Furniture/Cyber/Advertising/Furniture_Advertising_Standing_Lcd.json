@@ -27,7 +27,7 @@
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Standing_Lcd.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Advertising_Standing_Lcd_Texture.png",
+        "Texture": "Blocks/Decorative_Sets/Cyber/Advertising/Standing_Lcd_Texture.png",
         "Weight": 1
       }
     ],
