@@ -25,7 +25,6 @@ public class OverrideMiniGameStateCommand extends AbstractPlayerCommand {
         );
     }
 
-
     @Override
     protected void execute(@NonNullDecl CommandContext commandContext, @NonNullDecl Store<EntityStore> store, @NonNullDecl Ref<EntityStore> ref, @NonNullDecl PlayerRef playerRef, @NonNullDecl World world) {
         if(playerRef.getReference() == null || !playerRef.isValid()) return;
