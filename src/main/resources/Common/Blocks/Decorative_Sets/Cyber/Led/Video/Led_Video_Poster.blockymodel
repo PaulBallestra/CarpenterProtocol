@@ -57,29 +57,9 @@
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
-                  "right": {
-                    "offset": {"x": 8, "y": 26},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
                   "front": {
                     "offset": {"x": 16, "y": 0},
                     "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 10, "y": 26},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 28, "y": 32},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 0
-                  },
-                  "bottom": {
-                    "offset": {"x": 44, "y": 30},
-                    "mirror": {"x": true, "y": false},
                     "angle": 0
                   }
                 },
