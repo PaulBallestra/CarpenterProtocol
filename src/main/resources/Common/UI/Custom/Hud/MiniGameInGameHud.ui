@@ -1,7 +1,7 @@
 $C = "../Common.ui";
 
 $C.@DecoratedContainer {
-  Anchor: (Width: 300, Height: 250, Right: 20, Top: 50);
+  Anchor: (Width: 300, Height: 280, Right: 20, Top: 50);
 
   $C.@Container {
     Anchor: (Full: 0);
@@ -32,7 +32,29 @@ $C.@DecoratedContainer {
 
       Group { Anchor: (Height: 8); } // Spacer
 
-      Label #Team { Text: "Team: Unassigned"; Style: (FontSize: 15, HorizontalAlignment: Center); }
+      Label #Team { Text: "Your Team: Unassigned"; Style: (FontSize: 15, HorizontalAlignment: Center); }
+
+      Group { Anchor: (Height: 8); } // Spacer
+
+      Group {
+        LayoutMode: Center;
+        Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+        Group {
+          FlexWeight: 1;
+          Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+          LayoutMode: Center;
+          Background: #960000;
+          Label #Team0Score { Text: "Score: 0"; Style: (FontSize: 15, HorizontalAlignment: Center); }
+        }
+
+        Group {
+          FlexWeight: 1;
+          LayoutMode: Center;
+          Anchor: (Top: 0, Bottom: 0, Left: 0, Right: 0);
+          Background: #000096;
+          Label #Team1Score { Text: "Score: 0"; Style: (FontSize: 15, HorizontalAlignment: Center); }
+        }
+      }
 
       Group { Anchor: (Height: 8); } // Spacer
       Group {

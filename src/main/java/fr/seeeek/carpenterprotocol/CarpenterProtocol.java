@@ -5,8 +5,6 @@ import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.event.EventRegistry;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.command.system.CommandRegistry;
-import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.event.events.ecs.DropItemEvent;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
@@ -28,7 +26,6 @@ import javax.annotation.Nonnull;
 
 public class CarpenterProtocol extends JavaPlugin {
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
-
 
     public CarpenterProtocol(@Nonnull JavaPluginInit init) {
         super(init);
@@ -90,13 +87,13 @@ public class CarpenterProtocol extends JavaPlugin {
 
         // debugs commands
         commandRegistry.registerCommand(new OverrideMiniGameStateCommand());
+        // commandRegistry.registerCommand(new GetLaserTagGameCommand());
+        // commandRegistry.registerCommand(new OverridePlayerStateCommand());
         // commandRegistry.registerCommand(new LaserTagCreateCommand(instanceService));
         // commandRegistry.registerCommand(new GetMiniGameStateCommand());
         // commandRegistry.registerCommand(new OverrideLaserTagPlayerComponentKillsCommand());
         // commandRegistry.registerCommand(new GetMiniGamePlayerStateCommand());
-        // commandRegistry.registerCommand(new OverridePlayerStateCommand());
         // commandRegistry.registerCommand(new GetConfigCommand());
-        // commandRegistry.registerCommand(new GetLaserTagGameCommand());
         // commandRegistry.registerCommand(new GetLaserTagPlayerCommand());
 
         eventRegistry.registerGlobal(PlayerReadyEvent.class, MiniGamePlayerComponentEvent::onPlayerReady);

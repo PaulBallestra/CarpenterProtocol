@@ -20,6 +20,7 @@ public class MiniGameHudComponent implements Component<EntityStore> {
     // Cache last displayed values to avoid spam
     private MiniGameState lastState;
     private LaserTagPlayerComponent lastLaserTagPlayerComponent;
+    private LaserTagGameComponent lastLaserTagGameComponent;
     private int lastAliveCount;
     private int lastPlayersCount;
 
@@ -28,14 +29,15 @@ public class MiniGameHudComponent implements Component<EntityStore> {
         return new MiniGameHudComponent();
     }
 
-    public void cache(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent) {
+    public void cache(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent, LaserTagGameComponent laserTagGameComponent) {
         lastState = game.getState();
         lastAliveCount = game.getAlivePlayers().size();
         lastPlayersCount = game.getPlayers().size();
         lastLaserTagPlayerComponent = (LaserTagPlayerComponent) laserTagPlayerComponent.clone();
+        lastLaserTagGameComponent = (LaserTagGameComponent) laserTagGameComponent.clone();
     }
 
-    public boolean isDifferent(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent) {
+    public boolean isDifferent(MiniGameComponent game, LaserTagPlayerComponent laserTagPlayerComponent, LaserTagGameComponent laserTagGameComponent) {
         if (lastLaserTagPlayerComponent == null) return true;
 
         return lastState != game.getState()
@@ -43,6 +45,8 @@ public class MiniGameHudComponent implements Component<EntityStore> {
                 || lastPlayersCount != game.getPlayers().size()
                 || lastLaserTagPlayerComponent.getKills() != laserTagPlayerComponent.getKills()
                 || lastLaserTagPlayerComponent.getDeaths() != laserTagPlayerComponent.getDeaths()
-                || lastLaserTagPlayerComponent.getTeamId() != laserTagPlayerComponent.getTeamId();
+                || lastLaserTagPlayerComponent.getTeamId() != laserTagPlayerComponent.getTeamId()
+                || lastLaserTagGameComponent.getTeamKills(0) != laserTagGameComponent.getTeamKills(0)
+                || lastLaserTagGameComponent.getTeamKills(1) != laserTagGameComponent.getTeamKills(1);
     }
 }

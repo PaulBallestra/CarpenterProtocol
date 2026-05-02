@@ -8,7 +8,7 @@
     "CarpenterProtocolCategory.Signs"
   ],
   "BlockType": {
-    "Material": "Solid",
+    "Material": "Empty",
     "DrawType": "Model",
     "Opacity": "Transparent",
     "MovementSettings": {

@@ -10,6 +10,7 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import fr.seeeek.carpenterprotocol.components.LaserTagGameComponent;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameComponent;
 import fr.seeeek.carpenterprotocol.components.MiniGameHudComponent;
@@ -25,8 +26,9 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
                      CommandBuffer<EntityStore> commandBuffer) {
 
         MiniGameComponent miniGameComponent = chunk.getComponent(i, MiniGameComponent.getComponentType());
+        LaserTagGameComponent laserTagGameComponent = chunk.getComponent(i, LaserTagGameComponent.getComponentType());
 
-        if (miniGameComponent == null) return;
+        if (miniGameComponent == null || laserTagGameComponent == null) return;
 
         World world = store.getExternalData().getWorld();
 
@@ -46,7 +48,7 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
             if(laserTagPlayerComponent == null)
                 continue;
 
-            if (!hudComponent.isDifferent(miniGameComponent, laserTagPlayerComponent))
+            if (!hudComponent.isDifferent(miniGameComponent, laserTagPlayerComponent, laserTagGameComponent))
                 continue;
 
             Player player = commandBuffer.getComponent(playerEntity, Player.getComponentType());
@@ -55,8 +57,8 @@ public class MiniGameHudSystem extends EntityTickingSystem<EntityStore> {
                 continue;
 
             if (player.getHudManager().getCustomHud() instanceof MiniGameInGameHud miniGameInGameHud) {
-                miniGameInGameHud.refresh(miniGameComponent, laserTagPlayerComponent);
-                hudComponent.cache(miniGameComponent, laserTagPlayerComponent);
+                miniGameInGameHud.refresh(miniGameComponent, laserTagPlayerComponent, laserTagGameComponent);
+                hudComponent.cache(miniGameComponent, laserTagPlayerComponent, laserTagGameComponent);
             }
         }
     }

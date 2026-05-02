@@ -10,6 +10,9 @@ import com.hypixel.hytale.server.core.modules.entity.damage.DeathSystems;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import fr.seeeek.carpenterprotocol.common.BroadcastMessage;
+import fr.seeeek.carpenterprotocol.common.MessageType;
+import fr.seeeek.carpenterprotocol.components.LaserTagGameComponent;
 import fr.seeeek.carpenterprotocol.components.LaserTagPlayerComponent;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
@@ -42,6 +45,16 @@ public class LaserTagPlayerDeathSystem extends DeathSystems.OnDeathSystem{
 
                         victimLaserTagPlayerComponent.addDeath();
                         killerLaserTagPlayerComponent.addKill();
+
+                        store.forEachChunk((LaserTagGameComponent.getComponentType()), (chunk, _) -> {
+                            for (int i = 0; i < chunk.size(); i++) {
+                                LaserTagGameComponent laserTagGameComponent = chunk.getComponent(i, LaserTagGameComponent.getComponentType());
+                                if(laserTagGameComponent != null){
+                                    laserTagGameComponent.addKillToTeam(killerLaserTagPlayerComponent.getTeamId());
+                                    return;
+                                }
+                            }
+                        });
                     }
                 }
             });

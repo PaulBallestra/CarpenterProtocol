@@ -4,6 +4,7 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractPlayerCommand;
+import com.hypixel.hytale.server.core.permissions.HytalePermissions;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
@@ -18,6 +19,8 @@ public class GetLaserTagGameCommand extends AbstractPlayerCommand {
 
     public GetLaserTagGameCommand(){
         super("getlasertag", "Returns all the values for the laser tag mini-game you're in");
+
+        requirePermission(HytalePermissions.fromCommand("admin"));
     }
 
     @Override

@@ -8,7 +8,7 @@
     "CarpenterProtocolCategory.Signs"
   ],
   "BlockType": {
-    "Material": "Solid",
+    "Material": "Empty",
     "DrawType": "Model",
     "Opacity": "Transparent",
     "CustomModel": "Blocks/Decorative_Sets/Cyber/Sign/Directionnal_Arrows/Directionnal_45_Arrows_Sign.blockymodel",
