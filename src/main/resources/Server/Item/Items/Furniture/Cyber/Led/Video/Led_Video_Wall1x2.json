@@ -15,7 +15,7 @@
     "CustomModelTexture": [
       {
         "Weight": 1,
-        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Panel_1x2_Texture.png"
+        "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Panel_1x2_Buy_Texture.png"
       }
     ],
     "CustomModelScale": 1,
@@ -23,6 +23,52 @@
     "VariantRotation": "NESW",
     "Gathering": {
       "Soft": {}
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "State1",
+              "State1": "State2",
+              "State2": "State3",
+              "State3": "State1"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "State1": {
+          "InteractionHint": "interactionHints.turntostate2",
+          "CustomModelTexture": [
+            {
+              "Weight": 1,
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Panel_1x2_Buy_Texture.png"
+            }
+          ]
+        },
+        "State2": {
+          "InteractionHint": "interactionHints.turntostate3",
+          "CustomModelTexture": [
+            {
+              "Weight": 1,
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Panel_1x2_More_Texture.png"
+            }
+          ]
+        },
+        "State3": {
+          "InteractionHint": "interactionHints.turntostate1",
+          "CustomModelTexture": [
+            {
+              "Weight": 1,
+              "Texture": "Blocks/Decorative_Sets/Cyber/Led/Video/Led_Video_Panel_1x2_Data_Texture.png"
+            }
+          ]
+        }
+      }
     },
     "BlockParticleSetId": "Metal",
     "BlockSoundSetId": "Metal",
@@ -37,15 +83,15 @@
   },
   "PlayerAnimationsId": "Block",
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.4,
     "Rotation": [
-      347,
-      18,
-      0
+      22.5,
+      45,
+      22.5
     ],
     "Translation": [
-      7,
-      -30
+      8.5,
+      -32
     ]
   },
   "ResourceTypes": [

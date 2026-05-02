@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Attachment",
-      "position": {"x": 0, "y": -6, "z": 0},
+      "position": {"x": 0, "y": 0, "z": 0},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,7 +22,7 @@
         {
           "id": "2",
           "name": "Zeppelin",
-          "position": {"x": -0.49065, "y": 21.3668, "z": 2.28571},
+          "position": {"x": 1.30935, "y": 15.3668, "z": 0.28571},
           "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
           "shape": {
             "type": "none",
