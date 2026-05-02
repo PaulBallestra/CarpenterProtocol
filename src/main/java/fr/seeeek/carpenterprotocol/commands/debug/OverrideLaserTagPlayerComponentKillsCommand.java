@@ -39,6 +39,8 @@ public class OverrideLaserTagPlayerComponentKillsCommand extends AbstractPlayerC
                     LaserTagGameComponent laserTagGameComponent = chunk.getComponent(i, LaserTagGameComponent.getComponentType());
                     if(laserTagGameComponent != null){
                         laserTagGameComponent.addKillToTeam(laserTagPlayerComponent.getTeamId());
+                        laserTagGameComponent.addKillToTeam(laserTagPlayerComponent.getTeamId());
+                        laserTagGameComponent.addKillToTeam(laserTagPlayerComponent.getTeamId());
                         return;
                     }
                 }
