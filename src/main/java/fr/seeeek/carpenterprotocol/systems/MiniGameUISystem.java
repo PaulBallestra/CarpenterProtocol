@@ -66,12 +66,8 @@ public class MiniGameUISystem extends EntityTickingSystem<EntityStore> {
         if (game.getState() == MiniGameState.ENDING && !game.isWinnerTitleShown()) {
             game.setIsWinnerTitleShown(true);
 
-            // --- SECURE ECS ITERATION START ---
-            // Ask the store for all chunks containing MiniGamePlayerComponents
             store.forEachChunk(MiniGamePlayerComponent.getComponentType(), (chunk, cb) -> {
-                // Loop through entities in this chunk
                 for (int j = 0; j < chunk.size(); j++) {
-                    // This is GUARANTEED to never be null
                     MiniGamePlayerComponent playerComp = chunk.getComponent(j, MiniGamePlayerComponent.getComponentType());
 
                     assert playerComp != null;
