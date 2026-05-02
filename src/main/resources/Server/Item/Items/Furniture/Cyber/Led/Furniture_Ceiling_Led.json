@@ -42,6 +42,46 @@
       "Color": "#c1c",
       "Radius": 0
     },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "State1",
+              "State1": "State2",
+              "State2": "State3",
+              "State3": "State4",
+              "State4": "State1"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "State1": {
+          "InteractionHint": "interactionHints.turntostate2",
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Ceiling_Led.blockyanim",
+          "Looping": true
+        },
+        "State2": {
+          "InteractionHint": "interactionHints.turntostate3",
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Ceiling_Led_2.blockyanim",
+          "Looping": true
+        },
+        "State3": {
+          "InteractionHint": "interactionHints.turntostate4",
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Ceiling_Led_3.blockyanim",
+          "Looping": true
+        },
+        "State4": {
+          "InteractionHint": "interactionHints.turntostate1",
+          "CustomModelAnimation": "Blocks/Animations/Cyber/Led/Ceiling_Led_4.blockyanim",
+          "Looping": true
+        }
+      }
+    },
     "Material": "Solid",
     "Opacity": "Transparent",
     "ParticleColor": "#b166bf",
